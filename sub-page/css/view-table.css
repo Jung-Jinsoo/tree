@@ -1,0 +1,46 @@
+.view-table {
+  width: 100%;
+  table-layout: fixed;
+  word-break: break-all;
+}
+.view-table th {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  height: 34px;
+  background: url(../images/common/table_bg_sep.png) no-repeat left bottom #7b7977;
+}
+.view-table th:first-child {
+  background: #7b7977;
+}
+.view-table td {
+  border-bottom: 1px solid #c1c1c1;
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+  height: 33px;
+}
+.view-table td.tdIndex2 {
+  text-align: left;
+  padding-left: 10px;
+}
+.view-table td.details {
+  padding: 5px 0 5px 10px;
+  text-align: left;
+}
+.view-table td .count_num {
+  font-size: 22px;
+  font-weight: bold;
+  color: #777;
+}
+.view-table tbody tr:hover {
+  background: #dfe4e8 !important;
+}
+.view-table tbody tr:first-child td {
+  border-top: 1px solid #c1c1c1;
+}
+.view-table tfoot tr {
+  background-color: #f9f9f9;
+}
+
+/*# sourceMappingURL=view-table.css.map */

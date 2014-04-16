@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<title>Summary or performace</title>
+	<!-- Reset -->
+	<link rel="stylesheet" href="css/reset.css" />	
+	<!-- Button 관련 CSS -->
+	<link rel="stylesheet" href="css/button.css" />
+	<link rel="stylesheet" href="css/summary.css" />
+	<link rel="stylesheet" href="css/view-table.css" />
+	<!-- 외부 Login -->
+	<link rel="stylesheet" href="css/fb-login.css" />
+	<link rel="stylesheet" href="css/jquery.selectBox.css" />
+	<!-- jQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<!-- //jQuery -->
+	<!-- Select Box Plugin -->
+	<script type="text/javascript" src="./js/jquery.selectBox.js"></script>
+	<!-- <script type="text/javascript" src="./js/bootstrap-select.js"></script> -->
+	<!-- //Select Box Plugin -->
+</head>
+<body>
+	<!-- Wrap -->
+	<div class="wrap">
+		<!-- 버튼 디자인 -->
+		<div class="button-design">
+
+
+			<!-- 날짜 세팅 관련 버튼 -->
+			<div class="date-button-wrap" id="date-button-wrap">
+				<button class="button date" type="button">YesterDay</button>				
+				<button class="button date" type="button">Today</button>
+				<button class="button date" type="button">7 days</button>
+				<button class="button date" type="button">28 days</button>
+				<button class="button date" type="button">90 days</button>
+			</div>
+			<!-- //날짜 세팅 관련 버튼 -->
+
+
+			<!-- Search Button -->			
+			<button class="button large blue" type="submit">Search</button>			
+			<button class="button large gray" type="submit">Edit</button>
+			<!-- //Search Button -->
+
+			<button class="button tiny blue" type="button">Create target Group</button>
+			<button class="button tiny gray" type="button">Edit</button>
+			<button class="button tiny" type="button">Delect</button>
+		</div>
+		<!-- //버튼 디자인 -->
+
+
+		<!-- 테이블 디자인 -->
+		<div class="table-design">
+			<!-- 사용하는곳 : -->
+			<table class="charts-table">
+				<tr>
+					<th scope="row">Period</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row">Cost</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row">Clicks</th>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row">CTR</th>
+					<td></td>
+				</tr>
+			</table>
+			<!-- 사용하는곳 : -->
+			<table class="view-table" summary="Campaign group list">
+				<thead>
+					<tr>
+						<th class="header">&nbsp;</th>
+						<th class="header">Campaign<br/>name</th>
+						<th class="header">Start<br/>date</th>
+						<th class="header">End<br/>date</th>
+						<th class="header">Imp</th>
+						<th class="header">Reach</th>
+						<th class="header">Clicks</th>
+						<th class="header">CTR</th>
+						<th class="header">Conversion<br/>rate</th>
+						<th class="header">Sales</th>
+						<th class="header">ROAS</th>
+						<th class="header">Avg.<br/>CPC</th>
+						<th class="header">Avg.<br/>CPM</th>
+						<th class="header">Avg.<br/>CPL</th>
+						<th class="header">Avg.<br/>CPA</th>
+						<th class="header">Avg.<br/>CPI</th>
+						<th class="header">Budget</th>
+						<th class="header">Remaining</th>
+						<th class="header">Total<br/>Spending</th>								
+						<th class="header">Report</th>								
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td colspan="4">sum / avg.</td>
+						<td>475,405</td>
+						<td>140,485</td>
+						<td>422</td>
+						<td>0.09%</td>
+						<td>8.53%</td>
+						<td>3,600</td>
+						<td>6.65%</td>
+						<td>128.37</td>
+						<td>113.95</td>
+						<td>0.0</td>
+						<td>1,504.83</td>
+						<td>4,514.5</td>
+						<td>9,053,500</td>
+						<td>8,963,747</td>
+						<td>89,753</td>
+						<td>&nbsp;</td>
+					</tr>
+				</tfoot>
+
+				<tbody>
+					<tr>
+						<td><img src="images/common/table_icon_play.png" height="9" width="5" alt="play"/></td>
+						<td><a href=";" name="moveManage">HoneySide_201442</a></td>
+						<td>14.04.02</td>
+						<td>14.05.01</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0.0%</td>
+						<td>0.0%</td>
+						<td>0</td>
+						<td>0.0%</td>
+						<td>0.0</td>
+						<td>0.0</td>
+						<td>0.0</td>
+						<td>0.0</td>
+						<td>0.0</td>
+						<td>1,000,000</td>
+						<td>1,000,000</td>
+						<td>0</td>									
+						<td><button type="button" class="button tiny gray" name="report">Report</button></td>
+					</tr>
+					<tr>
+						<td><img src="images/common/table_icon_pause.png" alt="pause"/></td>
+						<td><a href=";" name="moveManage">HoneySide_201442</a></td>
+						<td>14.04.02</td>
+						<td>14.05.01</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0.0%</td>
+						<td>0.0%</td>
+						<td>0</td>
+						<td>0.0%</td>
+						<td>0.0</td>
+						<td>0.0</td>
+						<td>0.0</td>
+						<td>0.0</td>
+						<td>0.0</td>
+						<td>1,000,000</td>
+						<td>1,000,000</td>
+						<td>0</td>									
+						<td><button type="button" class="button tiny gray" name="report">Report</button></td>
+					</tr>
+					<tr>
+						<td><img src="images/common/table_icon_play.png" height="9" width="5" alt="play"/></td>
+						<td><a href=";" name="moveManage">HoneySide_201442</a></td>
+						<td>14.04.02</td>
+						<td>14.05.01</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0.0%</td>
+						<td>0.0%</td>
+						<td>0</td>
+						<td>0.0%</td>
+						<td>0.0</td>
+						<td>0.0</td>
+						<td>0.0</td>
+						<td>0.0</td>
+						<td>0.0</td>
+						<td>1,000,000</td>
+						<td>1,000,000</td>
+						<td>0</td>									
+						<td><button type="button" class="button tiny gray" name="report">Report</button></td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="view-table" id="contents_table" summary="Campaign group list">
+				<colgroup>
+					<col width="35"/>
+					<col width="*"/>
+					<col width="60"/>
+					<col width="70"/>
+					<col width="70"/>
+					<col width="45"/>
+					<col width="90"/>
+					<col width="60"/>
+					<col width="60"/>
+					<col width="70"/>
+				</colgroup>
+				<thead>
+					<tr>
+						<th class="header">No.</th>
+						<th class="header">Message sent</th>
+						<th class="header">Reach</th>
+						<th class="header">Engaged</th>
+						<th class="header">Talking</th>
+						<th class="header">Likes</th>
+						<th class="header">Comments</th>
+						<th class="header">Share</th>
+						<th class="header">Virality</th>
+						<th class="header">Promote</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><span class="count_num">1</span></td>
+						<td class="details">아무런 기대없이 찾아온 한국, 그러나 이집트 의사 아흐메드는 이비인후과에서 3개월간 집중 트레이닝을 받은 후 새로운 가능성을 발견했습니다. 다시 돌아올 것을 기약하며 이집트로 돌아간 아흐메드, 다시 만날 그 날을 저희도 고대해봅니다 :)▶아이러브코리아, 땡큐삼성서울병원! 이집트의사 아흐메드의 특별했던 100일의 기록 : http://ohhappysmc.com/206442603<br/>Sun, 23 Mar 2014 23:52:00 GMT</td>	
+						<td>3.83K</td>	
+						<td>369</td>	
+						<td>141</td>	
+						<td>129</td>	
+						<td>7</td>	
+						<td>1</td>	
+						<td>3.68%</td>	
+						<td><button name="boost_post" type="button" class="button tiny gray">Boost</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- //테이블 디자인 -->
+
+		<!-- 셀렉트 박스 디자인 -->
+		<select name="page_id" id="page_id" style="margin-bottom: 10px;">
+			<option value="">Now loading...</option>
+		</select>
+		<!-- //셀렉트 박스 디자인 -->
+
+		<!-- 페이스북 로그인 유도 페이지 -->
+		<div class="fb-login">
+			<form name="frm" id="frm" action=""> 
+				<input type="hidden" name="accessToken" id="accessToken" value="${accessToken}" />
+				<div class="login-text-wrap">
+					<p>If you are currently logged in to Facebook, the right of the current logged in account will be activated to this page.</p>
+					<p>If you want to activate another account,</p>
+					<p>please log out from Facebook now and click the button.</p>
+					<a href="https://www.facebook.com/dialog/oauth?client_id=1403976166524591&amp;redirect_uri=http://stage.adwitt.com/auth.htm&amp;scope=ads_management,manage_pages,offline_access,publish_actions,publish_stream,read_insights,read_stream" class="btn-facebook-login">
+						Facebook Login
+					</a>
+				</div>
+			</form>
+		</div>
+		<!-- //페이스북 로그인 유도 페이지 -->
+	</div>
+	<!-- //Wrap -->
+<script type="text/javascript" src="./js/common.js"></script>
+
+</body>
+</html>

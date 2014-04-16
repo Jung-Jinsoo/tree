@@ -1,0 +1,30 @@
+.fb-login {
+  font-size: 15px;
+  line-height: 31px;
+  color: #fff;
+}
+.fb-login .login-text-wrap {
+  background: #1f9cd0;
+  padding: 30px;
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+}
+.fb-login .login-text-wrap p {
+  text-align: left;
+}
+.fb-login .login-text-wrap .btn-facebook-login {
+  display: block;
+  background-size: cover;
+  background-image: url(../images/btn-facebook-login.png);
+  width: 193.33333px;
+  height: 41.33333px;
+  margin: 20px auto 0;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+.fb-login .login-text-wrap .btn-facebook-login:active {
+  background-image: url(../images/btn-facebook-login-press.png);
+}
+
+/*# sourceMappingURL=fb-login.css.map */

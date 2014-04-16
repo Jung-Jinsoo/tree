@@ -1,0 +1,62 @@
+.m_ct_layer {
+  width: 615px;
+  height: 650px;
+  background: #f2f2f2;
+  padding: 30px;
+  position: relative;
+}
+.m_ct_layer .layerTable td {
+  font-size: 13px;
+  font-weight: normal;
+}
+.m_ct_layer .layerTable td input[type="text"] {
+  width: 250px;
+}
+.m_ct_layer .layerTable td textarea {
+  width: 250px;
+  height: 45px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 1px 1px 2px 1px #f3f3f3 inset;
+  resize: none;
+}
+.m_ct_layer .layerTable .categoryTR {
+  vertical-align: top;
+}
+.m_ct_layer .layerTable .categoryTR th {
+  padding-top: 9px;
+  height: 74px;
+}
+.m_ct_layer .layerTable .categoryTR td {
+  padding-top: 2px;
+}
+.m_ct_layer .layerTable .connectTR {
+  vertical-align: top;
+}
+.m_ct_layer .layerTable .connectTR th {
+  height: 88px;
+}
+.m_ct_layer .layerTable .connectTR td {
+  line-height: 22px;
+}
+.m_ct_layer .layerTable .relationTR th {
+  height: 54px;
+}
+.m_ct_layer .layerTable .relationTR td {
+  line-height: 22px;
+}
+.m_ct_layer .layerTable .relationTR td label {
+  margin-left: 25px;
+}
+.m_ct_layer .layerTable .relationTR td label:first-child {
+  margin-left: 0;
+}
+.m_ct_layer .layerTable .relationTR td input[type="checkbox"] {
+  margin-right: 7px;
+}
+.m_ct_layer .layerTable .ageTR td input {
+  width: 104px;
+}
+
+/*# sourceMappingURL=line.css.map */

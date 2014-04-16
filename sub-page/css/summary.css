@@ -1,0 +1,136 @@
+.wrap {
+  min-width: 1200px;
+}
+
+.charts-table {
+  width: 100%;
+  background: #f1f2f6;
+}
+.charts-table tr:first-child th, .charts-table tr:first-child td {
+  border-top: 0 none;
+}
+.charts-table th {
+  height: 44px;
+  font-size: 16px;
+  color: #3b5998;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.charts-table td {
+  padding-left: 12px;
+  color: #777777;
+  font-size: 13px;
+  border-top: 1px solid #fff;
+}
+
+.box_ave {
+  width: 100%;
+  border-bottom: 1px solid #b5b5b5;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.box_ave .list_ave {
+  width: 100%;
+}
+.box_ave .list_ave:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.box_ave .list_ave li {
+  float: left;
+  width: 12.5%;
+  text-align: center;
+}
+.box_ave .list_ave li .ave_img {
+  float: none;
+  width: 100%;
+  height: 31px;
+  padding: 0;
+  height: auto;
+  line-height: 31px;
+}
+.box_ave .list_ave li .ave_count {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-family: arial;
+  color: #666;
+  font-weight: bold;
+}
+.box_ave .list_ave li .ave_names {
+  font-size: 14px;
+  font-family: arial;
+  color: #b5b5b5;
+  font-weight: bold;
+}
+
+.sub-content {
+  margin-top: 30px;
+}
+.sub-content .sub-heading {
+  margin-bottom: 15px;
+}
+
+.chart-wrap {
+  overflow: hidden;
+}
+.chart-wrap .chart-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3b5998;
+}
+.chart-wrap .chart-click {
+  margin-right: 10px;
+}
+.chart-wrap .article {
+  float: left;
+  border: 1px solid #e7e7e7;
+}
+.chart-wrap .chart {
+  width: 575px;
+  height: 300px;
+}
+
+.table-wrap .view-table.includeIcon tr th:first-child {
+  width: 22px;
+}
+
+.insight-wrap {
+  overflow: hidden;
+}
+.insight-wrap .insight-list li {
+  float: left;
+  width: 282px;
+  height: 271px;
+  margin-left: 8px;
+  border: 1px solid #e7e7e7;
+}
+.insight-wrap .insight-list li:first-child {
+  margin-left: 0;
+}
+.insight-wrap .insight-list li .insight-list-heading {
+  height: 50px;
+  padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.insight-wrap .insight-list li .insight-list-heading dt, .insight-wrap .insight-list li .insight-list-heading p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3b5998;
+}
+.insight-wrap .insight-list li .insight-list-heading dd {
+  font-size: 14px;
+  color: #777;
+}
+.insight-wrap .insight-list li .insight-list-heading p {
+  padding-top: 15px;
+}
+.insight-wrap .insight-list li .insight-chart {
+  padding: 10px;
+  height: 180px;
+}
+.insight-wrap .insight-list li .insight-chart > div {
+  height: 100%;
+}
+
+/*# sourceMappingURL=summary.css.map */

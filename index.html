@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/tree.css"/>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<style tyle="text/css">
+	.tree {
+		position:absolute; left:50%;
+	}
+	</style>
+</head>
+<body>	
+	<div class="tree clfix">
+		<ul>
+			<li><a href="#">Design Sample</a>
+				<ul>
+					<li><a href="sub-page/button.html" target="_blank">Button Page</a></li>
+					<li><a href="sub-page/table.html" target="_blank">Table Page</a></li>
+					<li><a href="sub-page/select.html" target="_blank">Select Page</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+	</div>
+	<script>
+	var treeCenter = function(){
+		var treeWidth = $('.tree').width();
+		$('.tree').css({
+			'margin-left' : -(treeWidth/2)
+		});
+	}
+	$(document).ready(function(){
+		treeCenter();
+		$(window).resize(function(){
+			treeCenter();
+		});
+	});
+	
+	</script>
+</body>
+</html>

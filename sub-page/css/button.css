@@ -1,0 +1,159 @@
+@charset "UTF-8";
+button {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.button {
+  background: none;
+  font: 12px/1.231 'Nanum Gothic', Arial , '굴림', Gulim , sans-serif;
+}
+.button.large {
+  line-height: 40px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.button.tiny {
+  padding: 4px 8px;
+}
+.button.blue {
+  background: #3b5998;
+  color: #fff;
+  border-top: 1px solid #2f4779;
+  border-right: 1px solid #2f4779;
+  border-bottom: 4px solid #2f4779;
+  border-left: 1px solid #2f4779;
+}
+.button.blue:hover {
+  border-bottom: 3px solid #2f4779;
+  top: 1px;
+}
+.button.blue:active, .button.blue.active {
+  border-bottom: 1px solid #2f4779;
+  top: 3px;
+}
+.button.gray {
+  background: #777777;
+  color: #fff;
+  border-top: 1px solid #5f5f5f;
+  border-right: 1px solid #5f5f5f;
+  border-bottom: 4px solid #5f5f5f;
+  border-left: 1px solid #5f5f5f;
+}
+.button.gray:hover {
+  border-bottom: 3px solid #5f5f5f;
+  top: 1px;
+}
+.button.gray:active, .button.gray.active {
+  border-bottom: 1px solid #5f5f5f;
+  top: 3px;
+}
+.button.date {
+  background: white;
+  color: #777;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 7px;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 4px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+.button.date:hover {
+  border-bottom: 3px solid #cccccc;
+  top: 1px;
+}
+.button.date:active, .button.date.active {
+  border-bottom: 1px solid #cccccc;
+  top: 3px;
+}
+.button.resetpw {
+  padding: 5px 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-add {
+  width: 151px;
+  height: 111px;
+  background: url(../images/button/btn-add.png) no-repeat 50% 50%;
+  text-indent: -9999em;
+  border: 1px dashed gray;
+}
+
+.btn-modify {
+  width: 10px;
+  height: 10px;
+  background: url(../images/button/btn-modify.png) no-repeat 0 0;
+  text-indent: -9999em;
+  top: 5px;
+  margin-left: 5px;
+}
+
+.btn-fullsize {
+  width: 15px;
+  height: 13px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-fullscreen.png) no-repeat 0 0;
+  left: 0px;
+  top: 0px;
+}
+
+.btn-remove {
+  width: 14px;
+  height: 14px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-remove.png) no-repeat 0 0;
+  right: 0px;
+  top: 0px;
+}
+
+.btn-modify2 {
+  width: 14px;
+  height: 14px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-modify2.png) no-repeat 0 0;
+}
+
+.btn-magnifier {
+  display: block;
+  width: 14px;
+  height: 14px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-magnifier.png) no-repeat 0 0;
+}
+
+.btn-wrap {
+  position: absolute;
+  right: 0px;
+}
+.btn-wrap .btn-modify2, .btn-wrap .btn-remove, .btn-wrap .btn-magnifier {
+  margin-left: 2px;
+  float: left;
+}
+
+.box_th_ages {
+  position: relative;
+  padding: 0 10px;
+}
+.box_th_ages .age_type {
+  position: relative;
+  height: 65px;
+  margin-bottom: 5px;
+  background: url(../images/table/ico_man1.png) no-repeat 50% 8px;
+  text-align: center;
+}
+.box_th_ages .box_txt_ages li {
+  text-align: left;
+}
+.box_th_ages .box_txt_ages li:first-child {
+  text-align: center;
+}
+
+/*# sourceMappingURL=button.css.map */
