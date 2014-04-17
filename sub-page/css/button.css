@@ -84,7 +84,7 @@ button {
   height: 111px;
   background: url(../images/button/btn-add.png) no-repeat 50% 50%;
   text-indent: -9999em;
-  border: 1px dashed gray;
+  border: 1px dashed #c3c3c3;
 }
 
 .btn-modify {
@@ -122,38 +122,17 @@ button {
 }
 
 .btn-magnifier {
-  display: block;
   width: 14px;
   height: 14px;
   text-indent: -9999em;
   background: url(../images/button/btn-magnifier.png) no-repeat 0 0;
 }
 
-.btn-wrap {
-  position: absolute;
-  right: 0px;
-}
-.btn-wrap .btn-modify2, .btn-wrap .btn-remove, .btn-wrap .btn-magnifier {
-  margin-left: 2px;
-  float: left;
-}
-
-.box_th_ages {
-  position: relative;
-  padding: 0 10px;
-}
-.box_th_ages .age_type {
-  position: relative;
-  height: 65px;
-  margin-bottom: 5px;
-  background: url(../images/table/ico_man1.png) no-repeat 50% 8px;
-  text-align: center;
-}
-.box_th_ages .box_txt_ages li {
-  text-align: left;
-}
-.box_th_ages .box_txt_ages li:first-child {
-  text-align: center;
+.btn-info-data {
+  width: 67px;
+  height: 57px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-info-data.png) no-repeat 0 0;
 }
 
 /*# sourceMappingURL=button.css.map */

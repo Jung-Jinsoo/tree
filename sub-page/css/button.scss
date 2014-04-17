@@ -80,7 +80,7 @@ $bgcolor-date : #fff; //데이트
 	height : 111px;
 	background:url(../images/button/btn-add.png) no-repeat 50% 50%;
 	text-indent:-9999em;
-	border : 1px dashed gray;
+	border : 1px dashed #c3c3c3;
 }
 
 .btn-modify {
@@ -113,45 +113,22 @@ $bgcolor-date : #fff; //데이트
 .btn-modify2 {
 	width : 14px;
 	height : 14px;
-	text-indent: - 9999em;
+	text-indent: -9999em;
 	background : url(../images/button/btn-modify2.png) no-repeat 0 0;
 }
+
+// 이 버튼은 A 태그로 만든 버튼.
 .btn-magnifier {
-	display:block;
+	// display:block;
 	width : 14px;
 	height : 14px;
-	text-indent: - 9999em;
+	text-indent: -9999em;
 	background : url(../images/button/btn-magnifier.png) no-repeat 0 0;
 }
 
-.btn-wrap {
-	position:absolute;
-	right:0px;
-	.btn-modify2 , .btn-remove , .btn-magnifier {
-		margin-left:2px;
-		float:left;
-	}
+.btn-info-data {
+	width:67px;
+	height:57px;
+	text-indent: -9999em;
+	background : url(../images/button/btn-info-data.png) no-repeat 0 0;
 }
-
-.box_th_ages {
-	position:relative;
-	padding : 0 10px;
-	.age_type {
-		position:relative;
-		height:65px;
-		margin-bottom:5px;
-		background : url(../images/table/ico_man1.png) no-repeat 50% 8px;
-		text-align:center;
-	}
-	.box_txt_ages {
-		li {
-			text-align:left;
-			&:first-child {
-				text-align:center;
-			}
-		}
-	}
-}
-
-
-
