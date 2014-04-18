@@ -1,0 +1,194 @@
+.header-wrap {
+	background-color : #2c4887;
+	overflow:hidden;
+}
+
+.header {
+	width:100%;
+	// height : 169px;
+	// background:url(../images/bg_head_line.png) repeat-x 0 0;
+	position: relative;	
+	border-bottom:1px solid #cfd6e0;
+	.header-top {
+		min-width : 1200px;
+		margin : 0 auto;
+		height:70px;
+		.logo {
+			float:left;
+			margin:16px 0 0 20px;
+		}
+		.admin-container {
+			float:right;
+			margin:40px 20px 0 0;
+			li {
+				float:left;
+				background:url(../images/common/header/bg-division-line.png) no-repeat 0 50%;
+				padding:0 3px;
+				color : #b0bdde;
+				&:first-child {
+					background:none;
+				}
+				&.user_name {
+					color : #e6edff;
+					text-decoration : underline;
+				}
+				a {
+					color : #b0bdde;
+				}
+			}
+		}
+	}
+	.header-bot {
+		min-width : 1200px;
+		margin : 0 auto;
+		padding-top:15px;
+		.navigation {
+			float:left;
+			.gnb {
+				float:left;
+				margin:6px 0 0 22px;
+				> li {
+					margin-left:22px;
+					&:first-child {
+						margin-left:0px;
+					}
+					&.active {
+						border-bottom:3px solid #e8edf8;
+						&.gDash {
+							a {
+								background-position : 0 -80px;
+							}
+						}
+						&.gManage {
+							a {
+								background-position : -110px -80px;
+							}
+						}
+						&.gReports {
+							a {
+								background-position : -230px -80px;
+							}
+						}
+						&.gAccount {
+							a {
+								background-position : -320px -80px;
+							}
+						}
+						&.gHelp {
+							a {
+								background-position : -410px -80px;
+							}
+						}
+					}
+					> a {
+						display:block;
+						overflow:hidden;
+						height:37px;
+						text-indent:-9999em;
+						background-image:url(../images/common/header/gnb.png);
+						background-repeat : no-repeat;
+					}
+					&.gDash {
+						a {
+							width : 105px;
+							background-position: 0 0;
+							&:hover {
+								background-position:0 -40px;
+							}
+						}
+					}
+					&.gManage {
+						a {
+							width : 116px;
+							background-position:-110px 0;
+							&:hover {
+								background-position: -110px -40px;
+							}
+						}
+
+					}
+					&.gReports {
+						a {
+							width : 82px;
+							background-position:-230px 0;
+							&:hover {
+								background-position:-230px -40px;
+							}
+						}
+					}
+					&.gAccount {
+						a {
+							width : 86px;
+							background-position:-320px 0;
+							&:hover {
+								background-position: -320px -40px;
+							}
+						}
+					}
+					&.gHelp {
+						a {
+							width : 57px;
+							background-position:-410px 0;
+							&:hover {
+								background-position:-410px -40px;
+							}
+						}
+					}
+					float:left;
+					> ul {
+						height : 40px;
+						position:absolute;
+						left:0px;
+						bottom:0px;
+						line-height:40px;
+						display:none;
+						li {
+							float:left;
+							// background:url(../images/common/sep_2.png) no-repeat 0 50%;
+							padding:0 5px;
+							&:first-child {
+								background:none;
+							}
+							a {
+								color : #818794;
+								font-size:14px;
+								&:hover {
+									color : #1b2f59;
+								}
+							}
+						}
+					}
+				}
+			}
+			.add-gnb {
+				float:left;
+				// background:url(../images/common/sep_add_gnb.png) no-repeat 0 50%;
+				margin-left:20px;
+				padding-left:22px;
+				> li {
+					float:left;
+					&.gCreate {
+						a {
+							display:block;
+							width : 112px;
+							height : 28px;
+							overflow:hidden;
+							background-image:url(../images/common/header/btn_createads_normal.png);
+							text-indent:-9999em;
+							&:hover {
+								background-image:url(../images/common/header/btn_createads_hover.png);
+							}
+						}
+					}
+				}
+			}
+		}
+		.select-container {
+			float:right;
+			margin-right:20px;
+			select {
+				width:198px;
+			}
+		}
+	}
+}

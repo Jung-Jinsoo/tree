@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* @import url(../font/nanumbarungothic.css); */
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, th, td, div, blockquote, pre, form, fieldset, input, textarea, legend, table, button, img {
   margin: 0;

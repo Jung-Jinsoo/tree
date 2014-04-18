@@ -1,0 +1,29 @@
+.fb-login {
+	font-size:15px;
+	line-height:31px;
+	color : #fff;
+	.login-text-wrap {
+		background : #1f9cd0;
+		padding:30px;
+		text-align:center;
+		width:600px;
+		margin: 0 auto;		
+		p {
+			text-align:left;
+		}
+		.btn-facebook-login {
+			display:block;
+			// background-size는 ie8에서 적용이 안되니 추후에 수정
+			background-size:cover;
+			background-image : url(../images/btn-facebook-login.png);
+			width: (290*(2/3))+px;
+			height: (62*(2/3))+px;
+			margin: 20px auto 0;
+			text-indent:-9999em;
+			overflow:hidden;
+			&:active {
+				background-image : url(../images/btn-facebook-login-press.png);
+			}
+		}
+	}
+}

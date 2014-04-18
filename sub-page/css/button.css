@@ -135,4 +135,18 @@ button {
   background: url(../images/button/btn-info-data.png) no-repeat 0 0;
 }
 
+.btn-pause {
+  width: 14px;
+  height: 14px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-pause.png) no-repeat 0 0;
+}
+
+.btn-refresh {
+  width: 32px;
+  height: 32px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-refresh.png) no-repeat 0 0;
+}
+
 /*# sourceMappingURL=button.css.map */

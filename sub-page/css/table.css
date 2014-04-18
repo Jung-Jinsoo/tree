@@ -20,6 +20,13 @@
   text-align: center;
   height: 33px;
 }
+.view-table td .view-table-link {
+  color: gray;
+  font-weight: bold;
+}
+.view-table td .view-table-link:hover {
+  text-decoration: underline;
+}
 .view-table td.tdIndex2 {
   text-align: left;
   padding-left: 10px;
@@ -253,6 +260,13 @@
 .ad-table tbody th .target-group-info-wrap .detail-info li:first-child {
   text-align: center;
 }
+.ad-table tbody th .target-group-info-wrap .detail-info li .budget-arrow {
+  padding-left: 9px;
+  margin-right: 5px;
+}
+.ad-table tbody th .target-group-info-wrap .detail-info .location {
+  margin-top: 20px;
+}
 .ad-table tbody td {
   padding-top: 13px;
   padding-left: 4px;
@@ -264,6 +278,27 @@
   padding: 40px 5px 0;
   background: #f2f2f2;
   border: 1px solid #f2f2f2;
+  position: relative;
+}
+.ad-table tbody td .info-data-wrap .dim-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.ad-table tbody td .info-data-wrap .dim-layer .btn-refresh {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -16px 0 0 -16px;
+}
+.ad-table tbody td .info-data-wrap .btn-pause {
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
 .ad-table tbody td .info-data-wrap.bg-white {
   border: 1px solid #f2f2f2;

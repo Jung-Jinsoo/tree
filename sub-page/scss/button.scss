@@ -1,0 +1,151 @@
+// Only Button Design
+button {
+	padding : 0;
+	border : 0;
+	box-sizing: border-box;
+	outline : none;	
+	cursor : pointer;
+	position:relative;
+}
+
+
+@mixin borderColor ($bg){
+	border : {
+		top : 1px solid ($bg * 0.8);
+		right : 1px solid ($bg * 0.8);
+		bottom : 4px solid ($bg * 0.8);
+		left : 1px solid ($bg * 0.8);
+	}
+	&:hover {
+		border-bottom:3px solid ($bg * 0.8);
+		top:1px;
+	}
+	&:active , &.active {
+		border-bottom:1px solid ($bg * 0.8);;
+		top:3px;
+	}
+}
+
+// 버튼 타입별 배경색
+$bgcolor-blue : #3b5998; //블루
+$bgcolor-gray : #777; //그레이
+$bgcolor-date : #fff; //데이트
+
+// Text Button
+.button {
+	// 버튼 기본 세팅
+	background : none;
+	font:12px/1.231 'Nanum Gothic', Arial , '굴림', Gulim , sans-serif;
+	&.large {
+		line-height:40px;
+		width : 120px;		
+		font-weight:bold;
+		font-size:16px;
+		text-transform : uppercase;
+	}
+	&.tiny {
+		padding:4px 8px;
+	}
+	&.blue {		
+		background : $bgcolor-blue;
+		color : #fff;
+		@include borderColor($bgcolor-blue);
+	}
+	&.gray {
+		background : $bgcolor-gray;
+		color : #fff;
+		@include borderColor($bgcolor-gray);
+	}
+	&.date {
+		// box-shadow : 0 4px #ab3c3c;
+		background : $bgcolor-date;
+		color : #777;
+		font-size:13px;		
+		font-weight:bold;
+		padding:7px;		
+		@include borderColor($bgcolor-date);
+	}
+	&.resetpw {
+		padding: 5px 30px;		
+		font-size:16px;
+		font-weight:bold;		
+	}
+}
+
+
+// Image Button
+.btn-add {
+	width : 151px;
+	height : 111px;
+	background:url(../images/button/btn-add.png) no-repeat 50% 50%;
+	text-indent:-9999em;
+	border : 1px dashed #c3c3c3;
+}
+
+.btn-modify {
+	width : 10px;
+	height : 10px;
+	background : url(../images/button/btn-modify.png) no-repeat 0 0;
+	text-indent : -9999em;
+
+	// 위치값은 따로 빼기 
+	top:5px;
+	margin-left: 5px;
+}
+
+.btn-fullsize {
+	width : 15px;
+	height : 13px;
+	text-indent : -9999em;
+	background : url(../images/button/btn-fullscreen.png) no-repeat 0 0;
+
+	// 위치값은 따로 빼기 
+	left:0px;
+	top:0px;
+}
+.btn-remove {
+	width : 14px;
+	height : 14px;
+	text-indent : -9999em;
+	background : url(../images/button/btn-remove.png) no-repeat 0 0;
+
+	// 위치값은 따로 빼기 
+	right:0px;
+	top:0px;
+}
+
+
+.btn-modify2 {
+	width : 14px;
+	height : 14px;
+	text-indent: -9999em;
+	background : url(../images/button/btn-modify2.png) no-repeat 0 0;
+}
+
+.btn-magnifier {	
+	width : 14px;
+	height : 14px;
+	text-indent: -9999em;
+	background : url(../images/button/btn-magnifier.png) no-repeat 0 0;
+}
+
+.btn-info-data {
+	width:67px;
+	height:57px;
+	text-indent: -9999em;
+	background : url(../images/button/btn-info-data.png) no-repeat 0 0;
+}
+
+.btn-pause {
+	width: 14px;
+	height: 14px;
+	text-indent : -9999em;
+	background : url(../images/button/btn-pause.png) no-repeat 0 0;
+}
+
+.btn-refresh {
+	width : 32px;
+	height : 32px;
+	text-indent : -9999em;
+	background : url(../images/button/btn-refresh.png) no-repeat 0 0;
+}

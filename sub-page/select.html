@@ -3,16 +3,48 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 	<title>Select Box Style</title>	
-	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/reset.css" />	
+	<!-- Select Box Style -->
 	<link rel="stylesheet" href="css/select.css" />
+	<!-- Form 관련 Style -->
+	<link rel="stylesheet" href="css/form.css" />
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/jquery.selectBox.js"></script>
+	<style type="text/css">
+	.select {
+		margin : 20px 0 0 30px;
+	}
+	</style>
+
 </head>
 <body>
-	<select name="" id="">
+	<div class="select">
+		<select name="" id="">
 			<option value="">Now Loading...</option>
+			<option value="">AAAAABBBBBBCCCCCC...</option>
+			<option value="">1234567890.123456789</option>
+			<option value="">동해물과 백두산이 마르고</option>
 		</select>
-	<script type="text/javascript" src="./js/common.js"></script>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="input">
+		<input type="text" />
+
+	</div>
+
+
+
+
+	<script type="text/javascript">
+	$('select').selectBox();
+	</script>
 </body>
 </html>

@@ -1,0 +1,164 @@
+$min-width : 1200px;
+
+
+html , body {
+	height:100%;
+}
+
+.wrap {
+	min-width : $min-width;
+	min-height : 100%;
+}
+
+// .header-wrap {
+// 	background-color : #2c4887;
+// 	overflow:hidden;
+// 	.header {
+// 		min-width: $min-width;
+// 		margin: 0 auto;
+// 		.header-top {
+// 			height:70px;			
+// 			.logo {
+// 				float:left;
+// 				margin:16px 0 0 20px;
+// 			}
+// 			.admin-container {
+// 				float:right;
+// 				margin:40px 20px 0 0;
+// 				li {
+// 					float:left;
+// 					background:url(../images/common/header/bg-division-line.png) no-repeat 0 50%;
+// 					padding:0 3px;
+// 					color : #b0bdde;
+// 					&:first-child {
+// 						background:none;
+// 					}
+// 					&.user_name {
+// 						color : #e6edff;
+// 						text-decoration: none;
+// 					}
+// 					a {
+// 						color : #b0bdde;
+// 						font-weight:800;
+// 						&:hover {
+// 							color : #fff;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+
+
+
+
+.login-wrap {
+	background-color : #f2f2f2;
+	padding:20px 35px;
+	width: 600-70px;
+	height: 300-40px;
+	top:50%;		
+	margin-top: -150px;
+	left: 50%;
+	margin-left : -300px;	
+	position:absolute;;
+	.login-form {
+		background-color : #fff;
+		margin-top:20px;
+		label {
+			font-size:16px;
+			color:#3b5998;
+			font-weight:800;
+		}
+	}
+	.link-forgot-pw {
+		font-size:13px;
+		color:#999;
+		font-weight:800;
+		text-decoration:underline;
+		position:absolute;
+		left:35px;
+		bottom:25px;		
+		&:hover {
+			color : #3b5998;
+		}
+	}
+}
+.email-wrap {
+	border-bottom: 1px solid #ebebeb;
+}
+.email-wrap , .password-wrap {
+	height:51px;
+	label {
+		display:inline-block;
+		width:200-30px;
+		padding-left:30px;
+		line-height:51px;
+	}
+	label , .input-wrap {
+		float:left;
+	}
+	.input-wrap {
+		padding:10px;
+		border-left: 1px solid #ebebeb;
+		&:first-child {
+			
+		}		
+		input {
+			width:260px;
+			padding-left:8px;
+			height:29px;
+			line-height:29px;
+			border : 1px solid #c4c4c4;
+		}
+	}
+}
+
+
+.button-center {
+	margin-top:20px;
+	text-align:center;	
+}
+
+.footer-wrap {
+	overflow:hidden;
+	padding:20px 0;
+	background-color : #edeff1;		
+	width:100%;
+	min-width : $min-width;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	.footer {
+		width : $min-width;
+		margin:0 auto;
+		color : #bac1c8;
+		.footer-logo , 
+		.footer-info {
+			float:left;
+		}
+		.footer-logo {
+			margin-right:100px;
+		}
+		.footer-info {
+			line-height:18px;
+			color : #3b5998;
+			address {
+				font-style:normal;
+				span {
+					padding-right:10px;
+				}
+				.link-biz-info {
+					text-decoration : underline;
+					color : #3b5998;
+					font-weight:700;
+					&:hover {
+						font-weight:800;
+					}
+				}
+			}
+		}
+	}
+}

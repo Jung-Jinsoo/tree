@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<title>Login Page</title>
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/login.css" />
+	<link rel="stylesheet" href="css/header.css" />
+	<link rel="stylesheet" href="css/button.css" />
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>	
+	<div class="wrap">
+		<!-- Header -->
+		
+		<div class="header-wrap">
+			<div class="header">
+				<!-- header-top -->
+				<div class="header-top">
+					<div class="logo">
+						<h1>
+							<a href="/"><img src="images/common/header/logo.png" alt="FAP Facebook ads platform" /></a>
+						</h1>
+					</div>
+					<div class="admin-container">
+						<ul>
+							<li><a href="${pageContext.request.contextPath }/ads_member/step_1.htm" id="register">Create an account</a></li>
+							<li><a href="./login.htm">Login</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //header-top -->
+			</div>
+		</div>
+	
+		<!-- //Header -->
+		<!-- Main -->
+		<div class="main">
+			<div class="login-wrap">
+				<div class="login-heading">
+					<h4><img src="images/login/title-login.png" alt="Login" /></h4>					
+				</div>				
+				<form name="frm" id="frm" action="${pageContext.request.contextPath }/member/login.htm" method="post">
+					<fieldset class="log">
+						<div id="warning_msg" style="color: #ff0000;"></div>						
+						<div class="login-form">
+							<legend class="blind">Login Form</legend>
+							<div class="email-wrap">
+								<label class="titles" for="email">E-mail</label>
+								<div class="input-wrap email">
+									<input type="text" id="email" name="id" tabindex="2" title="E mail" value="" class="validate[required,custom[email]] detail round" placeholder="E-mail"/>
+								</div>
+							</div>
+							<div class="password-wrap">
+								<label class="titles1" for="pw">password</label>
+								<div class="input-wrap password">
+									<input type="password" class="validate[required] detail round" id="pw" name="pwd" tabindex="3" title="input password" value="" placeholder="Password"/>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					<div class="button-center">
+						<button tabindex="5" title="Login" type="submit" class="button blue large">Login</button>
+					</div>
+					<a href="./lost_password.htm" id="lostpassword" class="link-forgot-pw">Forgot password</a>
+				</form>
+			</div>
+		</div>
+		<!-- //Main -->
+		<!-- Footer -->
+		<div class="footer-wrap">				
+			<div class="footer">					
+				<h3 class="footer-logo"><img src="images/common/footer/footer-logo.png" alt="㈜WISEBIRDS" width="140" height="61" /></h3>
+				<div class="footer-info">
+					<address>
+					<span>대표이사 : 김종원</span>
+					<span>서울특별시 강남구 도산대로 161 (신사동) 자홍빌딩 1층</span>
+					<span>전화 : 070-4814-1038</span>
+					<span>팩스 : 02-2038-8851</span>
+					<br/>			
+					<span>사업자등록번호 : 211-88-94969</span>
+					<span>통신판매업신고 제2014-서울강남-00728호</span>
+					<span><a href="http://www.ftc.go.kr/info/bizinfo/communicationList.jsp" class="link-biz-info" target="_blank">사업자정보확인</a></span>								
+					</address>
+					<p class="copyright">Facebook ads platform © 2013 · adwitt.com</p>
+				</div>
+			</div>
+		</div>
+		<!-- //Footer -->
+	</div>
+	<!-- //Wrap -->
+	<script type="text/javascript" src="./js/common.js"></script>	
+</body>
+</html>

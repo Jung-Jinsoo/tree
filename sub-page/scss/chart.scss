@@ -1,0 +1,7 @@
+.box_ave{width:100%;border-bottom:1px solid #b5b5b5;padding:10px 0;margin-bottom:10px;}
+.list_ave{width:100%;}
+.list_ave:after{clear:both;content:'';display:block;}
+.list_ave li{float:left;width:12.5%;text-align: center;}
+.list_ave li .ave_img{float:none;width:100%;height:31px;text-align: center;padding:0;height:auto;line-height:31px;}
+.list_ave li .ave_count{margin-bottom:0;font-size:24px;font-family:arial;color:#666;font-weight: bold;text-align: center;}
+.list_ave li .ave_names{font-size:14px;font-family: arial;color:#b5b5b5;font-weight: bold;text-align: center;}

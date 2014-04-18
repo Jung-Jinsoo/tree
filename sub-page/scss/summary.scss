@@ -1,0 +1,191 @@
+.wrap {
+	min-width:1200px;
+}
+
+.charts-table {
+	width : 100%;
+	background : #f1f2f6;
+	tr {
+		&:first-child {
+			th,td {
+				border-top: 0 none;
+			}
+		}
+	}
+	th {
+		height: 44px;
+		font-size:16px;
+		color : #3b5998;
+		border : {
+			top : 1px solid #fff;
+			right : 1px solid #fff;
+		}		
+	}
+	td {
+		padding-left:12px;		
+		color : #777777;
+		font-size:13px;
+		border-top:1px solid #fff;
+	}
+}
+
+
+
+// .tableWrap {
+//   float:left;  
+//   .infoLine {
+//     margin-top:7px;
+//     border:1px solid #d9d9d9;
+//     padding:4px 0;
+//     font-size:13px;
+//     font-family:'굴림',Gulim,Arial;
+//     color:#777;
+//     span {
+//       img {
+//         margin-right:6px;
+//       }
+//       display:block;
+//       float:left;
+//       text-align:center;
+//     }
+//   }
+// }
+
+
+
+
+
+
+
+.box_ave{
+	width:100%;
+	border-bottom:1px solid #b5b5b5;
+	padding:10px 0;
+	margin-bottom:10px;
+	.list_ave{
+		width:100%;
+		&:after{
+			clear:both;
+			content:'';
+			display:block;
+		}
+		li {
+			float:left;
+			width:12.5%;
+			text-align: center;
+			.ave_img {
+				float:none;
+				width:100%;
+				height:31px;
+				padding:0;
+				height:auto;
+				line-height:31px;
+			}
+			.ave_count {
+				margin-bottom:0;
+				font-size:24px;
+				font-family:arial;
+				color:#666;
+				font-weight: bold;
+			}
+			.ave_names {
+				font-size:14px;
+				font-family: arial;
+				color:#b5b5b5;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+
+
+
+.sub-content {
+	margin-top: 30px;	
+	.sub-heading {
+		margin-bottom: 15px;
+	}
+}
+
+
+
+.chart-wrap {
+	overflow:hidden;
+	.chart-heading {
+		font-size:18px;
+		font-weight:bold;
+		color : #3b5998;
+	}
+	.chart-click {
+		margin-right:10px;
+	}
+	.article {		
+		float:left;
+		border:1px solid #e7e7e7;
+	}
+	.chart {
+		width:575px;
+		height:300px;
+	}
+}
+
+
+
+
+.table-wrap {
+	.view-table {
+		&.includeIcon {
+			tr {
+				th {
+					&:first-child {
+						width:22px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.insight-wrap {
+	overflow:hidden;
+	.insight-select {
+
+	}
+	.insight-list {
+		li {
+			float:left;
+			width:282px;
+			height:271px;
+			margin-left:8px;
+			border:1px solid #e7e7e7;
+			&:first-child {
+				margin-left:0
+			}
+			.insight-list-heading {
+				height:50px;
+				padding:10px;
+				border-bottom:1px solid #e7e7e7;
+				dt , p {
+					font-size:16px;
+					font-weight:bold;
+					color : #3b5998;
+				}
+				dd {
+					font-size:14px;
+					color : #777;
+				}
+				p {
+					padding-top: 15px;
+				}
+			}
+			.insight-chart {
+				padding: 10px;
+				height:180px;
+				> div {
+					height:100%;
+				}
+			}
+		}
+	}
+}

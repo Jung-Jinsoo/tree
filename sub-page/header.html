@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<title>Header Page</title>	
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/header.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>	
+	<div class="wrap">
+		<!-- header -->
+		<input type="hidden" id="top_menu" />
+		<div class="header-wrap">
+			<div id="header" class="header">
+				<!-- header → top -->
+				<div class="header-top clfix">
+					<!-- Logo -->
+					<h1 class="logo">
+						<a href="${pageContext.request.contextPath }/member/clientlist.htm?mode=client_first">
+							<img src="images/common/header/logo.png" alt="adwitt - Ad by witty Technologists" />
+						</a>
+					</h1>
+					<!-- //Logo -->
+					<div class="admin-container">
+						<ul class="admin">
+							<li>${loginedClient.email1 }@${loginedClient.email2 }</li>
+							<li class="user_name"><span>${loginedClient.name }</span> 님</li>
+							<li><a href="${pageContext.request.contextPath }/member/my_info.htm">My acount</a></li>
+							<li><a href="${pageContext.request.contextPath }/member/logout.htm">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //header → top -->
+
+				<!-- header → bot -->
+				<div class="header-bot clfix">
+					<!-- navigation -->
+					<div class="navigation">
+						<!-- gnb -->
+						<ul class="gnb">
+							<li class="gDash"><a href="${pageContext.request.contextPath }/report/dashboard.htm">Dashboard</a></li>
+							<li class="gManage"><a href="${pageContext.request.contextPath }/campagin_group/list.htm">Manage Ads</a>
+								
+							</li>
+							<li class="gReports"><a href="${pageContext.request.contextPath }/report/performance.htm">Reports</a>
+								
+							</li>
+							<li class="gAccount"><a href="${pageContext.request.contextPath }/member/account_info.htm">Account</a>
+								
+							</li>
+							<li class="gHelp"><a href="${pageContext.request.contextPath }/help/help.htm">Help</a></li>
+						</ul>
+						<ul class="add-gnb">
+							<li class="gCreate">
+								<a href="${pageContext.request.contextPath }/ad/ad_create.htm" class="btn_createads">Create Ads</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sub-gnb">
+						<ul class="sub-gManage">
+							<li><a href="${pageContext.request.contextPath }/campagin_group/list.htm">Manage campaign</a></li>
+							<li><a href="${pageContext.request.contextPath }/target/list.htm">Audiences</a></li>
+							<li><a href="${pageContext.request.contextPath }/target/listConversionTracking.htm">Conversion tracking</a></li>			
+						</ul>
+						<ul class="sub-gReports">
+							<li><a href="${pageContext.request.contextPath }/report/performance.htm">Performance</a></li>
+							<li><a href="${pageContext.request.contextPath }/report/custom_graph.htm">Custom graph</a></li>
+							<li><a href="${pageContext.request.contextPath }/report/insight.htm">Insight</a></li>
+						</ul>
+						<ul class="sub-gAccount">
+							<li><a href="${pageContext.request.contextPath }/member/account_info.htm">Account info</a></li>
+							<li><a href="${pageContext.request.contextPath }/member/user_info.htm">User info</a></li>
+							<li><a href="${pageContext.request.contextPath }/member/clientlist.htm">Client info</a></li>
+							<li><a href="${pageContext.request.contextPath }/member/alert_setting.htm">Alert setting</a></li>			
+							<li><a href="${pageContext.request.contextPath }/member/listBudget.htm">충전관리</a></li>					
+						</ul>
+					</div>
+					<!-- //navigation -->
+					<!-- select-container -->
+					<div class="select-container">
+						<select title="Client" class="validate[required]" name="admin_idx" id="admin_idx">
+							<option value="">Select client</option>
+							<option value="${i }">${loginedClient.advertiserAdminList[i].name }</option>
+						</select>
+						<input type="hidden" id="admin_idx" value="0" />
+						<select title="Account" class="validate[required]" name="ad_account" id="ad_account">
+							<option value="">Select account</option>
+						</select>
+					</div>
+					<!-- //selectBox -->
+				</div>
+				<!-- //header → bot -->
+			</div>
+		</div>
+		<!-- //header -->
+	</div>		
+	<script type="text/javascript" src="./js/common.js"></script>
+</body>
+</html>

@@ -20,7 +20,17 @@ $date_button_wrap.children('button').on('click',function(){
 });
 
 
-// PlaceHolder 
-// http://mathiasbynens.be/demo/placeholder
+// ad-table 관련 Javascritp
 
-$('select').selectBox();
+$('.info-data-wrap').each(function(){
+	$(this).height($(this).parent().siblings('th').children('div').outerHeight());	
+});
+$('.btn-pause').on('click',function(){
+	var dimLayer = '<div class="dim-layer"><button class="btn-refresh">Restart</button></div>',
+	parseDim = $.parseHTML(dimLayer);
+	$(this).parent().append(parseDim);
+
+});
+$('.info-data-wrap').on('click','.btn-refresh',function(){
+	$(this).parent('.dim-layer').remove();
+});

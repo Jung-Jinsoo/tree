@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
 	<title>Table Style</title>	
+	
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/table.css" />
 	<link rel="stylesheet" href="css/button.css" />	
@@ -80,7 +81,7 @@
 		<tbody>
 			<tr>
 				<td><img src="images/common/table_icon_play.png" height="9" width="5" alt="play"/></td>
-				<td><a href=";" name="moveManage">HoneySide_201442</a></td>
+				<td><a name="moveManage" class="view-table-link">HoneySide_201442</a></td>
 				<td>14.04.02</td>
 				<td>14.05.01</td>
 				<td>0</td>
@@ -102,7 +103,7 @@
 			</tr>
 			<tr>
 				<td><img src="images/common/table_icon_pause.png" alt="pause"/></td>
-				<td><a href=";" name="moveManage">HoneySide_201442</a></td>
+				<td><a href=";" name="moveManage" class="view-table-link">HoneySide_201442</a></td>
 				<td>14.04.02</td>
 				<td>14.05.01</td>
 				<td>0</td>
@@ -124,7 +125,7 @@
 			</tr>
 			<tr>
 				<td><img src="images/common/table_icon_play.png" height="9" width="5" alt="play"/></td>
-				<td><a href=";" name="moveManage">HoneySide_201442</a></td>
+				<td><a href=";" name="moveManage" class="view-table-link">HoneySide_201442</a></td>
 				<td>14.04.02</td>
 				<td>14.05.01</td>
 				<td>0</td>
@@ -192,7 +193,7 @@
 
 <table class="ad-table">
 	<colgroup>
-	<col width="140"/>
+	<col width="170"/>
 	<col width="170"/>
 	<col width="163"/>
 	<col width="163"/>
@@ -263,8 +264,13 @@
 				<div class="detail-info">
 					<ul>
 						<li><span>와이즈버즈_2014416_1</span><button type="button" class="btn-modify">수정</button></li>
-						<li>예산 : <span class="numbers budgetspan budget1">333,334</span><span class="numbers budgetspantype">(Life Time)</span><button type="button" class="btn-modify">수정</button></li>
-						<li>South Korea</li>
+						<li>예산 : <span class="numbers budgetspantype">(Life Time)</span>
+							<br/>
+							<span class="budget-arrow"><img src="images/table/ad-table/icon-like-scythe.png" alt="" /></span>
+							<span class="numbers budgetspan budget1">333,334</span>							
+							<button type="button" class="btn-modify">수정</button>
+						</li>
+						<li class="location">South Korea</li>
 						<li>13 ~ 17</li>
 						<li>여성</li>								
 						<li>도달인원 : <span>1,000,000명</span></li>
@@ -278,9 +284,14 @@
 			<div class="info-data-wrap">
 				<ul>
 					<li><span>착한남자(Innocent Man)_2014417_desktopfeed_1</span><button type="button" class="btn-modify">수정하기</button></li>
-					<li><span>입찰가 : </span><span>0.17</span><button type="button" class="btn-modify">수정하기</button></li>
-					<li><span>추천 비드값 : </span><span>0.16 ~ 0.3</span></li>
+					<li><span>입찰가 : </span>						
+						<span>0.17</span><button type="button" class="btn-modify">수정하기</button></li>
+					<li><span>추천 비드값 : </span>
+						<br/>
+						<span>0.16 ~ 0.3</span>
+					</li>
 				</ul>
+				<button class="btn-pause" type="button">정지시키기</button>
 			</div>
 		</td>
 
@@ -289,8 +300,12 @@
 				<ul>
 					<li><span>착한남자(Innocent Man)_2014417_desktopfeed_1</span><button type="button" class="btn-modify">수정하기</button></li>
 					<li><span>입찰가 : </span><span>0.17</span><button type="button" class="btn-modify">수정하기</button></li>
-					<li><span>추천 비드값 : </span><span>0.16 ~ 0.3</span></li>
+					<li><span>추천 비드값 : </span>
+						<br/>
+						<span>0.16 ~ 0.3</span>
+					</li>
 				</ul>
+				<button class="btn-pause" type="button">정지시키기</button>
 			</div>
 		</td>
 		<td class="last-child"></td>
@@ -306,10 +321,6 @@
 	</tr>
 </tbody>	
 </table>
-<script type="text/javascript">
-$('.info-data-wrap').each(function(){
-	$(this).height($(this).parent().siblings('th').children('div').outerHeight());	
-});
-</script>
+<script src="./js/common.js" type="text/javascript"></script>
 </body>
 </html>

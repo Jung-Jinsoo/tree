@@ -1,0 +1,117 @@
+html, body {
+  height: 100%;
+}
+
+.wrap {
+  min-width: 1200px;
+  min-height: 100%;
+}
+
+.login-wrap {
+  background-color: #f2f2f2;
+  padding: 20px 35px;
+  width: 530px;
+  height: 260px;
+  top: 50%;
+  margin-top: -150px;
+  left: 50%;
+  margin-left: -300px;
+  position: absolute;
+}
+.login-wrap .login-form {
+  background-color: #fff;
+  margin-top: 20px;
+}
+.login-wrap .login-form label {
+  font-size: 16px;
+  color: #3b5998;
+  font-weight: 800;
+}
+.login-wrap .link-forgot-pw {
+  font-size: 13px;
+  color: #999;
+  font-weight: 800;
+  text-decoration: underline;
+  position: absolute;
+  left: 35px;
+  bottom: 25px;
+}
+.login-wrap .link-forgot-pw:hover {
+  color: #3b5998;
+}
+
+.email-wrap {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.email-wrap, .password-wrap {
+  height: 51px;
+}
+.email-wrap label, .password-wrap label {
+  display: inline-block;
+  width: 170px;
+  padding-left: 30px;
+  line-height: 51px;
+}
+.email-wrap label, .email-wrap .input-wrap, .password-wrap label, .password-wrap .input-wrap {
+  float: left;
+}
+.email-wrap .input-wrap, .password-wrap .input-wrap {
+  padding: 10px;
+  border-left: 1px solid #ebebeb;
+}
+.email-wrap .input-wrap input, .password-wrap .input-wrap input {
+  width: 260px;
+  padding-left: 8px;
+  height: 29px;
+  line-height: 29px;
+  border: 1px solid #c4c4c4;
+}
+
+.button-center {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-wrap {
+  overflow: hidden;
+  padding: 20px 0;
+  background-color: #edeff1;
+  width: 100%;
+  min-width: 1200px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.footer-wrap .footer {
+  width: 1200px;
+  margin: 0 auto;
+  color: #bac1c8;
+}
+.footer-wrap .footer .footer-logo,
+.footer-wrap .footer .footer-info {
+  float: left;
+}
+.footer-wrap .footer .footer-logo {
+  margin-right: 100px;
+}
+.footer-wrap .footer .footer-info {
+  line-height: 18px;
+  color: #3b5998;
+}
+.footer-wrap .footer .footer-info address {
+  font-style: normal;
+}
+.footer-wrap .footer .footer-info address span {
+  padding-right: 10px;
+}
+.footer-wrap .footer .footer-info address .link-biz-info {
+  text-decoration: underline;
+  color: #3b5998;
+  font-weight: 700;
+}
+.footer-wrap .footer .footer-info address .link-biz-info:hover {
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=login.css.map */
