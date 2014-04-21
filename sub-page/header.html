@@ -5,8 +5,10 @@
 	<title>Header Page</title>	
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/header.css" />
+	<link rel="stylesheet" href="css/select.css" />
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.selectBox.js"></script>
 </head>
 <body>	
 	<div class="wrap">
@@ -37,7 +39,7 @@
 				<!-- header → bot -->
 				<div class="header-bot clfix">
 					<!-- navigation -->
-					<div class="navigation">
+					<div class="navigation clfix">
 						<!-- gnb -->
 						<ul class="gnb">
 							<li class="gDash"><a href="${pageContext.request.contextPath }/report/dashboard.htm">Dashboard</a></li>
@@ -57,8 +59,20 @@
 								<a href="${pageContext.request.contextPath }/ad/ad_create.htm" class="btn_createads">Create Ads</a>
 							</li>
 						</ul>
+						<!-- select-container -->
+						<div class="select-container">
+							<select title="Client" class="validate[required]" name="admin_idx" id="admin_idx" style="width:300px;">
+								<option value="">Select client</option>
+								<option value="abcabc">동해물과백두산이 마르고 닳도록 하나님이 보우하사 우리 나라</option>
+							</select>
+							<input type="hidden" id="admin_idx" value="0" />
+							<select title="Account" class="validate[required]" name="ad_account" id="ad_account">
+								<option value="">Select account</option>
+							</select>
+						</div>
+						<!-- //selectBox -->
 					</div>
-					<div class="sub-gnb">
+					<div class="sub-gnb" id="sub-gnb">
 						<ul class="sub-gManage">
 							<li><a href="${pageContext.request.contextPath }/campagin_group/list.htm">Manage campaign</a></li>
 							<li><a href="${pageContext.request.contextPath }/target/list.htm">Audiences</a></li>
@@ -78,18 +92,7 @@
 						</ul>
 					</div>
 					<!-- //navigation -->
-					<!-- select-container -->
-					<div class="select-container">
-						<select title="Client" class="validate[required]" name="admin_idx" id="admin_idx">
-							<option value="">Select client</option>
-							<option value="${i }">${loginedClient.advertiserAdminList[i].name }</option>
-						</select>
-						<input type="hidden" id="admin_idx" value="0" />
-						<select title="Account" class="validate[required]" name="ad_account" id="ad_account">
-							<option value="">Select account</option>
-						</select>
-					</div>
-					<!-- //selectBox -->
+					
 				</div>
 				<!-- //header → bot -->
 			</div>
@@ -97,5 +100,25 @@
 		<!-- //header -->
 	</div>		
 	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript">
+	// GNB 
+	$('.gnb > li > a').on('mouseover',function(){
+		var _this = $(this),
+		subGNB = $('#sub-gnb'),
+		offset = _this.offset();
+
+		subGNB
+		.children()
+		.hide();
+
+		subGNB
+		.children('.sub-' + _this.parent().attr('class'))		
+		.css({
+			"left" : offset.left,
+			"display" : "block"
+		});	
+	});
+	$('select').selectBox();
+	</script>	
 </body>
 </html>
