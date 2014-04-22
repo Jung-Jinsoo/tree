@@ -12,17 +12,20 @@ button {
   background: none;
   font: 12px/1.231 'Nanum Gothic', Arial , '굴림', Gulim , sans-serif;
 }
-.button.large {
+
+.btn-large {
   line-height: 40px;
   width: 120px;
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase;
 }
-.button.tiny {
+
+.btn-tiny {
   padding: 4px 8px;
 }
-.button.blue {
+
+.btn-blue {
   background: #3b5998;
   color: #fff;
   border-top: 1px solid #2f4779;
@@ -30,15 +33,16 @@ button {
   border-bottom: 4px solid #2f4779;
   border-left: 1px solid #2f4779;
 }
-.button.blue:hover {
+.btn-blue:hover {
   border-bottom: 3px solid #2f4779;
   top: 1px;
 }
-.button.blue:active, .button.blue.active {
+.btn-blue:active, .btn-blue.active {
   border-bottom: 1px solid #2f4779;
   top: 3px;
 }
-.button.gray {
+
+.btn-gray {
   background: #777777;
   color: #fff;
   border-top: 1px solid #5f5f5f;
@@ -46,15 +50,16 @@ button {
   border-bottom: 4px solid #5f5f5f;
   border-left: 1px solid #5f5f5f;
 }
-.button.gray:hover {
+.btn-gray:hover {
   border-bottom: 3px solid #5f5f5f;
   top: 1px;
 }
-.button.gray:active, .button.gray.active {
+.btn-gray:active, .btn-gray.active {
   border-bottom: 1px solid #5f5f5f;
   top: 3px;
 }
-.button.date {
+
+.btn-date {
   background: white;
   color: #777;
   font-size: 13px;
@@ -65,20 +70,22 @@ button {
   border-bottom: 4px solid #cccccc;
   border-left: 1px solid #cccccc;
 }
-.button.date:hover {
+.btn-date:hover {
   border-bottom: 3px solid #cccccc;
   top: 1px;
 }
-.button.date:active, .button.date.active {
+.btn-date:active, .btn-date.active {
   border-bottom: 1px solid #cccccc;
   top: 3px;
 }
-.button.resetpw {
+
+.btn-resetpw {
   padding: 5px 30px;
   font-size: 16px;
   font-weight: bold;
 }
-.button.target-setting {
+
+.btn-target-setting {
   color: #777;
   text-align: left;
   font-size: 12px;
@@ -106,7 +113,7 @@ button {
   width: 101px;
   height: 29px;
 }
-.button.target-setting:hover {
+.btn-target-setting:hover {
   background: #dbdbdb;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -126,7 +133,7 @@ button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbdbdb', endColorstr='#fdfdfd',GradientType=0 );
   /* IE6-8 */
 }
-.button.target-setting:active {
+.btn-target-setting:active {
   position: relative;
   top: 1px;
 }
@@ -201,16 +208,21 @@ button {
   background: url(../images/button/btn-refresh.png) no-repeat 0 0;
 }
 
-.bid-button {
-  color: #a3a3a3;
-  width: 71px;
-  height: 39px;
+.btn-group-pause, .btn-restart {
+  font: 12px/1.231 'Nanum Gothic', Arial , '굴림', Gulim , sans-serif;
+  border: 1px solid #D5D5D5;
+  color: #F68833;
+  background: #fff;
+  font-weight: 800;
+  padding: 4px 8px;
 }
-.bid-button span {
-  font-size: 7px;
+
+.btn-group-pause {
+  width: 95px;
 }
-.bid-button span:first-child {
-  font-size: 12px;
+
+.btn-restart {
+  width: 60px;
 }
 
 /*# sourceMappingURL=button.css.map */
