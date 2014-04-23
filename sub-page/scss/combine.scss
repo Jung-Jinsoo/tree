@@ -1,0 +1,808 @@
+// 자주 쓰는 컬러 세팅
+
+$color-blue : #3b5998;
+$color-gray : #777;
+$color-white : #fff;
+/* Button Style */
+
+// 버튼 over , active 효과 주는 mixin
+@mixin borderColor ($bg){
+	border : {
+		top : 1px solid ($bg * 0.8);
+		right : 1px solid ($bg * 0.8);
+		bottom : 4px solid ($bg * 0.8);
+		left : 1px solid ($bg * 0.8);
+	}
+	&:hover {
+		border-bottom:3px solid ($bg * 0.8);
+		top:1px;
+	}
+	&:active , &.active {
+		border-bottom:1px solid ($bg * 0.8);;
+		top:3px;
+	}
+}
+
+// 버튼중 텍스트로 구성된것들 스타일
+.btn-large {
+	width : 120px;
+	line-height:40px;	
+	font-weight:bold;
+	font-size:16px;
+	text-transform : uppercase;
+}
+.btn-tiny {
+	padding:4px 8px;
+}
+.btn-blue {		
+	background : $color-blue;
+	color : #fff;
+	@include borderColor($color-blue);
+}
+.btn-gray {
+	background : $color-gray;
+	color : #fff;
+	@include borderColor($color-gray);
+}
+.btn-date {
+	background : $color-white;
+	color : #777;
+	font-size:13px;		
+	font-weight:bold;
+	padding:7px;		
+	@include borderColor($color-white);
+}
+.btn-resetpw {
+	padding: 5px 30px;		
+	font-size:16px;
+	font-weight:bold;		
+}
+.btn-target-setting {
+	color : #777;
+	text-align:left;
+	font-size:12px;
+	font-weight:700;
+	padding-left:3px;
+	border : 1px solid #d4d4d4; 	
+	background: rgb(253,253,253); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZkZmRmZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkYmRiZGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(253,253,253,1) 0%, rgba(219,219,219,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(253,253,253,1)), color-stop(100%,rgba(219,219,219,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(253,253,253,1) 0%,rgba(219,219,219,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(253,253,253,1) 0%,rgba(219,219,219,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(253,253,253,1) 0%,rgba(219,219,219,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(253,253,253,1) 0%,rgba(219,219,219,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-8 */
+	// box-shadow: 0.5px 0.866px 3px 0px rgb( 0, 0, 0 );    
+	width: 101px;
+	height: 29px;
+	&:hover {
+		background: rgb(219,219,219); /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RiZGJkYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZGZkZmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(219,219,219,1) 0%, rgba(253,253,253,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(219,219,219,1)), color-stop(100%,rgba(253,253,253,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(219,219,219,1) 0%,rgba(253,253,253,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(219,219,219,1) 0%,rgba(253,253,253,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(219,219,219,1) 0%,rgba(253,253,253,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(219,219,219,1) 0%,rgba(253,253,253,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#fdfdfd',GradientType=0 ); /* IE6-8 */
+	}
+	&:active {
+		position:relative;
+		top:1px;
+	}
+}
+
+
+// 버튼들중 이미지로 구성된것들
+.btn-add {
+	width : 151px;
+	height : 111px;
+	background:url(../images/button/btn-add.png) no-repeat 50% 50%;
+	text-indent:-9999em;
+	border : 1px dashed #c3c3c3;
+}
+
+.btn-modify {
+	width : 10px;
+	height : 10px;
+	background : url(../images/button/btn-modify.png) no-repeat 0 0;
+	text-indent : -9999em;	
+	top:5px;
+	margin-left: 5px;
+}
+
+.btn-fullsize {
+	width : 15px;
+	height : 13px;
+	text-indent : -9999em;
+	background : url(../images/button/btn-fullscreen.png) no-repeat 0 0;	
+}
+.btn-remove {
+	width : 14px;
+	height : 14px;
+	text-indent : -9999em;
+	background : url(../images/button/btn-remove.png) no-repeat 0 0;
+
+}
+
+
+.btn-modify2 {
+	width : 14px;
+	height : 14px;
+	text-indent: -9999em;
+	background : url(../images/button/btn-modify2.png) no-repeat 0 0;
+}
+
+.btn-magnifier {	
+	width : 14px;
+	height : 14px;
+	text-indent: -9999em;
+	background : url(../images/button/btn-magnifier.png) no-repeat 0 0;
+}
+
+.btn-info-data {
+	width:67px;
+	height:57px;
+	text-indent: -9999em;
+	background : url(../images/button/btn-info-data.png) no-repeat 0 0;
+}
+
+.btn-pause {
+	width: 14px;
+	height: 14px;
+	text-indent : -9999em;
+	background : url(../images/button/btn-pause.png) no-repeat 0 0;
+}
+
+.btn-refresh {
+	width : 32px;
+	height : 32px;
+	text-indent : -9999em;
+	background : url(../images/button/btn-refresh.png) no-repeat 0 0;
+}
+
+
+.btn-group-pause ,.btn-restart {
+	border : 1px solid #D5D5D5;
+	color : #F68833;
+	background : #fff;
+	font-weight:800;
+	padding : 4px 8px;
+	
+}
+.btn-group-pause {
+	width : 95px;
+}
+.btn-restart {
+	width : 60px;
+}
+
+/* ETC */
+
+// .list-target-group {
+// 	li {
+// 		width : 118px;
+// 		height : 104px;
+// 		padding-top:20px;
+// 		position:relative;
+// 		float:left;
+// 		background: url(../images/bg_list_targeting.png) no-repeat 50% 50%;
+// 		border : 1px dashed #e7e7e7;
+// 		margin:4px 0 0 4px;
+// 		text-align:center;
+// 		cursor : pointer;
+// 	}
+// }
+
+
+.title {
+	color : $color-blue;
+	font-size:18px;
+	font-weight:800;	
+}
+
+
+
+.tab-wrap {
+	.tab-list li {
+		float:left;
+		margin-left:17px;
+		a {
+			display:block;
+			width:202px;
+			height : 219px;
+
+			box-sizing : border-box;
+						
+			border:1px solid #ced7e9;
+			padding:20px 10px 0;
+
+			&:hover {
+				background: #e1e2e4;
+			}
+		}
+		.tab-image-wrap , .tab-term {
+			text-align:center;
+		}
+		.tab-term {						
+			font-size:18px;
+			font-weight:800;
+			color : #3b5998;
+			letter-spacing:-1px;
+			word-spacing:-1px;
+			margin-bottom : 15px;
+		}
+		.tab-desc {
+			font-size:11px;
+			color : #777;
+			line-height : 16px;
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+	}	
+}
+.tab-info {	
+	box-sizing: border-box;
+	position:relative;
+	margin-top:10px;
+	border:1px solid #ced7e9;
+	width : 860px;
+	padding:40px;
+	background-color : #fcfcfc;
+	.text {
+		font-size:13px;
+		color : $color-gray;
+		.point {
+			color : #ff9d4e;
+		}
+	}
+	.tab-info-image {
+		margin-top:35px;
+		text-align:center;
+	}
+	.arrow {
+		position:absolute;
+		left:94px;
+		top:-9px;
+		width : 13px;
+		height : 9px;
+		background-image: url(../images/createAds/arrow-tab-info.png);		
+	}
+	@for $i from 1 through 4 {
+		.tab-info#{$i}{
+			display:none;			
+			@if $i == 1 {
+				display:block;				
+			}			
+		}
+	}	
+}
+
+
+/* Select Box Style */
+
+.selectBox-dropdown {
+    min-width: 150px;
+    position: relative;
+    border: solid 1px #c4c4c4;
+    line-height: 2.0;
+    text-decoration: none;
+    text-align: left;
+    color: #000;
+    outline: none;
+    vertical-align: middle;
+    background: #FFF;    
+    display: inline-block;
+    cursor: pointer;
+    &:focus , &:focus .selectBox-arrow {
+    }
+    &.selectBox-menuShowing-bottom {        
+    }
+    &.selectBox-menuShowing-top {        
+    }
+    .selectBox-label {
+        padding: 2px 8px;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .selectBox-arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 23px;
+        height: 100%;
+        background: url(../images/select/select-down.png) 50% center no-repeat;
+        border-left: solid 1px #BBB;
+    }
+}
+
+
+.selectBox-menuShowing {
+    .selectBox-arrow {        
+        background: url(../images/select/select-up.png) 50% center no-repeat;        
+    }
+}
+
+
+
+/* Dropdown menu */
+.selectBox-dropdown-menu {
+    position: absolute;
+    z-index: 99999;
+    max-height: 200px;
+    min-height: 1em;
+    border: solid 1px #c4c4c4; /* should be the same border width as .selectBox-dropdown */
+    background: #FFF;    
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Inline control */
+.selectBox-inline {
+    min-width: 150px;
+    outline: none;
+    border: solid 1px #BBB;
+    background: #FFF;
+    display: inline-block;    
+    overflow: auto;
+}
+
+.selectBox-inline:focus {
+    border-color: #666;
+}
+
+/* Options */
+.selectBox-options,
+.selectBox-options LI,
+.selectBox-options LI A {
+    list-style: none;
+    display: block;
+    cursor: default;
+    padding: 0;
+    margin: 0;
+}
+
+.selectBox-options.selectBox-options-top{
+	margin-top:1px;	
+}
+.selectBox-options.selectBox-options-bottom{	
+}
+
+.selectBox-options LI A {
+    line-height: 2.0;
+    padding: 0 .5em;
+    white-space: nowrap;
+    overflow: hidden;
+    background: 6px center no-repeat;
+    cursor : pointer;
+}
+
+.selectBox-options LI.selectBox-hover A {
+    background-color: #EEE;
+}
+
+.selectBox-options LI.selectBox-disabled A {
+    color: #888;
+    background-color: transparent;
+}
+
+.selectBox-options LI.selectBox-selected A {
+    background-color: #C8DEF4;
+}
+
+.selectBox-options .selectBox-optgroup {
+    color: #666;
+    background: #EEE;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0 .3em;
+    white-space: nowrap;
+}
+
+/* Disabled state */
+.selectBox.selectBox-disabled {
+    color: #888 !important;
+}
+
+.selectBox-dropdown.selectBox-disabled .selectBox-arrow {
+    opacity: .5;
+    filter: alpha(opacity=50);
+    border-color: #666;
+}
+
+.selectBox-inline.selectBox-disabled {
+    color: #888 !important;
+}
+
+.selectBox-inline.selectBox-disabled .selectBox-options A {
+    background-color: transparent !important;
+}
+
+/* Facebook Login Style */
+
+.fb-login {
+	font-size:15px;
+	line-height:31px;
+	color : #fff;
+	.login-text-wrap {
+		background : #1f9cd0;
+		padding:30px;
+		text-align:center;
+		width:600px;
+		margin: 0 auto;		
+		p {
+			text-align:left;
+		}
+		.btn-facebook-login {
+			display:block;
+			// background-size는 ie8에서 적용이 안되니 추후에 수정
+			background-size:cover;
+			background-image : url(../images/btn-facebook-login.png);
+			width: (290*(2/3))+px;
+			height: (62*(2/3))+px;
+			margin: 20px auto 0;
+			text-indent:-9999em;
+			overflow:hidden;
+			&:active {
+				background-image : url(../images/btn-facebook-login-press.png);
+			}
+		}
+	}
+}
+
+
+/* Table Style */
+
+.view-table {
+	width : 100%;
+	table-layout:fixed;
+	word-break:break-all;	
+	th {
+		color : #fff;
+		text-align : center;
+		font-weight:bold;
+		height:34px;
+		background: url(../images/common/table_bg_sep.png) no-repeat left bottom #7b7977;
+		&:first-child {
+			background :#7b7977;
+		}
+	}
+	td {
+		border-bottom:1px solid #c1c1c1;
+		font-size:12px;
+		
+		color : #777;
+		text-align:center;
+		height:33px;
+		.view-table-link {
+			color : gray;
+			font-weight:bold;
+			&:hover {
+				text-decoration : underline;
+			}
+		}
+		&.tdIndex2 {
+			text-align:left;
+			padding-left:10px;
+		}
+		&.details {
+			padding:5px 0 5px 10px;
+			text-align:left;
+		}
+		.count_num {
+			font-size:22px;
+			font-weight:bold;
+			color : #777;
+		}
+	}
+	tbody {
+		tr {
+			&:hover {				
+				background : (#cbd0d3 * 1.1) !important;				
+			}
+			&:first-child {
+				td {border-top:1px solid #c1c1c1;}
+			}
+		}
+	}
+	tfoot {
+		tr {
+			background-color : #f9f9f9;
+		}
+	}
+}
+
+
+.charts-table {
+	width : 100%;
+	background : #f1f2f6;
+	tr {
+		&:first-child {
+			th,td {
+				border-top: 0 none;
+			}
+		}
+	}
+	th {
+		height: 44px;
+		font-size:16px;
+		color : #3b5998;
+		border : {
+			top : 1px solid #fff;
+			right : 1px solid #fff;
+		}		
+	}
+	td {
+		padding-left:12px;		
+		color : #777777;
+		font-size:13px;
+		border-top:1px solid #fff;
+	}
+}
+
+.ad-table {
+	$border-color : #bcbcbc;
+	margin-top:10px; // 테스트 목적으로 집어넣음
+	table-layout:fixed;
+	word-break : break-all;
+	// ad-table에서 thead 스타일
+	thead {
+		th {
+			height:124-13px;			
+			vertical-align:top;
+			border-bottom : 2px dashed $border-color;
+			padding-left:4px;
+			padding-bottom:13px;
+			&:first-child {
+				padding:0;
+				vertical-align:middle;
+				background: none;
+				border-right: 2px dashed $border-color;
+			}
+			.ad-preview-wrap {
+				box-sizing:border-box;
+				width:100%;
+				height:100%;
+				padding:0 6px;
+				background: #dfe3e7;
+				overflow:auto;
+				color : #565656;
+				// 광고 미리보기 헤딩 
+				.ad-preview-heading {
+					position:relative;
+					background:url(../images/table/bg-heading.png) repeat-x 0 100%;
+					margin-top:3px;
+					height:19px;
+					button {
+						position:absolute;
+					}					
+					.ad-placement {
+						font-size:9px;						
+						width:110px;
+						margin: 0 auto;
+						text-align:center;
+						display: inline-block;
+						overflow:hidden;
+					}
+				}
+				// 광고 제목 스타일
+				.ad-preview-title {
+					text-align:left;
+					font-size:10px;
+					font-weight:bold;
+				}
+				// 광고 미리 보는 이미지 스타일
+				.ad-preview-image {
+					> div {
+						position:relative;
+						margin : 0 auto;
+						border : 1px solid #cfd6dc;
+					}
+					.ad_thumbs {
+						position:absolute;
+						img {
+							width:100%;
+							height:100%;
+						}
+					}
+					.rhs_ad {
+						width:126px;
+						height:55px;
+						background : url(../images/table/ad-table/bg_rhs.png) no-repeat 0 0;
+						.ad_thumbs {
+							top:20px;
+							left:6px;
+							width : 37px;
+							height:37px;
+						}
+					}
+					.desktop_newspeed {
+						width:126px;
+						height:55px;
+						background : url(../images/table/ad-table/bg_newspeed.png) no-repeat 0 0;
+						.ad_thumbs {
+							top: 20px;
+							left:27px;
+							width:25px;
+							height:25px;
+						}
+					}
+					.sponsor_story1 {
+						width : 57px;
+						height: 61px;
+						background : url(../images/table/ad-table/bg_sponstory_1.png) no-repeat 0 0;
+						.ad_thumbs {
+							top:29px;
+							left:5px;
+							width:47px;
+							height:17px;
+						}
+					}
+					.page_ad {
+						width:126px;
+						height:55px;
+						background: url(../images/table/ad-table/bg_pagead.png) no-repeat 0 0;
+						.ad_thumbs {
+							top:21px;
+							left:4px;
+							width:45px;
+							height:26px;
+						}
+					}
+					.page_ad_mobile {
+						width : 126px;
+						height:55px;
+						background: url(../images/table/ad-table/bg_pagead.png) no-repeat 0 0;
+						.ad_thumbs {
+							top:20px;
+							left:27px;
+							width:25px;
+							height:25px;
+						}
+
+					}
+					.post_engage {
+						width:76px;
+						height:61px;
+						background: url(../images/table/ad-table/bg_post_engage.png) no-repeat 0 0;
+						.ad_thumbs{
+							top:23px;
+							left:21px;
+							width:51px;
+							height:34px;
+						}
+					}
+					.post_ad {
+						width:55px;
+						height:61px;
+						background: url(../images/table/ad-table/bg_post_ad.png) no-repeat 0 0; 
+						.ad_thumbs{
+							top:21px;
+							left:4px;
+							width:45px;
+							height:26px;
+						}
+					}
+				}
+
+			}
+			&.nth-child-2 {
+				padding-left:11px;
+			}
+			&.last-child {
+				padding-left:10px;
+				border-bottom : 0 none;
+				.ad-preview-wrap {
+					background:none;			
+					border : 1px dashed gray;
+				}
+			}
+		}
+	}
+	// ad-table에서 tbody 스타일
+	tbody {
+
+		th , 
+		td {
+			vertical-align:top;
+		}
+		.last-child {
+			th {
+				padding: 0;
+				vertical-align:middle;
+				height:250px;
+			}
+		}
+
+		th {
+			padding-top:40px;
+			border-right : 2px dashed $border-color;
+			.target-group-info-wrap {
+				position:relative;
+				padding : 0 10px;				
+				.background-wrap {
+					position:relative;
+					height:65px;
+					margin-bottom:5px;
+					background : url(../images/table/ico_man1.png) no-repeat 50% 8px;
+					text-align:center;
+					.btn-wrap {
+						position:absolute;
+						right:0px;
+						.btn-modify2 , 
+						.btn-remove , 
+						.btn-magnifier {
+							margin-left:2px;
+							float:left;
+						}
+					}
+				}
+				.detail-info {
+					li {
+						text-align:left;
+						&:first-child {
+							text-align:center;
+						}						
+						.budget-arrow {
+							padding-left:9px;
+							margin-right:5px;
+						}
+					}					
+					.location {
+						margin-top:20px;
+					}
+				}
+			}			
+		}
+		td {
+			padding-top:13px;
+			padding-left:4px;
+			&.nth-child-2 {
+				
+				padding-left:11px;
+			}
+			.info-data-wrap {
+				padding: 40px 5px 0;
+				background : #f2f2f2;
+				border : 1px solid #f2f2f2;
+				position:relative;
+				.dim-layer {
+					width:100%; 
+					height:100%;
+					position:absolute;
+					top:0px; 
+					left:0px; 
+					background-color : rgba(0,0,0,0.5);
+					text-align:center;
+					.btn-refresh {
+						position:absolute;
+						top:50%;
+						left:50%;
+						margin:-16px 0 0 -16px;
+					}
+				}
+				.btn-pause {
+					position:absolute;
+					right:0px;
+					top:0px;
+				}
+				&.bg-white {
+					border : 1px solid #f2f2f2;
+					background : none;
+				}
+				li {
+					padding:3px 0;
+					border-top : 1px solid #bcbcbc;
+					&:first-child {
+						border-top: 0 none;
+					}
+				}
+			}
+		}
+	}	
+}

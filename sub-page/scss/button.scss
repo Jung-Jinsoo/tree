@@ -208,3 +208,54 @@ $bgcolor-date : #fff; //데이트
 .btn-restart {
 	width : 60px;
 }
+
+.list-target-group {
+	li {
+		width : 118px;
+		height : 104px;
+		padding-top:20px;
+		position:relative;
+		float:left;
+		background: url(../images/bg_list_targeting.png) no-repeat 50% 50%;
+		border : 1px dashed #e7e7e7;
+		margin:4px 0 0 4px;
+		text-align:center;
+		cursor : pointer;
+	}
+}
+
+.tab-wrap {
+	li {
+		float:left;
+		margin-left:17px;
+		a {
+			box-sizing : border-box;
+			display:block;
+			width:202px;
+			height : 219px;
+			
+			border:1px solid #ced7e9;
+			padding:0 10px;
+
+			&:hover {
+				background: #e1e2e4;
+			}
+		}
+		.tab-image-wrap , .tab-title {
+			text-align:center;
+		}
+		.tab-title {						
+			font-size:18px;
+			font-weight:800;
+			color : #3b5998;
+			letter-spacing:-1px;
+			word-spacing:-1px;
+		}
+		.tab-desc {
+			font-s
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}

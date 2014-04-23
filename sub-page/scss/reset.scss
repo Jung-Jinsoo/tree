@@ -1,14 +1,13 @@
 @charset "utf-8";
 
-/* @import url(../font/nanumbarungothic.css); */
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+// @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li,th,td,div,blockquote,pre,form,fieldset,input,textarea,legend,table,button,img{
 	margin:0;
 	padding:0;
 }
 body{
-	font:12px/1.231 'Nanum Gothic', Arial , '굴림', Gulim , sans-serif;
+	font:12px/1.231 'Nanum Gothic' , Arial , '굴림' , Gulim , Helvetica , sans-serif;
 }
 h1,h2,h3,h4,h5,h6{
 	font-size:100%;
@@ -107,4 +106,14 @@ mark{
 }
 object{
 	outline:none;
+}
+
+
+button {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  position: relative;
 }

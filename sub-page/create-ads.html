@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<title>For Copy</title>	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/combine.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="main-content">
+
+			<h3 class="title">Marketing objective</h3>
+
+			<div class="tab-wrap">
+				<ul class="tab-list clfix">
+					<li>
+						<a href="#">
+							<div class="tab-image-wrap">
+								<img src="images/createAds/img-mkt-tab1.png" height="37" width="64" alt="" />
+							</div>
+							<dl>
+								<dt class="tab-term">
+									To get<br/>more fans
+								</dt>
+								<dd class="tab-desc">
+									Increase the number of page<br/>likes (fans) which would give<br/>you a bigger audience<br/>including the friends of fans.
+								</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="tab-image-wrap">
+								<img src="images/createAds/img-mkt-tab2.png" height="37" width="64" alt="" />
+							</div>
+							<dl>
+								<dt class="tab-term">
+									To increase<br/>engagement								
+								</dt>
+								<dd class="tab-desc">
+									Promote your contents to<br/>get more people to see and<br/>increase your chance of<br/>engagement.								
+								</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="tab-image-wrap">
+								<img src="images/createAds/img-mkt-tab3.png" height="37" width="64" alt="" />
+							</div>
+							<dl>
+								<dt class="tab-term">
+									To drive<br/>traffic to your website
+								</dt>
+								<dd class="tab-desc">
+									Drive traffic from Facebook to<br/>your website (external URL),<br/>targeting everyone on<br/>Facebook								
+								</dd>
+							</dl>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="tab-image-wrap">
+								<img src="images/createAds/img-mkt-tab4.png" height="37" width="64" alt="" />
+							</div>
+							<dl>
+								<dt class="tab-term">
+									To promote<br/>installation of your app
+								</dt>
+								<dd class="tab-desc">
+									Get more people to install<br/>and use your app by targeting<br/>the people who are more<br/>likely to install.								
+								</dd>
+							</dl>
+						</a>
+					</li>
+				</ul>
+				<div class="tab-info">
+					<div class="arrow">&nbsp;</div>
+					<div class="tab-info1">
+						<p class="text">Increase the number of page likes (fans) which would give you a bigger audience including the friends of fans. This type allows your ads to be exposed to every ad place of Facebook. Exclusive <span class="point">CPL(cost per click)</span> product is available only for Adwitt users - Charge only when Facebook users become your fan.</p>
+						<div class="tab-info-image">
+							<img src="images/createAds/tab-info1.png" alt="" />
+						</div>
+					</div>
+					<div class="tab-info2">
+						<p class="text">Promote your contents to get more people to see and increase your chance of engagement. Photo, movie clips, link, offer, poll and other various contents can be advertised.</p>
+						<div class="tab-info-image">
+							<img src="images/createAds/tab-info2.png" alt="" />
+						</div>
+					</div>
+					<div class="tab-info3">
+						<p class="text">Drive traffic from Facebook to your website (external URL), targeting everyone on Facebook. If you have Facebook page, you can also get the traffic from news feed of desktop and mobile. Once you set the ‘Conversion tracking’ code, data of lead, registration, add to cart, purchase and ROAS can be tracked.</p>
+						<div class="tab-info-image">
+							<img src="images/createAds/tab-info3.png" alt="" />
+						</div>
+					</div>
+					<div class="tab-info4">
+						<p class="text">Get more people to install and use your Facebook app or native mobile app by targeting the people who are more likely to install. Social feature supporting by Facebook will help your message to be recognized as friends’ voice.</p>
+						<div class="tab-info-image">
+							<img src="images/createAds/tab-info4.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+
+	</div>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript">
+	$('.tab-wrap li a').on('mouseover' , function(){
+		var _this = $(this);
+		$('.tab-info .tab-info'+(_this.parent().index()+1))
+		.show()
+		.siblings('div:not(.arrow)')
+		.hide();
+
+		$('.tab-info .arrow').css({
+			'left' : function(){
+				return ((_this.outerWidth()/2) - 7) + _this.position().left;
+			}
+		})
+	});		
+	</script>
+</body>
+</html>
