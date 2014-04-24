@@ -1,33 +1,230 @@
-// 자주 쓰는 컬러 세팅
+// 변수 세팅
 
+// 자주스는 컬러 세팅
 $color-blue : #3b5998;
 $color-gray : #777;
 $color-white : #fff;
+
+
+// 레이아웃 관련된 스타일
+.wrap {
+	min-width : 1200px;
+}
+
+.header-wrap {
+	background-color : #2c4887;
+	overflow:hidden;
+}
+
+
+// Header Style
+
+.header {	
+	position: relative;		
+	.header-top {		
+		margin : 0 auto;
+		height:70px;
+		.logo {
+			float:left;
+			margin:16px 0 0 20px;
+		}
+		.admin-container {
+			float:right;
+			margin:40px 20px 0 0;
+			li {
+				float:left;
+				background:url(../images/common/header/bg-division-line.png) no-repeat 0 50%;
+				padding:0 3px;
+				color : #b0bdde;
+				&:first-child {
+					background:none;
+				}
+				&.user_name {
+					color : #e6edff;
+					text-decoration : underline;
+				}
+				a {
+					color : #b0bdde;
+				}
+			}
+		}
+	}
+	.header-bot {		
+		margin : 0 auto;
+		padding-top:15px;
+		border-top : 1px solid #425c93;
+		.nav {			
+			.gnb {
+				float:left;
+				margin:6px 0 0 22px;
+				li {
+					float:left;
+					margin-left:22px;
+					border-bottom : 2px solid $color-blue;
+					&:first-child {
+						margin-left:0px;
+					}
+					a {
+						display:block;
+						overflow:hidden;
+						height:37px;
+						text-indent:-9999em;
+						background-image:url(../images/common/header/gnb.png);
+						background-repeat : no-repeat;
+					}
+				}
+				.active {
+					border-bottom:2px solid #e8edf8;
+				}
+				.gDash {
+					a {
+						width : 105px;
+						background-position: 0 0;
+						&:hover {
+							background-position:0 -40px;
+						}
+						&.active {
+
+						}
+					}
+					&.active {
+						a {
+							background-position : 0 -80px;
+						}
+					}					
+				}
+				.gManage {
+					a {
+						width : 116px;
+						background-position:-110px 0;
+						&:hover {
+							background-position: -110px -40px;
+						}
+					}
+					&.active {
+						a {
+							background-position : -110px -80px;
+						}
+					}
+				}
+				.gReports {
+					a {
+						width : 82px;
+						background-position:-230px 0;
+						&:hover {
+							background-position:-230px -40px;
+						}
+					}
+					&.active {
+						a {
+							background-position : -230px -80px;
+						}
+					}
+				}
+				.gAccount {
+					a {
+						width : 86px;
+						background-position:-320px 0;
+						&:hover {
+							background-position: -320px -40px;
+						}
+					}
+					&.active {
+						a {
+							background-position : -320px -80px;
+						}
+					}
+				}
+				.gHelp {
+					a {
+						width : 57px;
+						background-position:-410px 0;
+						&:hover {
+							background-position:-410px -40px;
+						}
+					}
+					&.active {
+						a {
+							background-position : -410px -80px;
+						}
+					}
+				}
+			}
+
+			.gCreate {
+				display:inline-block;
+				width : 112px;
+				height : 28px;
+				overflow:hidden;
+				background-image:url(../images/common/header/btn_createads_normal.png);
+				text-indent:-9999em;
+				&:hover {
+					background-image:url(../images/common/header/btn_createads_hover.png);
+				}
+			}
+			.select-wrap {
+				float:right;
+				margin-right:20px;
+				select {
+					width:198px;
+				}
+			}
+		}
+		.sub-gnb {
+			position:relative;
+			height : 39px;
+			background : #e8edf8;
+			border-bottom : 1px solid #d0d5df;
+			> ul {
+				height : 40px;
+				position:absolute;
+				left:0px;
+				bottom:0px;
+				line-height:40px;
+				display:none;
+				li {
+					float:left;
+					padding:0 5px;
+					&:first-child {
+						background:none;
+					}
+					a {
+						color : #818794;
+						font-size:14px;
+						&:hover {
+							color : #1b2f59;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
 /* Button Style */
 
 // 버튼 over , active 효과 주는 mixin
 @mixin borderColor ($bg){
-	border : {
-		top : 1px solid ($bg * 0.8);
-		right : 1px solid ($bg * 0.8);
-		bottom : 4px solid ($bg * 0.8);
-		left : 1px solid ($bg * 0.8);
-	}
+	border : 1px solid $bg;	
 	&:hover {
-		border-bottom:3px solid ($bg * 0.8);
-		top:1px;
+		background-color : lighten($bg , 10%);
+		border : 1px solid lighten($bg , 10%);
 	}
 	&:active , &.active {
-		border-bottom:1px solid ($bg * 0.8);;
-		top:3px;
-	}
+		background-color : darken($bg , 10%);
+		border : 1px solid darken($bg , 10%);
+	}	
 }
 
 // 버튼중 텍스트로 구성된것들 스타일
-.btn-large {
-	width : 120px;
-	line-height:40px;	
-	font-weight:bold;
+.btn-large {		
+	padding: 10px 20px;
+	font-weight:800;
 	font-size:16px;
 	text-transform : uppercase;
 }
@@ -43,14 +240,6 @@ $color-white : #fff;
 	background : $color-gray;
 	color : #fff;
 	@include borderColor($color-gray);
-}
-.btn-date {
-	background : $color-white;
-	color : #777;
-	font-size:13px;		
-	font-weight:bold;
-	padding:7px;		
-	@include borderColor($color-white);
 }
 .btn-resetpw {
 	padding: 5px 30px;		
@@ -92,6 +281,47 @@ $color-white : #fff;
 	&:active {
 		position:relative;
 		top:1px;
+	}
+}
+
+.btn-date {
+	font-size:13px;
+	font-weight:bold;
+	padding:7px;
+	border: solid 1px #b7b7b7;
+	color : #606060;
+
+	background: rgb(255,255,255);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkY2RjZGMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(220,220,220,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(220,220,220,1)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dcdcdc',GradientType=0 );
+	&:hover {
+		background: rgb(237,237,237);
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZWRlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(237,237,237,1) 0%, rgba(255,255,255,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); 
+		background: -webkit-linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(255,255,255,1) 100%); 
+		background: -o-linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(255,255,255,1) 100%); 
+		background: -ms-linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(255,255,255,1) 100%); 
+		background: linear-gradient(to bottom,  rgba(237,237,237,1) 0%,rgba(255,255,255,1) 100%); 
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); 
+	}
+	&:active , &.active {
+		color : #999;
+		background: rgb(255,255,255);
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkY2RjZGMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(220,220,220,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(220,220,220,1)));
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%); 
+		background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
+		background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
+		background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(220,220,220,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dcdcdc',GradientType=0 );
 	}
 }
 
@@ -198,144 +428,148 @@ $color-white : #fff;
 // }
 
 
-.title {
-	color : $color-blue;
-	font-size:18px;
-	font-weight:800;	
-}
+// Create Ads 인트로 스타일
+.create-ads-intro {
+	.sub-title {
+		color : $color-blue;
+		font-size:18px;
+		font-weight:800;	
+	}
+	.tab-wrap {
+		.tab-list li {
+			float:left;
+			margin-left:17px;
+			a {
+				display:block;
+				width:202px;
+				height : 219px;
 
+				box-sizing : border-box;
 
+				border:1px solid #ced7e9;
+				padding:20px 10px 0;
 
-.tab-wrap {
-	.tab-list li {
-		float:left;
-		margin-left:17px;
-		a {
-			display:block;
-			width:202px;
-			height : 219px;
-
-			box-sizing : border-box;
-						
-			border:1px solid #ced7e9;
-			padding:20px 10px 0;
-
-			&:hover {
-				background: #e1e2e4;
+				&:hover {
+					background: #e1e2e4;
+				}
+			}
+			.tab-image-wrap , .tab-term {
+				text-align:center;
+			}
+			.tab-term {						
+				font-size:18px;
+				font-weight:800;
+				color : #3b5998;
+				letter-spacing:-1px;
+				word-spacing:-1px;
+				margin-bottom : 15px;
+			}
+			.tab-desc {
+				font-size:11px;
+				color : #777;
+				line-height : 16px;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+		}	
+	}
+	.tab-info {	
+		box-sizing: border-box;
+		position:relative;
+		margin-top:10px;
+		border:1px solid #ced7e9;
+		width : 860px;
+		padding:40px;
+		background-color : #fcfcfc;
+		.text {
+			font-size:13px;
+			color : $color-gray;
+			.point {
+				color : #ff9d4e;
 			}
 		}
-		.tab-image-wrap , .tab-term {
+		.tab-info-image {
+			margin-top:35px;
 			text-align:center;
 		}
-		.tab-term {						
-			font-size:18px;
-			font-weight:800;
-			color : #3b5998;
-			letter-spacing:-1px;
-			word-spacing:-1px;
-			margin-bottom : 15px;
+		.arrow {
+			position:absolute;
+			left:94px;
+			top:-9px;
+			width : 13px;
+			height : 9px;
+			background-image: url(../images/createAds/arrow-tab-info.png);		
 		}
-		.tab-desc {
-			font-size:11px;
-			color : #777;
-			line-height : 16px;
-		}
-		&:first-child {
-			margin-left: 0;
-		}
-	}	
+		@for $i from 1 through 4 {
+			.tab-info#{$i}{
+				display:none;			
+				@if $i == 1 {
+					display:block;				
+				}			
+			}
+		}	
+	}
+
 }
-.tab-info {	
-	box-sizing: border-box;
-	position:relative;
-	margin-top:10px;
-	border:1px solid #ced7e9;
-	width : 860px;
-	padding:40px;
-	background-color : #fcfcfc;
-	.text {
-		font-size:13px;
-		color : $color-gray;
-		.point {
-			color : #ff9d4e;
-		}
-	}
-	.tab-info-image {
-		margin-top:35px;
-		text-align:center;
-	}
-	.arrow {
-		position:absolute;
-		left:94px;
-		top:-9px;
-		width : 13px;
-		height : 9px;
-		background-image: url(../images/createAds/arrow-tab-info.png);		
-	}
-	@for $i from 1 through 4 {
-		.tab-info#{$i}{
-			display:none;			
-			@if $i == 1 {
-				display:block;				
-			}			
-		}
-	}	
-}
+
+
+
 
 
 /* Select Box Style */
 
 .selectBox-dropdown {
-    min-width: 150px;
-    position: relative;
-    border: solid 1px #c4c4c4;
-    line-height: 2.0;
-    text-decoration: none;
-    text-align: left;
-    color: #000;
-    outline: none;
-    vertical-align: middle;
-    background: #FFF;    
-    display: inline-block;
-    cursor: pointer;
-    &:focus , &:focus .selectBox-arrow {
-    }
-    &.selectBox-menuShowing-bottom {        
-    }
-    &.selectBox-menuShowing-top {        
-    }
-    .selectBox-label {
-        padding: 2px 8px;
-        display: inline-block;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    .selectBox-arrow {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 23px;
-        height: 100%;
-        background: url(../images/select/select-down.png) 50% center no-repeat;
-        border-left: solid 1px #BBB;
-    }
+	min-width: 150px;
+	position: relative;
+	border: solid 1px #c4c4c4;
+	line-height: 2.0;
+	text-decoration: none;
+	text-align: left;
+	color: #000;
+	outline: none;
+	vertical-align: middle;
+	background: #FFF;    
+	display: inline-block;
+	cursor: pointer;
+	&:focus , &:focus .selectBox-arrow {
+	}
+	&.selectBox-menuShowing-bottom {        
+	}
+	&.selectBox-menuShowing-top {        
+	}
+	.selectBox-label {
+		padding: 2px 8px;
+		display: inline-block;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	.selectBox-arrow {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 23px;
+		height: 100%;
+		background: url(../images/select/select-down.png) 50% center no-repeat;
+		border-left: solid 1px #BBB;
+	}
 }
 
 
 .selectBox-menuShowing {
-    .selectBox-arrow {        
-        background: url(../images/select/select-up.png) 50% center no-repeat;        
-    }
+	.selectBox-arrow {        
+		background: url(../images/select/select-up.png) 50% center no-repeat;        
+	}
 }
 
 
 
 /* Dropdown menu */
 .selectBox-dropdown-menu {
-    position: absolute;
-    z-index: 99999;
-    max-height: 200px;
-    min-height: 1em;
+	position: absolute;
+	z-index: 99999;
+	max-height: 200px;
+	min-height: 1em;
     border: solid 1px #c4c4c4; /* should be the same border width as .selectBox-dropdown */
     background: #FFF;    
     overflow: auto;
@@ -344,27 +578,27 @@ $color-white : #fff;
 
 /* Inline control */
 .selectBox-inline {
-    min-width: 150px;
-    outline: none;
-    border: solid 1px #BBB;
-    background: #FFF;
-    display: inline-block;    
-    overflow: auto;
+	min-width: 150px;
+	outline: none;
+	border: solid 1px #BBB;
+	background: #FFF;
+	display: inline-block;    
+	overflow: auto;
 }
 
 .selectBox-inline:focus {
-    border-color: #666;
+	border-color: #666;
 }
 
 /* Options */
 .selectBox-options,
 .selectBox-options LI,
 .selectBox-options LI A {
-    list-style: none;
-    display: block;
-    cursor: default;
-    padding: 0;
-    margin: 0;
+	list-style: none;
+	display: block;
+	cursor: default;
+	padding: 0;
+	margin: 0;
 }
 
 .selectBox-options.selectBox-options-top{
@@ -374,53 +608,53 @@ $color-white : #fff;
 }
 
 .selectBox-options LI A {
-    line-height: 2.0;
-    padding: 0 .5em;
-    white-space: nowrap;
-    overflow: hidden;
-    background: 6px center no-repeat;
-    cursor : pointer;
+	line-height: 2.0;
+	padding: 0 .5em;
+	white-space: nowrap;
+	overflow: hidden;
+	background: 6px center no-repeat;
+	cursor : pointer;
 }
 
 .selectBox-options LI.selectBox-hover A {
-    background-color: #EEE;
+	background-color: #EEE;
 }
 
 .selectBox-options LI.selectBox-disabled A {
-    color: #888;
-    background-color: transparent;
+	color: #888;
+	background-color: transparent;
 }
 
 .selectBox-options LI.selectBox-selected A {
-    background-color: #C8DEF4;
+	background-color: #C8DEF4;
 }
 
 .selectBox-options .selectBox-optgroup {
-    color: #666;
-    background: #EEE;
-    font-weight: bold;
-    line-height: 1.5;
-    padding: 0 .3em;
-    white-space: nowrap;
+	color: #666;
+	background: #EEE;
+	font-weight: bold;
+	line-height: 1.5;
+	padding: 0 .3em;
+	white-space: nowrap;
 }
 
 /* Disabled state */
 .selectBox.selectBox-disabled {
-    color: #888 !important;
+	color: #888 !important;
 }
 
 .selectBox-dropdown.selectBox-disabled .selectBox-arrow {
-    opacity: .5;
-    filter: alpha(opacity=50);
-    border-color: #666;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	border-color: #666;
 }
 
 .selectBox-inline.selectBox-disabled {
-    color: #888 !important;
+	color: #888 !important;
 }
 
 .selectBox-inline.selectBox-disabled .selectBox-options A {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 /* Facebook Login Style */

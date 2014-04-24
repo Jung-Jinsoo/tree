@@ -2,12 +2,18 @@
 
 // @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
+html,body {
+	width:100%;
+	height:100%;
+}
 body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li,th,td,div,blockquote,pre,form,fieldset,input,textarea,legend,table,button,img{
 	margin:0;
 	padding:0;
 }
 body{
 	font:12px/1.231 'Nanum Gothic' , Arial , '굴림' , Gulim , Helvetica , sans-serif;
+	word-break:break-all;
+	-ms-word-break:break-all;	
 }
 h1,h2,h3,h4,h5,h6{
 	font-size:100%;
@@ -108,6 +114,9 @@ object{
 	outline:none;
 }
 
+img , button , select {
+	vertical-align: middle;
+}
 
 button {
   padding: 0;
@@ -116,4 +125,7 @@ button {
   outline: none;
   cursor: pointer;
   position: relative;
+  background : transparent;
+  font-family : 'Nanum Gothic' , Arial , '굴림' , Gulim , Helvetica , sans-serif;
+  white-space : nowrap;
 }

@@ -8,13 +8,7 @@ button {
   position: relative;
 }
 
-.button {
-  background: none;
-  font: 12px/1.231 'Nanum Gothic', Arial , '굴림', Gulim , sans-serif;
-}
-
 .btn-large {
-  line-height: 40px;
   width: 120px;
   font-weight: bold;
   font-size: 16px;
@@ -262,10 +256,6 @@ button {
   color: #3b5998;
   letter-spacing: -1px;
   word-spacing: -1px;
-}
-.tab-wrap li .tab-desc {
-  font-size: 11px;
-  color: #777;
 }
 .tab-wrap li:first-child {
   margin-left: 0;
