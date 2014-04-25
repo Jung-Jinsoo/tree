@@ -13,7 +13,7 @@ $view_table.find('tbody tr:nth-child(even)').css({
 var $date_button_wrap = $('#date-button-wrap');
 
 $date_button_wrap.children('button').on('click',function(){
-	$(this)
+	$(this)	
 	.addClass('active')
 	.siblings('button')
 	.removeClass('active');
@@ -34,3 +34,31 @@ $('.btn-pause').on('click',function(){
 $('.info-data-wrap').on('click','.btn-refresh',function(){
 	$(this).parent('.dim-layer').remove();
 });
+
+// GNB 
+$('.gnb > li > a').on('mouseover',function(){
+	var _this = $(this),
+	subGNB = $('#sub-gnb'),
+	offset = _this.offset();
+
+	subGNB
+	.children()
+	.hide();
+
+	subGNB
+	.children('.sub-' + _this.parent().attr('class'))
+	.css({
+		"left" : offset.left,
+		"display" : "block"
+	});	
+})
+.on('click',function(e){
+	e.preventDefault();
+	$(this)
+	.parent()
+	.addClass('active')
+	.siblings()
+	.removeClass('active');
+});
+
+$('select').selectBox();

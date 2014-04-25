@@ -1,0 +1,201 @@
+// Wrap Layout
+.wrap {
+//  min-width: 1200px;
+  width:1200px;
+}
+
+// Header Layout
+.header {
+  .top {
+    height:48px;
+    .logo {
+      float:left;
+      margin:10px 0 0 20px;
+      a {
+        display:block;
+        width:204px;
+        height:33px;
+        background:url(../images/mn_sprite.png) no-repeat 0 0;
+        overflow:hidden;
+        text-indent:-9999em;
+      }
+    }
+    .admin {
+      float:right;
+      margin:26px 22px 0 0;
+      font-size:12px;
+      > li {
+        float:left;
+        background:url(../images/sep.png) no-repeat 0 1px;
+        padding-left:7px;
+        padding-right:7px;
+        &:first-child {
+          background: none;
+        }
+        a {
+          color:#999;
+          font-size:12px;
+        }
+        span {
+          color:#3b5998;
+          font-weight:bold;
+        }
+      }
+      .moreMenu {
+        position:relative;
+        z-index:1;
+        .subAdmin {
+          position:absolute;
+          right:0px;
+          top:20px;
+          display:none;
+          background:#fff;
+          padding:9px;
+          border: 1px solid #c1c1c1;
+          border-radius : 5px;
+          color : #777777;
+          font-size:11px;
+          z-index:5;
+          .arrow {
+            display:block;
+            background:url(../images/common/icon_more_arrow.png) no-repeat 0 0;
+            width:17px;
+            height:9px;
+            position:absolute;
+            top:-8px;
+            right:9px;
+
+          }
+        }
+      }
+    }
+  }
+
+  //GNB layout
+  .gnb {
+    height:38px;
+    background:url(../images/gnb/bg_gnb.png) repeat-x 0 0;
+    li {
+      float:left;
+      height:38px;
+      background:url(../images/gnb/line_gnb.png) no-repeat 0 50%;
+      &:first-child {
+        background:none;
+        margin-left:20px;
+      }
+      a {
+        display:block;
+        text-indent:-999em;
+        height:38px;
+        overflow:hidden;
+      }
+    }
+    .gnb01 {
+      a {
+        width:140px;
+        background:url(../images/gnb/gnb_01.png) no-repeat 0 0;
+        &.on {
+          background:url(../images/gnb/gnb_01_on.png) no-repeat 0 0;
+        }
+      }
+    }
+    .gnb02 {
+      a {
+        width:135px;
+        background:url(../images/gnb/gnb_02.png) no-repeat 0 0;
+        &.on {
+          background:url(../images/gnb/gnb_02_on.png) no-repeat 0 0;
+        }
+      }
+    }
+    .gnb03 {
+      a {
+        width:151px;
+        background:url(../images/gnb/gnb_03.png) no-repeat 0 0;
+        &.on {
+          background:url(../images/gnb/gnb_03_on.png) no-repeat 0 0;
+        }
+      }
+    }
+    .gnb04 {
+      a {
+        width:120px;
+        background:url(../images/gnb/gnb_04.png) no-repeat 0 0;
+        &.on {
+          background:url(../images/gnb/gnb_04_on.png) no-repeat 0 0;
+        }
+      }
+    }
+    .gnb05 {
+      a {
+        width:121px;
+        background:url(../images/gnb/gnb_05.png) no-repeat 0 0;
+        &.on {
+          background:url(../images/gnb/gnb_05_on.png) no-repeat 0 0;
+        }
+      }
+    }
+    .gnb06 {
+      a {
+        width:97px;
+        background:url(../images/gnb/gnb_06.png) no-repeat 0 0;
+        &.on {
+          background:url(../images/gnb/gnb_06_on.png) no-repeat 0 0;
+        }
+      }
+    }
+  }
+  .gnbSub {
+    height:35px;
+    background:#eceef7;
+    border-bottom:1px solid #c1c9da;
+    width:100%;
+    position:relative;
+    > li {
+      display:none;
+      position:absolute;
+      line-height:35px;
+      > .arrow {
+        display:block;
+        width:11px;
+        height:6px;
+        background:url(../images/gnb/icon_subgnb_arrow.png) no-repeat 0 0;
+        position:absolute;
+        top:-6px;
+      }
+      > ul {
+        li {
+          float:left;
+          &:first-child {
+            a {
+              background: none;
+            }
+          }
+          a {
+            font-family: arial;
+            font-weight:bold;
+            font-size:14px;
+            background:url(../images/gnb/line_subgnb.png) no-repeat 0 50%;
+            color:#666666;
+            padding:0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.content {
+  > .title {
+    margin:18px 0 17px 20px;
+  }
+}
+
+// copyright
+.copyright {
+  margin-top:35px;
+  text-align:center;
+  color : #e2e2e2;
+  font-size:11px;
+  font-family : '±¼¸²',Gulim,Arial;
+  height:24px;
+}

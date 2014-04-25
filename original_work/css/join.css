@@ -1,0 +1,130 @@
+/* 2014-01-23 Make By Ginzason */
+@charset "utf-8";
+
+/* LNB�޴�  */
+.lnb_join {padding-left: 50px;}
+.lnb_join:after{clear: both;display: block;content: '';}
+
+.lnb_join li {float:left;height: 62px;}
+.lnb_join li.lnb1{width:55px;margin-right: 113px;}
+.lnb_join li.lnb2{width:83px;margin-right: 117px;}
+.lnb_join li.lnb3{width:55px;margin-right: 130px;}
+.lnb_join li.lnb4{width:56px;}
+
+.lnb_join li a{display: block;height: 62px;}
+
+.lnb_join li a.join_menu1{width: 55px;background:url(/images/join/join_gnb1.png) no-repeat;}
+.lnb_join li a.join_menu2{width: 83px;background:url(/images/join/join_gnb2.png) no-repeat;}
+.lnb_join li a.join_menu3{width: 55px;background:url(/images/join/join_gnb3.png) no-repeat;}
+.lnb_join li a.join_menu4{width: 56px;background:url(/images/join/join_gnb4.png) bottom no-repeat;}
+
+.lnb_join li.on a.join_menu1{background:url(/images/join/join_gnb1_on.png) no-repeat;}
+.lnb_join li.on a.join_menu2{background:url(/images/join/join_gnb2_on.png) no-repeat;}
+.lnb_join li.on a.join_menu3{background:url(/images/join/join_gnb3_on.png) no-repeat;}
+.lnb_join li.on a.join_menu4{background:url(/images/join/join_gnb4_on.png) bottom no-repeat;}
+/* //LNB�޴�  */
+
+/* input ���̰�*/
+.inp_info_530{width:530px !important;}
+.inp_info_250{width:250px !important;}
+.inp_info_160{width:160px !important;}
+.inp_info_75{width: 75px !important;}
+
+/* //input ���̰�*/
+
+
+/* �ڽ� ���� �� ���� */
+.box_info {padding: 20px;margin: 20px;background: #f2f2f2;}
+.box_info_article{margin-bottom: 20px;}
+
+.tit_ad_info {margin-bottom: 10px;}
+.tbl_info_join {width: 100%;background: #fcfcfc;}
+.tbl_info_join caption{display: none}
+.tbl_info_join th {
+    border-right: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+    color: #3B5998;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 0 12px 30px;
+    text-align: left;
+    vertical-align: middle;
+}
+.tbl_info_join td {
+    border-bottom: 1px solid #EBEBEB;
+    padding: 12px 0 12px 20px;
+    font: bold 13px gulim,"굴림";
+    color: #777;
+}
+    
+
+.btn_post {
+    background: none repeat scroll 0 0 #3B5998;
+    border: 1px solid #5873AB;  
+    box-shadow: 1px 1px 0 #334E8D inset, 2px 2px 0 #385594 inset;    
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    height: 26px;
+    width: 102px;
+}
+.btn_refresh{
+    background: none repeat scroll 0 0 #3B5998;
+    border: 1px solid #5873AB;  
+    box-shadow: 1px 1px 0 #334E8D inset, 2px 2px 0 #385594 inset;    
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    height: 26px;
+    width: 82px; 
+}
+.btn_email {
+    background: none repeat scroll 0 0 #3B5998;
+    border: 1px solid #5873AB;  
+    box-shadow: 1px 1px 0 #334E8D inset, 2px 2px 0 #385594 inset;    
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    height: 26px;
+    width: 82px;
+}
+
+.box_agreement1{overflow-y:scroll;width: 97%;height:131px;padding:13px 18px; border: 1px solid #e5e5e5;background: #fff;}
+.box_agreement2{overflow-y:scroll;width: 97%;height:131px;padding:13px 18px;border: 1px solid #e5e5e5;background: #fff;}
+.box_agreement3{overflow-y:scroll;width: 97%;height:131px;padding:13px 18px;border: 1px solid #e5e5e5;background: #fff;}
+.box_agreement4{width: 97%;height:131px;padding:13px 18px;border: 1px solid #e5e5e5;background: #fff;font-size:15px;color: #777}
+/* // �ڽ� ���� �� ���� */
+
+.box_p_agree{margin:10px 0 5px;}
+.div_mB40{margin-bottom: 40px;}
+
+.mR35{margin-right: 35px;}
+
+.box_info1 {
+    background: none repeat scroll 0 0 #F2F2F2;    
+    padding: 20px;
+}
+.wrap_post{width:640px;margin:0px auto;padding-top:10px;}
+
+.box_post{
+  padding:35px 30px;
+  background: #fff;
+  
+}
+
+.txt_post{color: #3B5998;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+  }
+.btn_search_post {
+    background: none repeat scroll 0 0 #3B5998;
+    border: 0;    
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    height: 26px;
+    width: 40px;
+}
+.ta_c{text-align:center;}

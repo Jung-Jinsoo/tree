@@ -1,0 +1,521 @@
+@charset "UTF-8";
+/* 2012-12-26 Make By Ginzason */
+/* reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+fieldset, img {
+  border: 0 none;
+}
+
+dl, ul, ol, menu, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+input, select, textarea, button {
+  vertical-align: middle;
+}
+
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  background: #fff;
+}
+
+body, th, td, input, select, textarea, button, a {
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: Arial,gulim,'�뗭�',dotum;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  text-decoration: none;
+}
+
+address, caption, cite, code, dfn, em, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+caption {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+select {
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #c4c4c4;
+  box-shadow: 0 1px 0 #f1f1f1;
+  font-family: "굴림", Gulim, Arial, Sans-serif;
+  color: #777;
+  padding-left: 8px;
+  word-spacing: -3px;
+  height: 31px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* html5 reset*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* global */
+.screen_out {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0px;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+.clb {
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+/* 濡쒓렇�몄긽��諛�諛붾뵒 */
+.wrap_login {
+  width: 100%;
+}
+
+.wrap_login_page {
+  height: 800px;
+}
+
+.box_hearder {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  padding-bottom: 8px;
+  background: url(../images/bg_header.png) bottom repeat-x #2c4887;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 286px;
+  height: 42px;
+  background: url(../images/logo.png) no-repeat;
+}
+
+.box_hearder .btn_join {
+  display: block;
+  width: 204px;
+  height: 32px;
+  background: url(../images/logo.png) no-repeat;
+}
+
+.box_join {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 230px;
+  height: 48px;
+}
+
+.box_join:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.box_join .login {
+  height: 14px;
+  padding-top: 36px;
+}
+
+.box_join .login li {
+  float: left;
+  width: 142px;
+  height: 14px;
+  margin-right: 10px;
+  border-right: 1px solid #cdcdcd;
+}
+
+.box_join .login li.end {
+  border: none;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.box_join .txt_create {
+  display: inline-block;
+  width: 132px;
+  height: 14px;
+  background: url(../images/txt_create.png) no-repeat;
+}
+
+.box_join .txt_login {
+  display: inline-block;
+  width: 48px;
+  height: 14px;
+  background: url(../images/txt_login.png) no-repeat;
+}
+
+/* 濡쒓렇�멸���*/
+.box_login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 300px;
+  margin: -150px 0 0 -300px;
+  background: #f2f2f2;
+}
+
+.box_login1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 327px;
+  margin: -164px 0 0 -300px;
+  background: #f2f2f2;
+}
+
+.box_login2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 243px;
+  margin: -121px 0 0 -300px;
+  background: #f2f2f2;
+}
+
+.h4_login {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  width: 51px;
+  height: 22px;
+  background: url(../images/tit_login.png) no-repeat;
+}
+
+.h4_pw {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  width: 184px;
+  height: 22px;
+  background: url(../images/tit_pw.png) no-repeat;
+}
+
+.h4_help {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  width: 136px;
+  height: 22px;
+  background: url(../images/tit_p_help.png) no-repeat;
+}
+
+.txt_loginfalse {
+  font-family: gulim;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ff0000;
+  margin-bottom: 5px;
+}
+
+.txt_explanation {
+  position: absolute;
+  top: 56px;
+  width: 520px;
+  font-family: gulim;
+  font-size: 13px;
+  font-weight: bold;
+  color: #999;
+}
+
+.log {
+  width: 530px;
+  padding: 68px 0 0 35px;
+}
+
+.log_reset {
+  padding: 95px 0 0 35px;
+}
+
+.log_help {
+  padding: 116px 0 0 35px;
+}
+
+.log:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.log .titles {
+  float: left;
+  display: inline-block;
+  width: 170px;
+  height: 51px;
+  padding-left: 30px;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  background: #fff;
+  font-size: 16px;
+  color: #3b5998;
+  font-weight: bold;
+  line-height: 51px;
+}
+
+.log .titles1 {
+  float: left;
+  display: inline-block;
+  width: 170px;
+  height: 51px;
+  padding-left: 30px;
+  border-right: 1px solid #ebebeb;
+  background: #fff;
+  font-size: 16px;
+  color: #3b5998;
+  font-weight: bold;
+  line-height: 51px;
+}
+
+.log .wemail {
+  float: left;
+  display: inline-block;
+  width: 329px;
+  height: 41px;
+  padding-top: 10px;
+  border-bottom: 1px solid #ebebeb;
+  background: #fff;
+}
+
+.log .detail {
+  width: 260px;
+  height: 29px;
+  margin-left: 10px;
+  color: #777;
+}
+
+.box_button {
+  width: 100%;
+  height: 36px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.box_button .btn_login {
+  width: 102px;
+  height: 36px;
+  background: url(../images/btn_login.png) no-repeat;
+}
+
+.box_button .btn_save {
+  width: 168px;
+  height: 36px;
+  background: url(../images/btn_save.png) no-repeat;
+}
+
+.box_button .btn_reset {
+  width: 224px;
+  height: 36px;
+  background: url(../images/btn_reset.png) no-repeat;
+}
+
+.txt_fogot {
+  position: absolute;
+  top: 260px;
+  left: 35px;
+  font-size: 13px;
+  color: #999;
+  font-family: gulim;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.round {
+  border: 1px solid #C4C4C4;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 1px 0 #F1F1F1;
+  color: #777;
+  padding-left: 8px;
+}
+
+/* Join */
+.wrap_join {
+  width: 1160px;
+  padding-top: 23px;
+  margin: 0px auto;
+}
+
+.h2_create {
+  width: 223px;
+  height: 23px;
+  margin-bottom: 18px;
+  background: url(../images/tit_create.png) no-repeat;
+}
+
+.h3_admin {
+  width: 211px;
+  height: 18px;
+  margin: 40px 0 10px;
+  background: url(../images/tit_admin.png) no-repeat;
+}
+
+.h3_company {
+  width: 135px;
+  height: 22px;
+  margin: 30px 0 6px;
+  background: url(../images/tit_company.png) no-repeat;
+}
+
+.box_account {
+  padding: 20px 0 20px 20px;
+  background: #f2f2f2;
+}
+
+.tbl_account {
+  width: 1120px;
+  background: #fff;
+}
+
+.tbl_account th {
+  height: 51px;
+  padding-left: 30px;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding-left: 31px;
+  font-size: 16px;
+  color: #3b5998;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.tbl_account th.end {
+  border-bottom: 0px;
+}
+
+.tbl_account td {
+  height: 51px;
+  padding-left: 20px;
+  border-bottom: 1px solid #ebebeb;
+  padding-left: 31px;
+  font-size: 13px;
+  color: #777;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.tbl_account td.end {
+  border-bottom: 0px;
+}
+
+.rdo_agency {
+  margin-left: 30px;
+}
+
+.inp_short {
+  width: 270px;
+  height: 29px;
+}
+
+.inp_long {
+  width: 450px;
+  height: 29px;
+}
+
+.btn_account {
+  width: 171px;
+  height: 36px;
+  background: url(../images/btn_account.png) no-repeat;
+}
+
+.btnT1 {
+  background: #3b5998;
+  color: #fff;
+  font-weight: bold;
+  border: 0 none;
+}
+
+.btnResetPassword {
+  width: 200px;
+  height: 36px;
+  font-size: 18px;
+}
+
+.btnT1.btnBigS {
+  box-shadow: 1px 1px 0px #334e8d inset,2px 2px 0px #385594 inset;
+  border-bottom: 1px solid #5873ab;
+  border-right: 1px solid #5873ab;
+}
+
+.copyright {
+  margin-top: 10px;
+  text-align: center;
+  color: #e2e2e2;
+  font-size: 11px;
+  font-family: '굴림', Gulim, Arial;
+  height: 24px;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.btn_comm {
+  border: 0;
+  background: #777;
+  color: #fff;
+  text-align: center;
+  font: bold 13px/23px gulim,"굴림";
+}
+
+.btn_password {
+  width: 144px;
+  height: 25px;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=login.css.map */

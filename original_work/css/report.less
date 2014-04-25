@@ -1,0 +1,886 @@
+// Use Summary or performance
+.r_sop {
+  .sContent;
+  .innerSection{
+    position:relative;
+    height:324px;
+    background:url(../images/report/bg_summaryperformance.png) no-repeat 0 0 #fcfcfc;
+    span {
+      position:absolute;
+      text-align:center;
+      font-size:26px;
+      font-weight:bold;
+      font-family:Arial;
+      color : #777;
+      display:block;
+      width:200px;
+    }
+    .impression {
+      left:84px;
+      top:117px;
+    }
+    .ctr {
+      left:242px;
+      top:207px;
+    }
+    .click {
+      left:429px;
+      top:158px;
+    }
+    .cpm {
+      left:656px;
+      top:37px;
+    }
+    .cpc {
+      left:656px;
+      top:138px;
+    }
+    .spent {
+      left:917px;
+      top:233px;
+    }
+  }
+
+}
+
+.r_conversion {
+  .sContent;
+  .innerSection{
+    position:relative;
+    height:350px;
+    background:url(../images/report/bg_conversion.png) no-repeat 0 0 #fcfcfc;
+    span {
+      position:absolute;
+      text-align:center;
+      font-size:26px;
+      font-weight:bold;
+      font-family:Arial;
+      color : #777;
+      display:block;
+      width:200px;
+    }
+    .conversion {
+      left:91px;
+      top:151px;
+    }
+    .cpa {
+      left:314px;
+      top:36px;
+    }
+    .conversionrate {
+      left:353px;
+      top:234px;
+    }
+    .pagelike {
+      left:726px;
+      top:166px;
+    }
+    .cpl {
+      left:963px;
+      top:213px;
+    }
+  }
+}
+
+.r_exper {
+  .sContent;
+  .innerSection{
+    position:relative;
+    height:350px;
+    background:url(../images/report/bg_externalperformance.png) no-repeat 0 0 #fcfcfc;
+    margin-bottom:30px;
+    span {
+      position:absolute;
+      text-align:center;
+      font-size:26px;
+      font-weight:bold;
+      font-family:Arial;
+      color : #777;
+      display:block;
+      width:200px;
+    }
+    .registration {
+      left:221px;
+      top:87px;
+    }
+    .addcart {
+      left:335px;
+      top:201px;
+    }
+    .sales {
+      left:594px;
+      top:181px;
+      color : #ffffff;
+      font-size:30px;
+      letter-spacing:-1px;
+    }
+    .roas {
+      left:953px;
+      top:168px;
+      font-size:30px;
+      letter-spacing:-1px;
+    }
+  }
+
+  .tableWrap {
+    width:24.91379310344828%;
+    table {
+      th {
+        width : 33.6358%;
+      }
+    }
+    .infoLine {
+      span {
+        &.sWidth1 {
+          width: 20.55749128919861%;
+        }
+        &.sWidth2 {
+          width: 22.99651567944251%;
+        }
+        &.sWidth3 {
+          width: 20.55749128919861%;
+        }
+        &.sWidth4 {
+          width : 35.88850174216028%;
+        }
+        img {
+          margin-right:4px;
+        }
+      }
+    }
+  }
+  .chartWrap {
+    width : 75.08620689655172%;
+    float:left;
+    .innerChartWrap {
+      margin-left:25px;
+    }
+  }
+}
+
+// Use Advanced report
+
+//리포트 그래프 레이아웃
+.reportGraphyL {
+  .graphInfo {
+    float:left;
+    .innerGraphInfo {
+      font-family : '굴림',Gulim,Arial;
+      font-size:13px;
+      color : #777777;
+      line-height:29px;
+      padding-left:14px;
+      border:1px solid #d9d9d9;
+    }
+  }
+  .graph {
+    float:left;
+  }
+}
+
+.r_a_click {
+  .sContent;
+  .graphInfo {
+    width : 10.86206896551724%;
+    .innerGraphInfo {
+      height: 119px;
+    }
+  }
+  .graph {
+    width : 89.13793103448276%;
+    .innerGraph {
+      margin-left:58px;
+    }
+  }
+}
+.r_a_conversion {
+  .sContent;
+  .graphInfo {
+    width:13.36206896551724%;
+    .innerGraphInfo {
+      height:199px;
+    }
+  }
+  .graph {
+    width : 86.63793103448276%;
+    .innerGraph {
+      margin-left:50px;
+    }
+  }
+}
+
+.r_a_roas {
+  .sContent;
+  .graphInfo {
+    width:13.36206896551724%;
+    .innerGraphInfo {
+      height:90px;
+    }
+  }
+  .graph {
+    width : 86.63793103448276%;
+    .innerGraph {
+      margin-left:50px;
+    }
+  }
+}
+
+
+.r_a_itc {
+  .sContent;
+  .innerITC {
+    height:317px;
+    background:#f5f5f5;
+    // 이안에 바로 밑 자식들은 float:left
+    > * {
+      float:left;
+    }
+    .path_imp_container {
+      width:312px;
+      height:100%;
+    }
+    .path_ctr_container {
+      font-family : Arial;
+      font-weight:bold;
+      width:150px;
+      margin:76px 0 0 43px;
+      li {
+        position:relative;
+        width:100%;
+        height:64px;
+        background:url(../images/report/bg_mouse.png) no-repeat 100% 100%;
+        font-size:16px;
+        text-align: center;
+        &.first {
+          color : #99c1e5;
+        }
+        &.second {
+          color : #f28e96;
+          margin-top:39px;
+        }
+        .text{
+          display:block;
+          float:left;
+          position:relative;
+          top:24px;
+          width:70px;
+          margin-left:10px;
+
+        }
+        .number {
+          display:block;
+          float:left;
+          font-size:26px;
+          position:relative;
+          top:28px;
+          width:50px;
+        }
+      }
+    }
+    .path_cnc_container {
+      width:539px;
+      height:100%;
+      background:url(../images/report/bg_cnc_container.png) no-repeat 0 0;
+      margin-left:116px;
+      >div {
+        float:left;
+      }
+      .path_click_container {
+        width:200px;
+        height:100%;
+      }
+      .path_conversion_container {
+        width:276px;
+        height:100%;
+        margin-left:46px;
+      }
+    }
+  }
+}
+
+// Use insight
+
+.r_i_fans {
+  .sContent;
+}
+
+.r_gNa_likeS {
+  .sContent;
+  .r_gNa_a1 , .r_likeS {
+    float:left;
+    width:570px;
+  }
+  .r_gNa_a1 {
+    > div {
+      height:430px;
+      padding-top:16px;
+      background : #fcfcfc;
+      .genderSection {
+        margin: 0 auto;
+      }
+      .graph {
+        margin-top: 10px;
+      }
+    }
+  }
+  .r_likeS {
+    margin-left:20px;
+    > div {
+      height: 447px;
+      background : #fcfcfc;
+    }
+    .r_likeS_Graph , table {
+      float:left;
+    }
+    .r_likeS_Graph {
+      width:325px;
+    }
+    .tableType3 {
+      margin:67px 0 0 10px;
+      th {
+        width:130px;
+        height:51px;
+      }
+      td {
+        width:42px;
+      }
+    }
+  }
+}
+
+//국가 리스트
+.r_i_cntNlang {
+  .sContent;
+  ul.nationList {
+    font-family :Arial;
+    background : #fcfcfc;
+    padding: 21px 66px;
+    li {
+      float:left;
+      margin-left:57px;
+      &:first-child {
+        margin-left:0px;
+      }
+      table {
+        table-layout: fixed;
+        width:160px;
+        th {
+          font-size:14px;
+          color : #999;
+          font-weight:normal;
+          height:32px;
+          text-align:center;
+          &.c_name {
+            width:114px;
+          }
+          > img {
+            padding:3px;
+            border: 1px solid #e6e6e6;
+            background : #fff;
+          }
+        }
+        td {
+          font-weight:bold;
+          font-size:24px;
+          color : #777;
+          text-align:center;
+        }
+      }
+    }
+  }
+}
+
+.r_i_ptayp {
+  .sContent;
+  .innerSection {
+    background :#fcfcfc;
+  }
+}
+
+.r_gNa_a2 {
+  .sContent;
+  .innerSection {
+    background :#fcfcfc;
+    .graph , .genderSection {
+      float:left;
+    }
+    .genderSection {
+      margin-left:40px;
+    }
+  }
+}
+
+.r_i_impression {
+  .sContent;
+  .innerSection {
+    background: #fcfcfc;
+  }
+}
+
+.r_i_reach {
+  .sContent;
+  .innerSection {
+    background: #fcfcfc;
+  }
+}
+
+.r_i_userAnalytics {
+  .sContent;
+  .innerSection {
+    height:153px;
+    background :#fcfcfc;
+    .userAnalytics_List {
+      padding-top:49px;
+      li {
+        float : left;
+        margin-left:131px;
+        &:first-child {
+          margin-left:48px;
+        }
+        dl {
+          font-family:Arial;
+          padding-left:65px;
+          letter-spacing:-1px;
+
+          &.pageView {
+            background:url(../images/report/useranalytics/icon_page_view.png) no-repeat 0 0;
+          }
+          &.unqVisitor {
+            background:url(../images/report/useranalytics/icon_unq_visitor.png) no-repeat 0 0;
+          }
+          &.engagedUser {
+            background:url(../images/report/useranalytics/icon_engaged_user.png) no-repeat 0 0;
+          }
+          dt {
+            color : #3b5998;
+            font-size:17px;
+            padding-left:9px;
+            padding-bottom:2px;
+            width: 195px;
+            border-bottom: 1px solid #b3b3b3;
+          }
+          dd {
+            font-size:29px;
+            color : #777;
+            padding-left:5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.r_i_genderNage {
+  font-family:Arial;
+  .sContent;
+  ul {
+    padding:20px;
+    background : #fcfcfc;
+    > li {
+      margin-left:50px;
+      float:left;
+      &:first-child {
+        margin-left:0px;
+      }
+      h4 {
+        padding-left:8px;
+        padding-bottom:6px;
+        width:332px;
+        border-bottom:1px solid #d9d9d9;
+        font-weight:bold;
+        color :#3b5999;
+        font-size:20px;
+      }
+      .genderOList {
+        margin:30px 0 0 60px;
+      }
+    }
+  }
+}
+
+//성별 연령별 순위 리스트 스타일
+
+.genderOList {
+  width:224px;
+  height:274px;
+  position:relative;
+  overflow:hidden;
+  li {
+    position:absolute;
+    font-family:Arial;
+    &.small {
+      width:88px;
+      height:103px;
+      .ageGroup {
+        left:22px;
+        font-size:16px;
+      }
+      .percent {
+        font-size:20px;
+        width:40px;
+        top:20px;
+        left:22px;
+      }
+      //위치잡기
+      &.first {
+        left:0px;
+        top:0px;
+      }
+      &.second {
+        left:0px;
+        bottom:0px;
+      }
+      &.third {
+        right:0px;
+        bottom:0px;
+      }
+    }
+    &.sFemale {
+      background:url(../images/report/gender/bg_small_female.png) no-repeat 0 2px;
+      .ageGroup {
+        color :#d5323f;
+      }
+    }
+    &.sMale {
+      background:url(../images/report/gender/bg_small_male.png) no-repeat 0 2px;
+      .ageGroup {
+        color :#3b78bd;
+      }
+    }
+    // genderOList 에서 첫번째꺼
+    &:first-child {
+      width:146px;
+      height:162px;
+      // 클래스이름이 bMale일경우
+      &.bMale {
+        background:url(../images/report/gender/bg_big_male.png) no-repeat 0 2px;
+        .ageGroup {
+          color :#3b78bd;
+        }
+      }
+      // 클래스이름이 bFemale일경우
+      &.bFemale {
+        background:url(../images/report/gender/bg_big_female.png) no-repeat 0 2px;
+        .ageGroup {
+          color :#d5323f;
+        }
+      }
+      .ageGroup {
+        font-size:24px;
+        left:40px;
+      }
+      .percent {
+        width:60px;
+        font-size:30px;
+        top:34px;
+        left:40px;
+      }
+    }
+    span {
+      &.listNumber{
+        position:absolute;
+        left:0px;
+        top:2px;
+        width:23px;
+        height:23px;
+        text-indent:-9999em;
+        overflow:hidden;
+      }
+      &.no1 {
+        background:url(../images/report/gender/icon_no1.png) no-repeat 0 0;
+      }
+      &.no2 {
+        background:url(../images/report/gender/icon_no2.png) no-repeat 0 0;
+      }
+      &.no3 {
+        background:url(../images/report/gender/icon_no3.png) no-repeat 0 0;
+      }
+      &.ageGroup {
+        font-weight:bold;
+        position:absolute;
+        bottom:0px;
+      }
+      &.percent {
+        position:absolute;
+        display:block;
+        color : #fff;
+        font-weight:bold;
+        text-align:center;
+      }
+    }
+  }
+}
+
+.r_i_interaction {
+  .sContent;
+  .innerSection {
+    background : #fcfcfc;
+  }
+}
+
+.r_i_contents {
+  .sContent;
+
+  .innerSection {
+    background :#fcfcfc;
+    padding:27px 20px 30px 20px;
+    h4 {
+      font-family:Arial;
+      font-weight:bold;
+      font-size:20px;
+      color : #3b5999;
+      letter-spacing:-1px;
+    }
+    .graph {
+      float:left;
+      //임시 크기지정
+      width:181px;
+      height:181px;
+      margin:21px 0 0 60px;
+    }
+    .tableType3 {
+      float:left;
+      margin:19px 0 0 80px;
+      th {
+        width:50px;
+        &.setHeight {
+          height:70px;
+        }
+      }
+      td {
+        width:30px;
+      }
+    }
+    .tableContents1 {
+      float:left;
+      margin-left:180px;
+      margin-top:2px;
+    }
+    .tableContents2 {
+      margin-top:50px;
+    }
+  }
+}
+
+.tableContents1 {
+  width:539px;
+  font-family:Arial;
+  tr {
+    &.tr1 {
+      th {
+        border-bottom: 2px solid #d9d9d9;
+        height:47px;
+        &.first {
+          width:257px;
+        }
+        &.second {
+          width:139px;
+          font-size:16px;
+          color : #999;
+        }
+        &.third {
+          width:143px;
+          font-size:16px;
+          color : #c3de99;
+        }
+      }
+    }
+    &.tr2 {
+      > * {
+        border-bottom:1px solid #d9d9d9;
+      }
+      .first {
+        padding-left:20px;
+        font-size:16px;
+        color : #999;
+        text-align:left;
+        height:50px;
+      }
+      .second , .third {
+        font-weight:bold;
+        font-size:22px;
+        text-align:center;
+      }
+      .second {
+        color : #777;
+      }
+      .third {
+        color : #c3de99;
+      }
+    }
+  }
+}
+
+.tableContents2 {
+  font-family:Arial;
+  text-align:center;
+  .firstTR {
+    //Width Setting
+
+    .thOne {
+      width:60px;
+      height:35px;
+    }
+    .thTwo {
+      width:350px;
+      padding-left:10px;
+    }
+    .thThree {
+      width: 100px;
+    }
+    .thFour {
+      width: 100px;
+      background:url(../images/report/tc2/bg_borderline.png) no-repeat 0 50%;
+    }
+    th {
+      font-size:13px;
+      border-bottom:2px solid #d9d9d9;
+      color : #999;
+      font-weight:normal;
+      &.msgTH {
+        text-align:left;
+      }
+    }
+  }
+  .secondTR {
+    th , td {
+      font-size:16px;
+      border-bottom:1px solid #d9d9d9;
+      color : #777;
+      font-weight:normal;
+    }
+    .msgTD {
+      text-align:left;
+      line-height:24px;
+      padding-left:15px;
+      height:70px;
+      .dateText {
+        font-size:13px;
+        color : #999;
+      }
+    }
+  }
+}
+
+
+// 그래프에 대한 설명 보충용 테이블
+
+.tableType3 {
+  th{
+    font-size:16px;
+    text-align:left;
+    color :#999;
+  }
+  td {
+    font-size:26px;
+    font-weight:bold;
+    color : #777;
+    text-align:center;
+  }
+}
+// Use Raw data
+
+.r_r_adLevel {
+  .sContent;
+  .titleH3 {
+    float:left;
+  }
+  .btnDownExcel {
+    float:right;
+  }
+}
+.r_r_campaignLevel {
+  .sContent;
+  .titleH3 {
+    float:left;
+  }
+  .btnDownExcel {
+    float:right;
+  }
+}
+
+
+// Use Custom graph
+
+.r_c_graph {
+  .sContent;
+}
+
+// Use Reach report
+
+// Use Report Common Style
+.sContent {
+  padding:0 20px;
+  margin-top:30px;
+}
+.r_ads , .r_campaign {
+  .sContent;
+}
+
+//아이콘
+span.iconR {
+  display:block;
+  float:left;
+  width:16px;
+  height:11px;
+  position:relative;
+  top:9px;
+  margin-right:8px;
+  background-image:url(../images/report/icon/is_icon.png);
+  &.i_cost {
+    background-position:0 0;
+  }
+  &.i_clicks {
+    background-position:0 -20px;
+  }
+  &.i_ctr {
+    background-position:0 -40px;
+  }
+  &.i_impression {
+    background-position:0 -60px;
+  }
+  &.i_converrate {
+    background-position:-20px 0;
+  }
+  &.i_conver1 {
+    background-position:-20px -20px;
+  }
+  &.i_conver2 {
+    background-position:-20px -40px;
+  }
+  &.i_conver3 {
+    background-position:-20px -60px;
+  }
+  &.i_conver4 {
+    background-position:-40px 0;
+  }
+  &.i_roas {
+    background-position:-40px -20px;
+  }
+  &.i_sales1 {
+    background-position:-40px -40px;
+  }
+  &.i_sales2 {
+    background-position:-40px -60px;
+  }
+}
+
+.btnDownloadExcel {
+  font-size:18px;
+  width:156px;
+  height:36px;
+}
+
+// report에서만 사용됨.
+.alignSetting {
+  overflow:hidden;
+  .titleH3 {
+    float:left;
+  }
+  select {
+    float:right;
+  }
+  button {
+    float:right;
+  }
+}

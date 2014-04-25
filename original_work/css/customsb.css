@@ -1,0 +1,39 @@
+.selectBox {
+    position:relative;
+    font-size: 13px;
+    font-weight: bold;
+    color: #777777;
+    height: 29px;
+    line-height: 29px;
+    width: 270px;
+    text-indent:10px;
+}
+.selectBox .selectTitle {
+    display:block;
+    cursor : pointer;
+    background:#f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+.selectBox .selectList {
+    width:100%;
+    border-radius: 5px;
+    display:none;
+    position:absolute;
+    background:#ffffff;
+    border : 1px solid #e3e3e3;
+    z-index:10;
+    left:-1px;
+}
+.selectBox .selectList li {
+    cursor : pointer;
+}
+.selectBox .arrowSelect {
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: url(../images/icon_arr_selectbox.png) no-repeat 0 0;
+    top: 50%;
+    margin-top: -2px;
+    right: 7px;
+}

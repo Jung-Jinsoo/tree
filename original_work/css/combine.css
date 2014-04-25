@@ -1,0 +1,81 @@
+/* ETC */
+.create-ads-intro .sub-title {
+  color: #3b5998;
+  font-size: 18px;
+  font-weight: 800;
+}
+.create-ads-intro .tab-wrap .tab-list li {
+  float: left;
+  margin-left: 17px;
+}
+.create-ads-intro .tab-wrap .tab-list li a {
+  display: block;
+  width: 202px;
+  height: 219px;
+  box-sizing: border-box;
+  border: 1px solid #ced7e9;
+  padding: 20px 10px 0;
+}
+.create-ads-intro .tab-wrap .tab-list li a:hover {
+  background: #e1e2e4;
+}
+.create-ads-intro .tab-wrap .tab-list li .tab-image-wrap, .create-ads-intro .tab-wrap .tab-list li .tab-term {
+  text-align: center;
+}
+.create-ads-intro .tab-wrap .tab-list li .tab-term {
+  font-size: 18px;
+  font-weight: 800;
+  color: #3b5998;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  margin-bottom: 15px;
+}
+.create-ads-intro .tab-wrap .tab-list li .tab-desc {
+  font-size: 11px;
+  color: #777;
+  line-height: 16px;
+}
+.create-ads-intro .tab-wrap .tab-list li:first-child {
+  margin-left: 0;
+}
+.create-ads-intro .tab-info {
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 10px;
+  border: 1px solid #ced7e9;
+  width: 860px;
+  padding: 40px;
+  background-color: #fcfcfc;
+}
+.create-ads-intro .tab-info .text {
+  font-size: 13px;
+  color: #777777;
+}
+.create-ads-intro .tab-info .text .point {
+  color: #ff9d4e;
+}
+.create-ads-intro .tab-info .tab-info-image {
+  margin-top: 35px;
+  text-align: center;
+}
+.create-ads-intro .tab-info .arrow {
+  position: absolute;
+  left: 94px;
+  top: -9px;
+  width: 13px;
+  height: 9px;
+  background: url(../images/createAds/arrow-tab-info.png) no-repeat 0 0;
+}
+.create-ads-intro .tab-info .tab-info1 {
+  display: none;
+  display: block;
+}
+.create-ads-intro .tab-info .tab-info2 {
+  display: none;
+}
+.create-ads-intro .tab-info .tab-info3 {
+  display: none;
+}
+.create-ads-intro .tab-info .tab-info4 {
+  display: none;
+}

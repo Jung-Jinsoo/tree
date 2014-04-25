@@ -4,11 +4,20 @@
 $color-blue : #3b5998;
 $color-gray : #777;
 $color-white : #fff;
+$min-width : 1200px;
+
+
+.placeholder {
+	color : #aaa;
+}
+.radius {
+	border-radius : 5px;
+}
 
 
 // 레이아웃 관련된 스타일
 .wrap {
-	min-width : 1200px;
+	min-width : $min-width;
 }
 
 .header-wrap {
@@ -202,7 +211,130 @@ $color-white : #fff;
 }
 
 
+// Footer Style
 
+.footer-wrap {
+	overflow:hidden;
+	padding:20px 0;
+	background-color : #edeff1;		
+	width:100%;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	.footer {
+		margin:0 auto;
+		color : #bac1c8;
+		width : 1200px;
+		.footer-logo , 
+		.footer-info {
+			float:left;
+		}
+		.footer-logo {
+			margin-right:100px;
+		}
+		.footer-info {
+			line-height:18px;
+			color : #3b5998;
+			address {
+				font-style:normal;
+				span {
+					padding-right:10px;
+				}
+				.link-biz-info {
+					text-decoration : underline;
+					color : #3b5998;
+					font-weight:700;
+					&:hover {
+						font-weight:800;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Login Page
+
+.login-wrap {
+	background-color : #f2f2f2;
+	padding:20px 35px;
+	width: 600-70px;
+	height: 300-40px;
+	top:50%;		
+	margin-top: -150px;
+	left: 50%;
+	margin-left : -300px;	
+	position:absolute;;
+	.login-form {
+		background-color : #fff;
+		margin-top:20px;
+		label {
+			font-size:16px;
+			color:#3b5998;
+			font-weight:800;
+		}
+	}
+	.link-forgot-pw {
+		font-size:13px;
+		color:#999;
+		font-weight:800;
+		text-decoration:underline;
+		position:absolute;
+		left:35px;
+		bottom:25px;		
+		&:hover {
+			color : #3b5998;
+		}
+	}
+}
+.email-wrap {
+	border-bottom: 1px solid #ebebeb;
+}
+.email-wrap , .password-wrap {
+	height:51px;
+	label {
+		display:inline-block;
+		width:200-30px;
+		padding-left:30px;
+		line-height:51px;
+	}
+	label , .input-wrap {
+		float:left;
+	}
+	.input-wrap {
+		padding:10px;
+		border-left: 1px solid #ebebeb;
+		&:first-child {
+			
+		}		
+		input {
+			width:260px;
+			padding-left:8px;
+			height:29px;
+			line-height:29px;
+			border : 1px solid #c4c4c4;
+		}
+	}
+}
+
+.button-center {
+	margin-top:20px;
+	text-align:center;	
+}
+
+/* Input Style */
+.input-date {
+	border : 1px solid #ddd;
+	padding : 0 10px;
+	line-height : 31px;	
+	background : url(../images/common/icon/input-date.png) no-repeat right 5px top 50%;
+}
+.input-large {
+	width : 250px;	
+}
+.input-short {
+
+}
 
 
 
@@ -523,7 +655,7 @@ $color-white : #fff;
 	min-width: 150px;
 	position: relative;
 	border: solid 1px #c4c4c4;
-	line-height: 2.0;
+	line-height: 1.231;
 	text-decoration: none;
 	text-align: left;
 	color: #000;
@@ -608,7 +740,7 @@ $color-white : #fff;
 }
 
 .selectBox-options LI A {
-	line-height: 2.0;
+	line-height: 1.231;
 	padding: 0 .5em;
 	white-space: nowrap;
 	overflow: hidden;
@@ -633,7 +765,7 @@ $color-white : #fff;
 	color: #666;
 	background: #EEE;
 	font-weight: bold;
-	line-height: 1.5;
+	line-height: 1.231;
 	padding: 0 .3em;
 	white-space: nowrap;
 }
@@ -779,12 +911,19 @@ $color-white : #fff;
 	}
 }
 
+
+.period-table {
+	.title {
+		font-size:16px;
+		color : $color-blue;
+	}
+}
+
 .ad-table {
 	$border-color : #bcbcbc;
 	margin-top:10px; // 테스트 목적으로 집어넣음
 	table-layout:fixed;
 	word-break : break-all;
-	// ad-table에서 thead 스타일
 	thead {
 		th {
 			height:124-13px;			
@@ -1039,4 +1178,287 @@ $color-white : #fff;
 			}
 		}
 	}	
+}
+
+
+
+
+
+
+
+
+
+
+// jQuery UI datePicker Custom Style
+
+.ui-datepicker {
+	border:1px solid #d9d9d9;
+	width:226px;
+	// height:234px;
+	padding-bottom:6px;
+	overflow:hidden;
+	background:#fff;
+	display:none;
+	// header
+	.ui-datepicker-header {
+		position:relative;
+		.ui-datepicker-prev, .ui-datepicker-next {
+			width:11px;
+			height:17px;
+			overflow:hidden;
+			text-indent:-9999em;
+			position:absolute;
+			top:14px;
+			cursor : pointer;
+		}
+		.ui-datepicker-prev {
+			background:url(../images/common/button/datepicker_prev.png) no-repeat 0 0;
+			left:19px;
+
+		}
+		.ui-datepicker-next {
+			background:url(../images/common/button/datepicker_next.png) no-repeat 0 0;
+			right:21px;
+		}
+	}
+	.ui-datepicker-title {
+		height:42px;
+		text-align:center;
+		font-size:16px;
+		color : #222;
+		font-weight:bold;
+		line-height:46px;		
+	}
+	// header end 
+	.ui-datepicker-calendar {
+		width:100%;
+		thead {
+			tr {
+				th {
+					background-color:#fbfbfb;
+					font-size:12px;
+					color:#777;
+					border : {
+						top : 1px solid #eee;
+						bottom : 1px solid #eee;
+					}
+					// width : 33px;
+					padding:6px 0 7px;
+					&.ui-datepicker-week-end {
+						color : #5266b2;
+						&:first-child {
+							color :#f44157;
+						}
+					}
+				}
+			}
+		}
+		tbody {
+			tr {
+				td {
+					height:25px;
+					font-size:11px;
+					text-align:center;
+					a {
+						color : #333333;
+						display:block;
+						width:20px;
+						height:20px;
+						text-align:center;
+						margin:0 auto;
+						line-height:20px;
+						&:hover {
+							background: #e3e3e3;
+						}
+
+					}
+					&.ui-datepicker-current-day a {
+						background:#e3e3e3;
+					}
+					&.ui-datepicker-other-month {
+						color : #b3b3b3 !important;
+					}
+					&.ui-datepicker-week-end {
+						a {
+							color : #5266b2;
+						}
+						&:first-child {
+							a {
+								color : #f44157;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
 }

@@ -1,0 +1,232 @@
+/* For modern browsers */
+.clfix:before,.clfix:after{display:table;content:''}
+
+.clfix:after{clear:both}
+
+/* For IE 6/7 (trigger hasLayout) */
+.clfix{*zoom:1}
+
+
+.iframe-adView .headline input {
+  width: 528px !important;
+  height: 26px !important;
+  color: #707070;
+}
+.iframe-adView .bodytext textarea {
+  width: 528px;
+  height: 106px;
+  padding: 10px;
+  color: #707070;
+  border: 1px solid #d4d4d4;
+  resize: none;
+}
+.iframe-adView .images {
+  padding-bottom: 20px;
+}
+.iframe-adView .images > ul > li {
+  position: relative;
+  float: left;
+  width: 83px;
+  height: 83px;
+  background: url(../images/default_img_list.png) no-repeat 0 0;
+  border: 1px solid #d4d4d4;
+  margin-left: 8px;
+}
+.iframe-adView .images > ul > li:first-child {
+  margin-left: 0;
+}
+.iframe-adView .images > ul > li img {
+  max-width: 100%;
+}
+.iframe-adView .images > ul > li .btn-image {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 3px;
+}
+.iframe-adView .images > ul > li .btn-image .btn-remove {
+  float: right;
+  margin-right: 5px;
+}
+.iframe-adView .images > ul > li .btn-image .btn-copy, .iframe-adView .images > ul > li .btn-image .btn-add {
+  float: left;
+  margin-left: 5px;
+}
+.iframe-adView .images > ul > li .image-wrap img {
+  width: 83px;
+  height: 83px;
+}
+.iframe-adView .images > ul > li .image-size-view {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: -20px;
+  text-align: center;
+  color: #707070;
+}
+.iframe-adView .placement > ul > li {
+  float: left;
+  margin-left: 8px;
+}
+.iframe-adView .placement > ul > li:first-child {
+  margin-left: 0px;
+}
+.iframe-adView .placement > ul > li a {
+  display: block;
+  width: 178px;
+  height: 125px;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+.iframe-adView .placement > ul .desktop a {
+  background: url(../images/placement_desktop_normal.png) no-repeat 0 0;
+}
+.iframe-adView .placement > ul .desktop a:hover {
+  background: url(../images/placement_desktop_over.png) no-repeat 0 0;
+}
+.iframe-adView .placement > ul .right a {
+  background: url(../images/placement_right_normal.png) no-repeat 0 0;
+}
+.iframe-adView .placement > ul .right a:hover {
+  background: url(../images/placement_right_over.png) no-repeat 0 0;
+}
+.iframe-adView .placement > ul .mobile a {
+  background: url(../images/placement_mobile_normal.png) no-repeat 0 0;
+}
+.iframe-adView .placement > ul .mobile a:hover {
+  background: url(../images/placement_mobile_over.png) no-repeat 0 0;
+}
+.iframe-adView .placement > ul .active.desktop a {
+  background: url(../images/placement_desktop_active.png) no-repeat 0 0;
+}
+.iframe-adView .placement > ul .active.right a {
+  background: url(../images/placement_right_active.png) no-repeat 0 0;
+}
+.iframe-adView .placement > ul .active.mobile a {
+  background: url(../images/placement_mobile_active.png) no-repeat 0 0;
+}
+.iframe-adView .preview li {
+  float: left;
+  margin-left: 1px;
+}
+.iframe-adView .preview li a {
+  display: block;
+  width: 88px;
+  height: 28px;
+  background: #d4d4d4;
+  color: #fff;
+  line-height: 28px;
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.iframe-adView .preview li a:hover {
+  background: #3b5998;
+  color: #fff;
+}
+.iframe-adView .preview li:first-child {
+  margin-left: 0;
+}
+.iframe-adView .preview .viewer {
+  border: 1px solid #3b5998;
+  padding: 16px 12px;
+}
+.iframe-adView .option select {
+  width: 100%;
+}
+.iframe-adView .option .chk-box label {
+  color: #707070;
+  font-size: 12px;
+}
+
+.sub-content {
+  margin: 0 9px;
+  padding: 20px 0px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.sub-content .left-col {
+  float: left; 
+  width: 160px;
+  margin-right: 30px;
+}
+.sub-content .left-col p {
+  color: #707070;
+}
+.sub-content .left-col p:first-child {
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+}
+.sub-content .right-col {
+  float: left;
+  width: 550px;
+}
+
+.mobile-device-select li {
+  float: left;
+  margin-left: 8px;
+}
+.mobile-device-select li:first-child {
+  margin-left: 0px;
+}
+.mobile-device-select li a {
+  display: block;
+  width: 85px;
+  height: 85px;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+
+.mobile-device-select .ios-mobile {
+  background: url(../images/btn_ios_normal.png) no-repeat 0 0;
+}
+.mobile-device-select .android-mobile {
+  background: url(../images/btn_android_normal.png) no-repeat 0 0;
+}
+.mobile-device-select .active.ios-mobile {
+  background: url(../images/btn_ios_active.png) no-repeat 0 0;
+}
+.mobile-device-select .active.android-mobile {
+  background: url(../images/btn_android_active.png) no-repeat 0 0;
+}
+
+.display_none{display: none;}
+/* .option .option_div{width: 540px; min-height: 31px; margin-top: 10px; margin-bottom: 10px;}
+.option .option_name{float: left; width: 88px;}
+.option .option_select{position: relative; width: 440px; float: left;} */
+.mobile-show {margin-top: -10px; float: left; width: 440px;}
+
+
+
+.add-icon-wrap {
+	color : #707070;
+	margin-bottom:20px;
+}
+.add-icon-wrap .option_name{
+	float:left;
+	font-weight:bold;
+	margin-right: 20px;
+	font-size:12px;
+	width : 90px;
+}
+.add-icon-wrap .option_name span {
+	font-size:10px;
+	font-weight:normal;
+}
+.add-icon-wrap .icon_image {
+	float:left;
+}
+.add-icon-wrap .icon_image .list_add_icon_img1 li {
+	position:relative;
+	width : 83px;
+	height : 83px;
+	background : url(../images/default_img_list.png) no-repeat 0 0;
+	border:1px solid #d4d4d4;
+}
+.add-icon-wrap .icon_image .list_add_icon_img1 li .image-wrap > img {
+	width:83px;
+	height: 83px;
+}
+.add-icon-wrap .icon_image .list_add_icon_img1 li .image-size-view {
+	text-align:center;
+}

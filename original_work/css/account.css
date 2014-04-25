@@ -1,0 +1,387 @@
+
+.screen_out {display:block;overflow:hidden;position:absolute;left:-9999px;width:1px;height:1px;font-size:0;line-height:0;text-indent:-9999px;}
+.ir_pm {display:block;overflow:hidden;font-size:0px;line-height:0;text-indent:-9999px;} 
+
+.wrap_account{
+    
+}
+
+.box_info{padding:20px; margin-bottom:20px;  background:#f2f2f2; }
+.box_info_pb{margin-bottom: -33px;}
+
+/* title + button 횉체횇횂 */
+.box_more{padding-bottom: 0px;}
+.box_more:after { content: '';  display:block;  clear:both;}
+.box_more .stit_account{float:left;}
+.box_more .more{  float:right;}
+
+/* base button */
+.btn_comm{border:0;  background:#777;  color:#fff;  text-align:center;  font:bold 13px/23px gulim,"짹쩌쨍짼";}
+
+.box_more .btn_more {width:60px;height:23px;line-height:23px;} /* more button */
+.btn_addUser{width:82px;height:25px;background:#3b5998;line-height:25px;}
+.btn_password{width:144px;height:25px;line-height:25px;}
+.btn_edit{width:59px;height:22px;border-top:1px solid #8e8e8e;border-left:1px solid #8e8e8e;background:#999;line-height:22px;}
+.btn_edit1{width:60px;height:23px;background:#777;line-height:22px;}
+.btn_delete{width:60px;height:23px;background:#999;line-height:22px;}
+.btn_create{width:63px;height:25px;background:#3b5998;}
+
+.box_right{padding-top:8px;text-align:right;}
+/* 130510 쩌철횁짚 - 쨔철횈째�횑 쨍쨋횁첩째짧 */
+.box_right button {margin-left:4px;}
+.box_right button:first-child {margin-left:0px;}
+
+.tit_ad_info{
+	
+    margin-left: 3px;
+	
+}
+/* info table style */
+.tbl_info{width:100%;background:#fcfcfc;
+
+    margin-bottom: 30px;
+    
+    margin-top: 19px;
+    
+
+}
+.tbl_info caption{display:none;}
+.tbl_info th{
+  border-right: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+  color: #3B5998;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  padding:12px 0 12px 30px;
+  text-align: left;
+  vertical-align: middle;  
+}
+.tbl_info td{
+ border-bottom: 1px solid #EBEBEB;
+ padding:12px 0 12px 20px; 
+ font:bold 13px gulim,"짹쩌쨍짼";
+ color:#777;
+}
+
+.box_info_1{  
+  padding:20px; 
+}
+
+
+
+/* info2 style */
+.tbl_info2 {width:100%;}
+.tbl_info2_bb{border-bottom:1px solid #c1c1c1;}
+.tbl_info2 th{
+ background:#7B7977 url("../images/common/line_table.png") no-repeat scroll right bottom ;
+    color: #FFFFFF;
+    font-family: '짹쩌쨍짼',Gulim,Arial;
+    font-weight: bold;
+    padding:8px 0;
+    text-align: center;
+}
+.tbl_info2 th.end{
+ background:#7B7977;
+ }
+.tbl_info2 td{
+border-top: 1px solid #C1C1C1;
+    color: #777777;
+    font-family: '짹쩌쨍짼',Gulim,Arial;
+    font-size: 12px;
+    padding:8px 0;
+    text-align: center;
+}
+.tbl_info2 td.end{border-bottom: 1px solid #C1C1C1;}
+/* billing total 쨘횓쨘횖 */
+
+.tbl_info2 th.total{
+ border-top: 2px solid #777;
+ background:#dadada;
+ color:#777;
+ font-family: gulim,"짹쩌쨍짼";
+ font-size: 13px;
+ font-weight: bold;
+}
+.tbl_info2 td.total{
+ border-top: 2px solid #777;
+ background:#dadada;
+ color:#3b5998;
+ font-family: gulim,"짹쩌쨍짼";
+ font-size: 12px;
+ font-weight: bold; 
+}
+
+/* 횉횕쨈횥 횊짰�횓 횄챘쩌횘 째체쨌횄 쨔철횈째  */
+.box_confirm{padding:20px 0;background:#f2f2f2;text-align:center;}
+.box_confirm .btn_confirm{
+  width:100px;height:34px;  
+  border:1px solid #334e8d;background:#3b5998;
+  font:bold 18px Arial;color:#fff;
+}
+.box_confirm .btn_cancel{
+  width:100px;height:34px;  
+  border:1px solid #6b6b6b;background:#777;
+  font:bold 18px Arial;color:#fff;
+}
+
+
+
+/* �횚쨌횂 input */
+
+.inp_name{width:270px;height:29px;}
+.inp_url{width:450px;height:29px;}
+.inp_sub_address{width:270px;height:29px;}
+.slc_contry{width:290px;height:29px;}
+.inp_add_user{width:270px;height:29px;}
+.inp_pw{width:250px;height:29px;padding:0 10px;}
+.inp_cvv{width:50px;height:29px;}
+
+.inp_style1{ 
+  color: #777;
+  font-family: gulim,"짹쩌쨍짼";
+  font-size: 12px;
+  font-weight: bold;
+  padding:0 10px;
+}
+/* layer popup */
+.layer_password{
+  position:absolute;top:50%;left:50%;
+  width:475px;height:239px;
+  padding-left:30px;
+  margin:-120px 0 0 -252px;
+  background:#f2f2f2;
+}
+.layer_password .btn_x2{
+    display:block;
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:28px;height:28px;
+    background: url(../images/account/btn_close.png) no-repeat;
+  }
+.layer_password .ptit_pw{padding:26px 0 30px;}
+.layer_password .tbl_popup{width:445px;}
+.layer_password .tbl_popup th{ 
+  color: #3B5998;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  padding:8px 0 8px 30px;
+  text-align: left;
+  vertical-align: middle;  
+  letter-spacing:-1px;
+}
+.layer_password .tbl_popup td{ 
+  color: #777;
+  font-family: gulim,"짹쩌쨍짼";
+  font-size: 13px;
+  font-weight: bold;  
+}
+
+/* billing  */
+.wrap_card{margin-bottom:20px; overflow:hidden;}
+.wrap_card:after{content:'';clear:both;display:block;}
+
+.box_card{float:left;width:240px;height:160px;
+  margin-right:22px;
+  background:url(../images/account/bg_card.png) no-repeat;
+  color:#fff;font-family:"짹쩌쨍짼",gulim;font-size: 13px;font-weight:bold;
+}
+.box_card .card_name{padding:13px 9px 0;}
+.box_card .card_name .key{float:left;color:#969fcb;font-family:arial;font-size:14px;font-weight:bold;}
+.box_card .card_name .card_kind{float:right;color:#fff;font-family:"짹쩌쨍짼",gulim;font-size: 13px;font-weight:bold;}
+.box_card .card_number{padding-top:43px;text-align: center;}
+.box_card .card_date{padding-top:10px;text-align: center;}
+
+
+.box_billing{float:left;width:76.6%;padding-top:35px;}
+.tbl_billing{width:100%;background:#fff;}
+.tbl_billing th{
+  color: #3B5998;
+  font-family: Arial;
+  font-size: 16px;
+  padding:10px 0;
+  border-right:1px solid #ebebeb;
+  border-bottom:1px solid #ebebeb;
+  font-weight: bold;  
+  vertical-align: middle; 
+}
+.tbl_billing th.end{
+  border-bottom:0px;
+ }
+.tbl_billing td{
+  border-bottom:1px solid #ebebeb;
+  color: #777777;
+  font-family: '짹쩌쨍짼',Gulim;
+  font-weight: bold;
+  font-size: 12px;
+  padding:10px 0 10px 20px;
+}
+.tbl_billing td.end{border-bottom:0;}
+
+/* billing 쨩처쩌쩌쨘쨍짹창 */
+.box_billing_deatil{margin-bottom:30px;}
+
+/* layer popup billing*/
+.layer_billing{
+  padding-left:50px;
+  background:#f2f2f2;  
+}
+.layer_billing .btn_x2{
+    display:block;
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:28px;height:28px;
+    background: url(../images/account/btn_close.png) no-repeat;
+  }
+.layer_billing .ptit_bill{padding:26px 0 30px;}
+.layer_billing .tbl_pop_bill{width:615px;}
+.layer_billing .tbl_pop_bill th{ 
+  color: #3B5998;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding:8px 0 8px 10px;
+  text-align: left;
+  vertical-align: middle;  
+  letter-spacing:-1px;
+}
+.layer_billing .tbl_pop_bill td{ 
+  color: #777;
+  font-family: gulim,"짹쩌쨍짼";
+  font-size: 12px;
+  font-weight: bold;  
+}
+
+/* 쩐횏쨋첨쩌쨀횁짚 */
+.tbl_setting{width:100%;background:#fff;}
+.tbl_setting th{  
+  color: #3B5998;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding:10px 0 10px 30px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom:1px solid #ebebeb;
+}
+.tbl_setting th.nobd{border-bottom:0;}
+.tbl_setting th.item{  
+  padding:0 0 5px 0;
+  border: 0;
+  background:#f2f2f2;
+  color: #777;
+  font-family: gulim,"짹쩌쨍짼";
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+.tbl_setting td{   
+  border-bottom:1px solid #ebebeb;
+  border-left:1px solid #ebebeb;
+  color: #777;
+  font-family: gulim,"짹쩌쨍짼";
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+.tbl_setting td.second{
+  padding:10px 0 10px 20px;
+  text-align:left;
+}
+.tbl_setting td.nobd{border-bottom:0;}
+
+/* 2013-01-23 異붽�  */
+.pL30{padding-left: 30px;}
+.mL4{margin-left: 4px !important;}
+.btn_charge {
+    background: none repeat scroll 0 0 #3B5998;
+    border: 1px solid #5873AB;  
+    box-shadow: 1px 1px 0 #334E8D inset, 2px 2px 0 #385594 inset;    
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    height: 26px;
+    width: 62px;
+}
+.btnDate button.btn_searchs {
+    background: none repeat scroll 0 0 #3B5998;
+    border: 1px solid #5873AB;  
+    box-shadow: 1px 1px 0 #334E8D inset, 2px 2px 0 #385594 inset;    
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 17px;
+    height: 34px;
+    width: 102px;
+    border-radius: 0;
+    padding: 0;
+}
+
+.tbl_ad_manage_s{background: none repeat scroll 0 0 #FCFCFC;width: 100%;}
+
+.tbl_ad_manage_s th {
+    border-top: 1px solid #EBEBEB;
+    border-right: 1px solid #EBEBEB;
+    color: #3B5998;
+    font-size: 16px;
+    padding:8px 0;
+}
+.tbl_ad_manage_s th.first {
+    border-top: 0;    
+}
+
+.tbl_ad_manage_s td {
+    border-right: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+    padding-left: 13px;
+    font-family: arial;
+    font-size: 22px;
+    color: #777;
+    padding:8px 0;
+    text-align: center;
+}
+.tbl_ad_manage_s td.first{
+  border-top: 0;
+}
+.tbl_ad_manage_s td.end {border-top: 0;border-right: 0;}
+.tbl_ad_manage_s td.detail{text-align: left;padding-left:40px;}
+
+.txt_calender{width: 180px !important;}
+
+.box_tbl_chages{
+  padding: 20px;
+}
+
+.tbl_ad_manage_2 {    
+    width: 100%;
+}
+
+.tbl_ad_manage_2 th {
+    background: url("../images/common/line_table.png") no-repeat scroll left bottom #7B7977;
+    color: #FFFFFF;
+    font-family: '援대┝',Gulim,Arial;
+    font-weight: bold;
+    height: 34px;
+    text-align: center;
+}
+
+.tbl_ad_manage_2 td {
+    border-top: 1px dashed #C1C1C1;
+    color: #777777;
+    font-family: '援대┝',Gulim,Arial;
+    font-size: 12px;
+    height: 33px;
+}
+.tbl_ad_manage_2 td.first{border-top: 0;}
+.tbl_ad_manage_2 td.dates{text-align: center;}
+.tbl_ad_manage_2 td.detail{padding-left: 20px;}
+.tbl_ad_manage_2 td.money_c{text-align: right;padding-right: 20px;}
+
+.tbl_ad_manage_2 td.total{border-top:2px solid #d9d9d9;padding-top: 15px;}
+
+.btnAlignWrap_edit{
+		text-align: center;
+		margin-top: 60px;
+}

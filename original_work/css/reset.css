@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ul,ol,li,th,td,div,blockquote,pre,form,fieldset,input,textarea,legend,table,button,img{margin:0;padding:0}
+body{font:13px/1.231 Arial,'굴림',Gulim,sans-serif}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+ol,ul{list-style:none}
+table{border-collapse:collapse;border-spacing:0}
+img,fieldset,table,th,td{border:none}
+input {*margin:-1px 0;}
+input,textarea{font-size:1em}
+em,cite{font-style:normal}
+*+html body{position:relative}
+a {text-decoration :none;}
+a:link{}
+a:hover,a:active,a:focus{}
+a:visited{}
+img{vertical-align:middle;}
+input,select,button{vertical-align:middle;}
+/* 2013-07-02 수정 */
+select {margin:2px 0;box-sizing:border-box; border-radius:4px; border:1px solid #c4c4c4; box-shadow:0 1px 0 #f1f1f1; font-family:"굴림", Gulim, Arial, Sans-serif; color:#777; padding:4px; height:31px;line-height:31px;font-size:13px; font-weight:bold;}
+/* //2013-07-02 수정 */
+hr{display:block;height:1px;margin:1em 0;padding:0;border:0;border-top:1px solid #ccc}
+
+/* for IE haslayout */
+* html div,* html h1,* html h2,* html h3,* html h4,* html h5,* html h6,* html ul,* html ol,* html dl,* html dt,* html dd,* html table,* html th,* html td,* html form,* html fieldset,* html legend{zoom:1}
+
+/* For modern browsers */
+.clfix:before,.clfix:after{display:table;content:''}
+
+.clfix:after{clear:both}
+
+/* For IE 6/7 (trigger hasLayout) */
+.clfix{*zoom:1}
+
+/* Blind */
+.blind {visibility: hidden; overflow:hidden; position:absolute; top:0; left:0; width:0; height:0; font-size:0; line-height:0; }
+/*.blind{overflow:hidden;position:absolute;top:-999px;left:-999px;width:0px;height:0px;font-size:0;line-height:0}*/
+
+/* HTML5 일땐 아래의 주석을 풀어주세요~ */
+/*abbr,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{	margin:0;	padding:0;	border:0;	outline:0;	font-size:100%;	vertical-align:baseline;	background:transparent;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+mark{  font-weight:bold;}
+object{outline:none;}*/
+
+/*130408개발자추가*/
+iframe {		
+	border: 1px solid #efefef;
+}
+
+#div_createOverLay { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(0, 0, 0);	
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20); 
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+    opacity: 0.2;   
+    z-index:10;
+}
+.ajaxlodingimg {width:168px; height:124px;overflow:hidden;text-indent:-999em;background:url(../images/ajaxloding.gif) no-repeat}
+#ifrm { margin:0; padding:0; border:0;width:100%; height:0; }
+
+
+
+/*  140128 추가  */
+.w260 { width: 270px; }
+.w300 {width: 300px;}
+.w540 { width:540px; border: 0px;}
+.w530 { width: 570px !important; }
+
+.tableType2 tr:hover{background-color: #f2f2f2;}

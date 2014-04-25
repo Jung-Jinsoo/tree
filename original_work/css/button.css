@@ -1,0 +1,201 @@
+@charset "UTF-8";
+button {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.button {
+  background: none;
+  font: 12px/1.231 'Nanum Gothic', Arial , '굴림', Gulim , sans-serif;
+}
+.button.large {
+  line-height: 40px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.button.tiny {
+  padding: 4px 8px;
+}
+.button.blue {
+  background: #3b5998;
+  color: #fff;
+  border-top: 1px solid #2f4779;
+  border-right: 1px solid #2f4779;
+  border-bottom: 4px solid #2f4779;
+  border-left: 1px solid #2f4779;
+}
+.button.blue:hover {
+  border-bottom: 3px solid #2f4779;
+  top: 1px;
+}
+.button.blue:active, .button.blue.active {
+  border-bottom: 1px solid #2f4779;
+  top: 3px;
+}
+.button.gray {
+  background: #777777;
+  color: #fff;
+  border-top: 1px solid #5f5f5f;
+  border-right: 1px solid #5f5f5f;
+  border-bottom: 4px solid #5f5f5f;
+  border-left: 1px solid #5f5f5f;
+}
+.button.gray:hover {
+  border-bottom: 3px solid #5f5f5f;
+  top: 1px;
+}
+.button.gray:active, .button.gray.active {
+  border-bottom: 1px solid #5f5f5f;
+  top: 3px;
+}
+.button.date {
+  background: white;
+  color: #777;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 7px;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-bottom: 4px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+.button.date:hover {
+  border-bottom: 3px solid #cccccc;
+  top: 1px;
+}
+.button.date:active, .button.date.active {
+  border-bottom: 1px solid #cccccc;
+  top: 3px;
+}
+.button.resetpw {
+  padding: 5px 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.button.target-setting {
+  color: #777;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  padding-left: 3px;
+  border: 1px solid #d4d4d4;
+  background: #fdfdfd;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZkZmRmZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkYmRiZGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #fdfdfd 0%, #dbdbdb 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fdfdfd), color-stop(100%, #dbdbdb));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fdfdfd 0%, #dbdbdb 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fdfdfd 0%, #dbdbdb 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fdfdfd 0%, #dbdbdb 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fdfdfd 0%, #dbdbdb 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#dbdbdb',GradientType=0 );
+  /* IE6-8 */
+  width: 101px;
+  height: 29px;
+}
+.button.target-setting:hover {
+  background: #dbdbdb;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RiZGJkYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZGZkZmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #dbdbdb 0%, #fdfdfd 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dbdbdb), color-stop(100%, #fdfdfd));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #dbdbdb 0%, #fdfdfd 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #dbdbdb 0%, #fdfdfd 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #dbdbdb 0%, #fdfdfd 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #dbdbdb 0%, #fdfdfd 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbdbdb', endColorstr='#fdfdfd',GradientType=0 );
+  /* IE6-8 */
+}
+.button.target-setting:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn-add {
+  width: 151px;
+  height: 111px;
+  background: url(../images/button/btn-add.png) no-repeat 50% 50%;
+  text-indent: -9999em;
+  border: 1px dashed #c3c3c3;
+}
+
+.btn-modify {
+  width: 10px;
+  height: 10px;
+  background: url(../images/button/btn-modify.png) no-repeat 0 0;
+  text-indent: -9999em;  
+  margin-left: 5px;
+}
+
+.btn-fullsize {
+  width: 15px;
+  height: 13px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-fullscreen.png) no-repeat 0 0;
+  left: 0px;
+  top: 0px;
+}
+
+.btn-remove {
+  width: 14px;
+  height: 14px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-remove.png) no-repeat 0 0;
+  right: 0px;
+  top: 0px;
+}
+
+.btn-modify2 {
+  width: 14px;
+  height: 14px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-modify2.png) no-repeat 0 0;
+}
+
+.btn-magnifier {
+  width: 14px;
+  height: 14px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-magnifier.png) no-repeat 0 0;
+}
+
+.btn-info-data {
+  width: 67px;
+  height: 57px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-info-data.png) no-repeat 0 0;
+}
+
+.btn-pause {
+  width: 14px;
+  height: 14px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-pause.png) no-repeat 0 0;
+}
+
+.btn-refresh {
+  width: 32px;
+  height: 32px;
+  text-indent: -9999em;
+  background: url(../images/button/btn-refresh.png) no-repeat 0 0;
+}

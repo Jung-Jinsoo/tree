@@ -57,11 +57,10 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-img {
-  vertical-align: middle;
-}
-
-input, select {
+img
+, select
+, button
+, input {
   vertical-align: middle;
 }
 
@@ -126,20 +125,30 @@ object {
   outline: none;
 }
 
-img, button, select {
-  vertical-align: middle;
-}
-
 button {
   padding: 0;
   border: 0;
-  box-sizing: border-box;
   outline: none;
   cursor: pointer;
   position: relative;
   background: transparent;
   font-family: 'Nanum Gothic' , Arial , '굴림' , Gulim , Helvetica , sans-serif;
   white-space: nowrap;
+}
+
+legend {
+  *width: 0;
+}
+
+input
+, button {
+  box-sizing: border-box;
+}
+
+iframe {
+  vertical-align: top;
+  width: 100%;
+  border: 0 none;
 }
 
 /*# sourceMappingURL=reset.css.map */

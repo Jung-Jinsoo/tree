@@ -1,0 +1,79 @@
+.sContent {
+  padding:0 20px;
+  margin-top:30px;
+}
+.r_Top {
+  background : #f2f2f2;
+  padding:20px 20px 30px 20px;
+  table {
+    width:100%;
+    background : #fff;
+    th {
+      font-size:16px;
+      color : #3b5998;
+      font-family : Arial;
+      font-weight:bold;
+      border-top:1px solid #ebebeb;
+      border-right:1px solid #ebebeb;
+    }
+    td {
+      width : 80.68965517241379%;
+      border-top:1px solid #ebebeb;
+      padding:10px 15px;
+    }
+    tr {
+      // IE7 FIX
+      &.periodTR {
+        select {
+          *vertical-align:top;
+          *margin-top:5px;
+        }
+        span.hyphen {
+          margin:0 6px;
+          *vertical-align:top;
+          *position:relative;
+          *top:10px;
+        }
+      }
+      &:first-child {
+        th,td {
+          border-top:0 none;
+        }
+      }
+    }
+    input.date[type='text']{
+      height:29px;
+      width:124px;
+      line-height:29px;
+      *vertical-align: top;
+    }
+  }
+}
+
+.m_ca_createC {
+  .sContent;
+}
+
+.m_audiences {
+  .sContent;
+}
+
+
+.m_cvsTracking {
+  .sContent;
+
+  // 폰트사이즈 13px
+  .fs13 {
+    font-size:13px;
+  }
+  table {
+    th {
+      color : #f2f2f2;
+    }
+  }
+}
+
+
+
+
+.aR {float:right;}

@@ -7,13 +7,333 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
-<body>
-	<h2><img src="images/main-title/main-title-dashboard.png" alt="Dashboard" /></h2>
-	<h2><img src="images/main-title/main-title-manageads.png" alt="Manage Ads" /></h2>
-	<h2><img src="images/main-title/main-title-createads.png" alt="Create Ads" /></h2>
-	<h2><img src="images/main-title/main-title-reports.png" alt="Reports" /></h2>
-	<h2><img src="images/main-title/main-title-account.png" alt="Account" /></h2>
-	<h2><img src="images/main-title/main-title-help.png" alt="Help" /></h2>
-	<script type="text/javascript" src="./js/common.js"></script>
+<body>	
+	<div id="ifrm_Wrap">
+		
+		<div class="total-value-wrap">
+			<ul class="total-value clfix">
+				<li>
+					<div class="img">
+						<img alt="impression" src="${pageContext.request.contextPath }/images/dashboard/img-impression.png" alt=""/>
+					</div>
+					<p class="count" id="top_imp">
+						<fmt:formatNumber value="${summary.impressionSum }" type="number" pattern="#,##0" />
+					</p>
+					<p class="desc">impression</p>						
+				</li>
+				<li>
+					<div class="img">
+						<img alt="impression" src="${pageContext.request.contextPath }/images/dashboard/img-reach.png" alt=""/>	
+					</div>
+					<p class="count" id="top_reach">
+						<fmt:formatNumber value="${summary.reachSum }" type="number" pattern="#,##0" />
+					</p>
+					<p class="desc">Reach</p>																				
+				</li>
+				<li>
+					<div class="img">
+						<img alt="impression" src="${pageContext.request.contextPath }/images/dashboard/img-ctr.png" alt=""/>
+					</div>
+					<p class="count" id="top_ctr">
+						<fmt:formatNumber value="${summary.avgCtr }" type="number" pattern="#,##0.0#" /><span>%</span>							
+					</p>
+					<p class="desc">CTR</p>
+				</li>
+				<li>
+					<div class="img">
+						<img alt="impression" src="${pageContext.request.contextPath }/images/dashboard/img-click.png" alt=""/>
+					</div>						
+					<p class="count" id="top_clicks">
+						<fmt:formatNumber value="${summary.clickSum }" type="number" pattern="#,##0" />
+					</p>
+					<p class="desc">Click</p>						
+				</li>
+				<li>
+					<div class="img">
+						<img alt="impression" src="${pageContext.request.contextPath }/images/dashboard/img-cpc.png" alt=""/>
+					</div>						
+					<p class="count" id="summary_cpc">
+						<fmt:formatNumber value="${summary.avgCpc }" type="number" pattern="#,##0.0#" />
+					</p>
+					<p class="desc">CPC</p>						
+				</li>
+				<li>
+					<div class="img">
+						<img alt="impression" src="${pageContext.request.contextPath }/images/dashboard/img-conversion.png" alt=""/>
+					</div>						
+					<p class="count" id="top_conversion">
+						<fmt:formatNumber value="${summary.conversionSum }" type="number" pattern="#,##0" />
+					</p>
+					<p class="desc">Conversion</p>						
+				</li>
+				<li>
+					<div class="img">
+						<img alt="impression" src="${pageContext.request.contextPath }/images/dashboard/img-cpa.png" alt=""/>
+					</div>
+					<p class="count" id="conversion_cpa">
+						<fmt:formatNumber value="${summary.avgCpa }" type="number" pattern="#,##0.0#" />
+					</p>
+					<p class="desc">CPA</p>						
+				</li>
+				<li>
+					<div class="img">
+						<img alt="impression" src="${pageContext.request.contextPath }/images/dashboard/img-spend.png" alt=""/>
+					</div>					
+					<p class="count" id="summary_spent">
+						<fmt:formatNumber value="${summary.spendSum }" type="number" pattern="#,##0" />
+					</p>
+					<p class="desc">Spend</p>						
+				</li>
+			</ul>
+		</div>		
+		<div class="dash-summary-of-performance">
+			<div>
+				<h3><a href="" id="performance"><img src="" alt="Summary or performance" /></a></h3>
+			</div>
+			<div class="content">
+				<div class="click">
+					<h4>Click</h4>
+					<div>
+						<div id="summary_chart_container" style="height: 300px;"></div>
+					</div>			
+				</div>
+				<div class="conversion">
+					<h4>Conversion</h4>
+					<div>
+						<div id="conversion_container" style="height: 300px"></div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		
+		<div class="dash-campaign-group-list">
+			<div>
+				<h3><a href="" id="campagin_group"><img src="" alt="Campaign Group List" /></a></h3>
+			</div>
+			<div class="content">
+				<table class="tableType2" id="" summary="Campaign group list">
+					<thead>
+						<tr>
+							<th class="header">&nbsp;</th>
+							<th class="header">Campaign<br />name
+							</th>
+							<th class="header">Start<br />date
+							</th>
+							<th class="header">End<br />date
+							</th>
+							<th class="header">Imp</th>
+							<th class="header">Reach</th>
+							<th class="header">Clicks</th>
+							<th class="header">CTR</th>
+							<th class="header">Conversion<br />rate
+							</th>
+							<c:if test="${summary.salesSum > 0}">
+							<th class="header">Sales</th>
+							<th class="header">ROAS</th>
+						</c:if>
+						<th class="header">Avg.<br />CPC
+						</th>
+						<th class="header">Avg.<br />CPM
+						</th>
+						<th class="header">Avg.<br />CPL
+						</th>
+						<th class="header">Avg.<br />CPA
+						</th>
+						<c:if test="${cpi eq true}">
+						<th class="header">Avg.<br />CPI
+						</th>
+					</c:if>
+					<th class="header">Budget</th>
+					<th class="header">Remaining</th>
+					<th class="header">Total<br />Spending
+					</th>								
+					<th class="header">Report</th>
+				</tr>
+			</thead>
+			<tbody>
+				<c:if test="${empty campaignGroupList }">
+				<tr>
+					<td colspan="22">No data</td>
+				</tr>
+			</c:if>
+			<c:forEach items="${campaignGroupList}" var="campaignGroup">
+			<tr>
+				<td><c:choose>
+					<c:when test="${inno:isEnd(campaignGroup)}">
+					<img src="${pageContext.request.contextPath }/images/ico_check.png" alt="completed" />
+				</c:when>
+				<c:when test="${campaignGroup.campaign_status == 'ACTIVE'}">
+				<img src="${pageContext.request.contextPath }/images/play.png" alt="play" />
+			</c:when>
+			<c:when test="${campaignGroup.campaign_status == 'PAUSED'}">
+			<img src="${pageContext.request.contextPath }/images/ico_pause.png" alt="pause" />
+		</c:when>
+		<c:when test="${campaignGroup.campaign_status == 'DELETED'}">
+		<img src="${pageContext.request.contextPath }/images/ico_x.png" alt="deleted" />
+	</c:when>
+</c:choose></td>
+<td><a href=";" name="moveManage" value="${campaignGroup.campaign_group_id }" style="color: graytext; font-weight: bold;">${campaignGroup.name }</a></td>
+<td><fmt:formatDate value="${campaignGroup.start_time }" pattern="yy.MM.dd" /></td>
+<td><c:if test="${empty campaignGroup.end_time}">on going</c:if> <c:if test="${not empty campaignGroup.end_time}">
+	<fmt:formatDate value="${campaignGroup.end_time }" pattern="yy.MM.dd" />
+</c:if></td>
+<td><fmt:formatNumber value="${campaignGroup.periodStats.impressions }" type="number" pattern="#,##0" /></td>
+<td><fmt:formatNumber value="${campaignGroup.periodReachStats.reach }" type="number" pattern="#,##0" /></td>
+<td><fmt:formatNumber value="${campaignGroup.periodStats.clicks }" type="number" pattern="#,##0" /></td>
+<td><fmt:formatNumber value="${campaignGroup.periodStats.ctr }" type="number" pattern="#,##0.0#" />%</td>
+<td><fmt:formatNumber value="${campaignGroup.periodStats.conversionRate }" type="number" pattern="#,##0.0#" />%</td>
+<c:if test="${summary.salesSum > 0}">
+<td><fmt:formatNumber value="${campaignGroup.sales }" type="number" pattern="#,##0.##" /></td>
+<td><fmt:formatNumber value="${campaignGroup.roas }" type="number" pattern="#,##0.0#" />%</td>
+</c:if>
+<td><fmt:formatNumber value="${campaignGroup.periodStats.cpc }" type="number" pattern="#,##0.0#" /></td>
+<td><fmt:formatNumber value="${campaignGroup.periodStats.cpm }" type="number" pattern="#,##0.0#" /></td>
+<td><fmt:formatNumber value="${campaignGroup.periodStats.cpl }" type="number" pattern="#,##0.0#" /></td>
+<td><fmt:formatNumber value="${campaignGroup.periodStats.cpa }" type="number" pattern="#,##0.0#" /></td>
+<c:if test="${cpi eq true}">
+<td><fmt:formatNumber value="${campaignGroup.periodStats.cpi }" type="number" pattern="#,##0.0#" /></td>
+</c:if>
+<td><fmt:formatNumber value="${campaignGroup.totalBudget }" type="number" pattern="#,##0.##" /></td>
+<td><fmt:formatNumber value="${campaignGroup.budgetRemaining / crtCurrencyValue }" type="number" pattern="#,##0.##" /></td>
+<td><fmt:formatNumber value="${campaignGroup.lifetimeStats.spent }" type="number" pattern="#,##0.##" /></td>									
+<td><button type="button" class="btnT3 btnReport" id="report" name="report" campaignGroupId="${campaignGroup.id }">Report</button></td>
+</tr>
+</c:forEach>
+</tbody>
+<c:if test="${not empty campaignGroupList }">
+<tfoot>
+	<tr>
+		<td colspan="4">sum / avg.</td>
+		<td><fmt:formatNumber value="${summary.impressionSum }" type="number" pattern="#,##0" /></td>
+		<td><fmt:formatNumber value="${summary.reachSum }" type="number" pattern="#,##0" /></td>
+		<td><fmt:formatNumber value="${summary.clickSum }" type="number" pattern="#,##0" /></td>
+		<td><fmt:formatNumber value="${summary.avgCtr }" type="number" pattern="#,##0.0#" />%</td>
+		<td><fmt:formatNumber value="${summary.avgConversionRate }" type="number" pattern="#,##0.0#" />%</td>
+		<c:if test="${summary.salesSum > 0}">
+		<td><fmt:formatNumber value="${summary.salesSum }" type="number" pattern="#,##0.##" /></td>
+		<td><fmt:formatNumber value="${summary.avgRoas }" type="number" pattern="#,##0.0#" />%</td>
+	</c:if>
+	<td><fmt:formatNumber value="${summary.avgCpc }" type="number" pattern="#,##0.0#" /></td>
+	<td><fmt:formatNumber value="${summary.avgCpm }" type="number" pattern="#,##0.0#" /></td>
+	<td><fmt:formatNumber value="${summary.avgCpl }" type="number" pattern="#,##0.0#" /></td>
+	<td><fmt:formatNumber value="${summary.avgCpa }" type="number" pattern="#,##0.0#" /></td>
+	<c:if test="${cpi eq true}">
+	<td><fmt:formatNumber value="${summary.avgCpi }" type="number" pattern="#,##0.0#" /></td>
+</c:if>
+<td><fmt:formatNumber value="${summary.totalBudget }" type="number" pattern="#,##0.##" /></td>
+<td><fmt:formatNumber value="${summary.totalRemainging }" type="number" pattern="#,##0.##" /></td>
+<td><fmt:formatNumber value="${summary.totalSpent }" type="number" pattern="#,##0.##" /></td>
+<td></td>
+</tr>
+</tfoot>
+</c:if>
+</table>
+</div>
+</div>
+
+
+<div class="dash-insight">
+	<div>
+		<h3><a href="#" id="show_insight"><img src="" alt="Insight" /></a></h3>
+	</div>
+	<div class="content">
+		<div class="selectbox">
+			<select name="page_id" id="page_id" style="margin-bottom: 10px;">
+				<option value="">Now loading...</option>
+			</select>
+		</div>
+
+		<ul class="list_insight">
+			<li>
+				<div>
+					<div class="box_tit_insights">
+						<h6>Fan</h6>
+						<p>
+							<span id="total_page_likes">0</span> total page likes
+						</p>
+						<p>
+							<span id="new_page_likes">0</span> new page likes
+						</p>
+					</div>
+					<div class="box_detail_insights">
+						<div id="fans_container" style="height: 188px;"></div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div>
+					<div class="box_tit_insights">
+						<h6>Reach</h6>
+						<p>
+							<span id="total_reach">0</span> total reach
+						</p>
+						<p>
+							<span id="reach_paid">0</span> paid reach
+						</p>
+					</div>
+					<div class="box_detail_insights">
+						<div id="reach_container" style="height: 188px;"></div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div>
+					<div class="box_tit_insights">
+						<h6>Engagement</h6>
+						<p>
+							<span id="engagement">0</span> people engaged
+						</p>
+						<p></p>
+					</div>
+					<div class="box_detail_insights">
+						<div id="interaction_container" style="height: 188px;"></div>
+					</div>
+				</div>
+			</li>
+			<li class="end">
+				<div>
+					<div class="box_tit_insights">
+						<h6 class="m_center">Hot keyword in comment</h6>
+					</div>
+					<div class="box_detail_insights">
+						<div id="keyword_cloud" style="height: 200px;"></div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+<!-- Dash-Content -->
+<div class="dash-contents">
+	<div>
+		<h3><a href="Contents"><img src="" alt="" /></a></h3>
+	</div>
+	<div class="content">
+		<div class="box_tbl_grouplist">
+			<table class="tableType2" id="contents_table" summary="Campaign group list">
+				<thead>
+					<tr>
+						<th class="header">No.</th>
+						<th class="header">Message sent</th>
+						<th class="header">Reach</th>
+						<th class="header">Engaged</th>
+						<th class="header">Talking</th>
+						<th class="header">Likes</th>
+						<th class="header">Comments</th>
+						<th class="header">Share</th>
+						<th class="header">Virality</th>
+						<th class="header">Promote</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<!-- Dash-Content -->
+</div>
 </body>
 </html>

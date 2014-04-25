@@ -1,0 +1,22 @@
+
+body {
+	min-width:1200px;
+}
+
+.wrap {
+  width:100%;
+}
+
+.content > .title {
+  margin: 18px 0 17px 20px;
+}
+.copyright {
+  margin-top: 35px;
+  text-align: center;
+  color: #e2e2e2;
+  font-size: 11px;
+  font-family: "굴림", Gulim, Arial;
+  height: 24px;
+}
+
+

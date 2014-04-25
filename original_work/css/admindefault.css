@@ -1,0 +1,133 @@
+@CHARSET "EUC-KR";
+
+.mainwrapper { margin-right: 200px; }
+.mainwrapper .mainwrapper { margin-right: 0; }
+
+/*** HEADER ***/
+
+.header { background: #0866c6; clear: both; height: 110px; }
+.headerinner { margin-left: 260px; }
+.header .adminlogo { width: 260px; text-align: center; padding-top: 40px; float: left; }
+
+.headmenu { list-style: none; }
+.headmenu .dropdown-menu { border: 2px solid #0866c6; border-top: 0; margin: 0; }
+.headmenu .nav-header {
+	text-shadow: none; font-weight: normal; padding: 3px 15px; color: #999; font-size: 11px;
+	text-transform: uppercase; }
+.headmenu .dropdown-menu::after {
+	position: absolute; top: -6px; left: 45px; display: inline-block; border-right: 6px solid transparent;
+	border-bottom: 6px solid white; border-left: 6px solid transparent; content: ''; }
+.headmenu > li {
+	display: inline-block; float: left; font-size: 14px; position: relative; border-right: 1px solid rgba(255,255,255,0.15); }
+.headmenu > li:first-child { border-left: 1px solid rgba(255,255,255,0.15); }
+.headmenu > li.odd { background: rgba(255,255,255,0.1); }
+.headmenu > li.right { float: right; border-right: 0; }
+.headmenu > li > a {
+	min-width: 70px; position: relative; display: block; color: #fff;
+	padding: 25px 20px 9px 20px; cursor: pointer; }
+.headmenu > li > a:hover { text-decoration: none; }
+.headmenu > li > a .count { position: absolute; top: 5px; right: 10px; opacity: 0.5; }
+.headmenu > li > a:hover .count, .headmenu > li.open > a .count { opacity: 1; }
+.headmenu > li > a .headmenu-label { display: block; margin: 2px 0 3px 0; opacity: 0.5; text-align: center; }
+.headmenu > li > a:hover .headmenu-label, .headmenu > li.open > a .headmenu-label { opacity: 1; }
+
+.headmenu > li > a .head-icon { width: 50px; height: 50px; display: block; margin: auto; opacity: 0.5; }
+.headmenu > li > a:hover .head-icon, .headmenu > li.open a .head-icon { opacity: 1; }
+
+
+
+.viewmore a { font-size: 11px; text-transform: uppercase; font-size: 11px !important; }
+
+.newusers { min-width: 200px; }
+.newusers li a:hover { background; #eee; }
+.newusers li a::after { clear: both; display: block; content: ''; }
+.newusers .userthumb { width: 35px; display: block; float: left; margin: 3px 10px 3px 0; }
+.newusers strong { display: block; line-height: normal; }
+.newusers small { color: #999; line-height: normal; }
+
+.userloggedinfo { padding: 11px; color: #fff; }
+.userloggedinfo img { padding: 3px; background: rgba(255,255,255,0.2); width: 85px; float: left; }
+.userloggedinfo .userinfo { float: left; margin-left: 10px; }
+.userloggedinfo .userinfo small { font-size: 11px; opacity: 0.6; color: #fff; font-family: sans-serif; font-style: italic; }
+.userloggedinfo ul { list-style: none; margin-top: 5px; }
+.userloggedinfo ul li { display: block; font-size: 11px; line-height: normal; margin-bottom: 1px; }
+.userloggedinfo ul li a { padding: 4px 5px 3px 5px; color: #fff; line-height: normal; background: rgba(255,255,255,0.1); display: block; }
+.userloggedinfo ul li a:hover { text-decoration: none; background: rgba(255,255,255,0.2); }
+
+.no-borderradius .userloggedinfo .userinfo { float: none; margin-left: 92px; }
+
+
+@media screen and (max-width: 360px) {
+	
+		  .header { height: 90px; }
+		  .headmenu > li { font-size: 12px; }
+		  .headmenu > li > a { padding: 25px 5px 9px; }
+		  .headmenu > li > a .head-icon { width: 30px; height: 30px; background-size: cover; }
+		  .leftmenu .nav-tabs.nav-stacked li a { font-size: 13px; }
+		  .leftmenu .nav-tabs.nav-stacked .dropdown ul li a { font-size: 12px; }
+		  .userloggedinfo img { width: 60px; }
+		  .userloggedinfo .userinfo { top: 90px; }
+		  .header .logo { padding-top: 30px; }
+		  .headmenu .dropdown-menu:after { left: 25px; }
+		  .userloggedinfo .userinfo:after { right: 35px; }
+		  .searchbar input { background-position: 285px 10px; }
+		  
+		  .commentlist li p:last-child .btn { margin-bottom: 10px; }
+		  
+		  /* buttons */
+		  .tabbable > .nav-tabs > li { overflow: hidden; font-size: 11px; }
+		  .tabbable > .nav-tabs > li a { padding: 10px 5px; }
+		  .glyphicons li { width: auto; float: none; }
+		  .fontawesomeicons .span3 { width: auto; float: none; }
+		  .iconsweetslist li { width: auto; float: none; }
+		  
+		  /* forms */
+		  .dualselect select { width: 38%; }
+		  .chzn-container{ width: 270px !important; }
+		  .chzn-drop { width: 268px !important; }
+		  .chzn-search input { width: 220px !important; }
+		  .tagsinput { width: 260px !important; }
+		  #elm1_toolbargroup { width: 285px; }
+		  
+		  /* elements */
+		  .navbar .brand { display: none; } /* hidden for demo purposes only */
+		  
+		  /* boxes */
+		  .slide_img, .entry_img { float: none; margin-bottom: 10px; }
+		  .slide_content, .entry_content { margin-left: 0; }
+		  
+		  /* media */
+		  .mediamgr_category ul li { float: none; display: block; margin: 0; }
+		  .mediamgr_menu li { margin-bottom: 10px; }
+		  .mediamgr_menu li.newfilebtn { margin-left: 10px; }
+		  .mediaWrapper { width: 240px; }
+		  .imgpreview { width: 209px; }
+		  
+		  /* messages */
+		  .messagemenu ul { height: 45px; }
+		  .messagemenu ul li a { padding: 12px 10px; }
+		  
+		  /* calendar */
+		  .fc-header { margin-top: 30px; }
+		  .fc-header-title h2 { margin-top: -50px; }
+		  .fc-button-month { margin-left: -50px; }
+		  
+		  /* error */
+		  .errortitle h4 { font-size: 20px; }
+		  .errortitle span { font-size: 50px; }
+		  .errortitle span:first-child { margin-left: 0; }
+		  
+		  
+		  /* bootstrap */
+		  .tabbable > .tab-content { padding: 15px; }
+		  .btn-circle { width: 6px; }
+		  .btn-circle i { margin-left: -3px; }
+		  .input-append .btn, .input-prepend .btn { padding-left: 8px; padding-right: 8px; font-size: 12px; }
+		  
+		  /* footer */
+		  .footer .footer-left { float: none; text-align: center; }
+		  .footer .footer-right { float: none; text-align: center; }
+	  
+		  
+}
+

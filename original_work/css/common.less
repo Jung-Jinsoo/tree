@@ -1,0 +1,437 @@
+// label , input[type='button'], button[type='button']
+label , input[type='button'], button[type='button'] {
+  cursor : pointer;
+}
+
+// input중 type이 text Default Setting
+input[type='text']{
+  font-family: Arial;
+  border:1px solid #ddd;
+  border-radius:5px;
+  padding:0 10px;
+  box-shadow : 1px 1px 2px 1px #f3f3f3 inset;
+}
+
+// 날짜선택하는 input
+input.date[type='text']{
+  background: url(../images/common/icon_input_date.png) no-repeat 97% 50% #fff;
+}
+
+// Date버튼 모음
+.btnDate {
+  button[type='button'] {
+    border: 1px solid #c4c4c4;
+    font-family :'굴림',Gulim, Arial;
+    color :#777777;
+    font-size:13px;
+    font-weight:bold;
+    border-radius : 5px;
+    padding: 7px 6px;
+    margin-left:7px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+    *padding: 5px;
+    &:first-child {
+      margin-left:15px;
+    }
+  }
+}
+
+
+.mt10 {
+  margin-top:10px;
+}
+.mb10 {
+  margin-bottom:10px;
+}
+
+//기준의 r_Top
+.commonSection {
+  background : #f2f2f2;
+  padding:20px;
+  margin-bottom:10px;
+}
+
+//Table Type1 Ver.
+  .tableType1 {
+    width:100%;
+    background : #fcfcfc;
+    th {
+      font-size:16px;
+      color : #3b5998;
+      border-top:1px solid #ebebeb;
+      height:51px;
+    }
+    td {
+      border-top:1px solid #ebebeb;
+      border-left:1px solid #ebebeb;
+      padding-left:13px;
+
+    }
+    tr {
+      &:first-child {
+        th,td {
+          border-top:0 none;
+        }
+      }
+    }
+    .periodTR {
+      td {
+        input.date[type='text']{
+          height:29px;
+          width:124px;
+          line-height:29px;
+          *vertical-align: top;
+        }
+        select  {
+          margin-right:7px;
+          *vertical-align:top;
+          *margin-top:5px;
+        }
+        .hyphen {
+          margin:0 6px;
+          *vertical-align:top;
+          *position:relative;
+          *top:10px;
+        }
+      }
+    }
+  }
+
+
+//Table Type2 Ver.
+.tableType2{
+  margin-top:10px;
+  width : 100%;
+  &.includeIcon {
+    tr {
+      th {
+        &:first-child {
+          width:22px;
+        }
+      }
+    }
+  }
+  th {
+    color : #fff;
+    text-align : center;
+    font-family : '굴림',Gulim,Arial;
+    font-weight:bold;
+    height:34px;
+    background: url(../images/common/line_table.png) no-repeat left bottom #7b7977;
+    &:first-child {
+      background :#7b7977;
+    }
+  }
+  td {
+    border-bottom:1px solid #c1c1c1;
+    font-size:12px;
+    font-family : '굴림',Gulim,Arial;
+    color : #777;
+    text-align:center;
+    height:33px;
+    //td안에 tdIndex가 존재 하면.
+    &.tdIndex2 {
+      text-align:left;
+      padding-left:10px;
+    }
+  }
+  tbody {
+    tr {
+      &:first-child {
+        td {border-top:1px solid #c1c1c1;}
+      }
+    }
+  }
+}
+
+
+
+.impToC {
+  width : 100%;
+  height : 68px;
+  background : #99c0e7;
+  li {
+    text-align:center;
+    float:left;
+    padding-top:12px;
+    height: 56px;
+    font-weight:bold;
+    font-family : Arial;
+    color : #fff;
+    text-shadow : 1px 1px 1px #c4d0eb;
+    span {
+      float:left;
+      margin-right:8px;
+    }
+    dl {
+      float:left;
+    }
+    dt {
+      font-size:16px;
+    }
+    dd {
+      font-size:26px;
+    }
+  }
+  .first {
+    width : 309px;
+    background :#dbedff;
+    span {
+      margin-left:72px;
+    }
+  }
+  .second {
+    width : 252px;
+    background : url(../images/report/bg_imptoc1.png) no-repeat 0 0 #c3dffa;
+    span {
+      margin-left:80px;
+    }
+  }
+  .third {
+    width : 276px;
+    background : url(../images/report/bg_imptoc2.png) no-repeat 0 0 #abcef1;
+    span {
+      margin-left:88px;
+    }
+  }
+  .fourth {
+    width : 323px;
+    background : url(../images/report/bg_imptoc3.png) no-repeat 0 0 #99c0e7;
+    span {
+      margin-left:96px;
+    }
+  }
+}
+
+.genderSection {
+  width: 406px;
+  height:153px;
+  border: 1px dashed #d9d9d9;
+  border-radius : 5px;
+  padding-top:16px;
+  li {
+    width:144px;
+    height:136px;
+    float:left;
+    &.male {
+      margin-left:28px;
+      background:url(../images/report/gender/bg_big_male.png) no-repeat 0 0;
+    }
+    &.female {
+      background:url(../images/report/gender/bg_big_female.png) no-repeat 0 0;
+      margin-left:60px;
+    }
+    > p {
+      margin-top:31px;
+      font-family:Arial;
+      color:#fff;
+      font-weight:bold;
+      font-size:30px;
+      text-align:center;
+    }
+  }
+}
+
+.sContent {
+  padding:0 20px;
+  margin-top:30px;
+}
+
+
+.titleH3 {
+  margin-bottom:10px;
+}
+
+
+
+/*
+//버튼타입1 파랑바탕에 하얀색
+.btnT1 {
+  font-family:Arial;
+  font-weight:bold;
+  color:#fff;
+  background:#3b5998;
+  border:0 none;
+  &.btnSearch {
+    width:102px;
+    height:36px;
+    display:block;
+    margin:20px auto 0;
+    font-size:18px;
+  }
+  &.btnCrtCampaign {
+    width:136px;
+    height:25px;
+  }
+}
+
+
+//버튼타입2 진한회색바탕에 하얀색
+.btnT2 {
+  font-family:Arial;
+  font-weight:bold;
+  color : #fff;
+  background : #777;
+  border:0 none;
+  &.btnDownExcel {
+    width:128px;
+    height:25px;
+  }
+}
+
+//버튼타입3 연한회색바탕에 연한회색
+.btnT3 {
+  font-family:'굴림',Gulim,Arial;
+  background: #999;
+  color : #f2f2f2;
+  border:0 none;
+  font-weight:bold;
+  &.btnEdit {
+    width:60px;
+    height:23px;
+  }
+  &.btnReport {
+    width:64px;
+    height:23px;
+  }
+}
+
+// Create & Cancel 버튼
+.btnCrtNCncl {
+  overflow:hidden;
+  width:214px;
+  margin:20px auto 0;
+  li {
+    float:left;
+    margin-left:10px;
+    &:first-child {
+      margin-left:0;
+    }
+    .btnCrt , .btnCncl {
+      font-size:18px;
+      width:102px;
+      height:36px;
+    }
+  }
+}
+*/
+
+
+.btnT1 {
+  background:#3b5998;
+  color : #fff;
+  font-weight:bold;
+  border:0 none;
+  &.btnBigS {
+    box-shadow : 1px 1px 0px #334e8d inset,2px 2px 0px #385594 inset;
+    border-bottom:1px solid #5873ab;
+    border-right:1px solid #5873ab;
+  }
+  &.btnPrint {
+    width:72px;
+    height:25px;
+  }
+}
+.btnT2 {
+  background:#777;
+  color : #fff;
+  font-weight:bold;
+  border:0 none;
+  &.btnBigS {
+    box-shadow : 1px 1px 0px #6b6b6b inset,2px 2px 0px #737373 inset;
+    border-bottom:1px solid #666;
+    border-right:1px solid #666;
+  }
+}
+.btnT3 {
+  background:#999;
+  color : #f2f2f2;
+  font-weight:bold;
+  border:0 none;
+  box-shadow : 1px 1px 0px #8e8e8e inset,2px 2px 0px #959595 inset;
+  &.btnReport {
+    width:64px;
+    height:23px;
+  }
+}
+.btnBigS {
+  width:102px;
+  height:36px;
+  font-size:18px;
+}
+// more , edit , delete , view 버튼
+.btnMEDV {
+  width:60px;
+  height:23px;
+}
+.btnSmallS {
+  padding:4px 12px;
+  *padding:4px 0;
+}
+
+
+.btnAlignWrap {
+  text-align:center;
+  margin-top:20px;
+  button {
+    margin-left:10px;
+    &:first-child {
+      margin-left:0;
+    }
+  }
+}
+
+
+
+// 사용되는곳 en_main , report_default
+.tableWrap {
+  float:left;
+  table {
+    width: 100%;
+    background : #f1f2f6;
+    tr {
+      &:first-child {
+        th,td {
+          border-top: 0 none;
+        }
+      }
+    }
+    th {
+      height: 44px;
+      font-size:16px;
+      color : #3b5998;
+      border-top:1px solid #fff;
+      border-right: 1px solid #fff;
+    }
+    td {
+      padding-left:12px;
+      font-family : '굴림',Gulim,Arial;
+      color : #777777;
+      font-size:13px;
+      border-top:1px solid #fff;
+    }
+  }
+  .infoLine {
+    margin-top:7px;
+    border:1px solid #d9d9d9;
+    padding:4px 0;
+    font-size:13px;
+    font-family:'굴림',Gulim,Arial;
+    color:#777;
+    span {
+      img {
+        margin-right:6px;
+      }
+      display:block;
+      float:left;
+      text-align:center;
+    }
+  }
+}
