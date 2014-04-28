@@ -78,18 +78,6 @@ hr {
   zoom: 1;
 }
 
-/* For modern browsers */
-.clfix {
-  *zoom: 1;
-}
-.clfix:before, .clfix:after {
-  display: table;
-  content: '';
-}
-.clfix:after {
-  clear: both;
-}
-
 /* Blind */
 .blind, legend {
   overflow: hidden;

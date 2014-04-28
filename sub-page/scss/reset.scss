@@ -69,18 +69,8 @@ hr{
 /* for IE haslayout */
 * html div,* html h1,* html h2,* html h3,* html h4,* html h5,* html h6,* html ul,* html ol,* html dl,* html dt,* html dd,* html table,* html th,* html td,* html form,* html fieldset,* html legend{zoom:1}
 
-/* For modern browsers */
 
-.clfix {
-	*zoom:1;
-	&:before , &:after {
-		display:table;
-		content:'';
-	}
-	&:after {
-		clear:both;
-	}
-}
+
 /* Blind */
 .blind , legend{
 	overflow:hidden;
